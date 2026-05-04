@@ -59,4 +59,20 @@ ul>li{
     justify-content: space-evenly;
     
 }
+
+.projects-container {
+  padding: 20px;
+}
+
+.project-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h2 {
+  color: #2c3e50;
+}
     

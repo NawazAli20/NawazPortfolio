@@ -1,0 +1,70 @@
+{
+  "active_research_projects": [
+    {
+      "title": "Fake News Identification using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI",
+      "objective": "Analyze news and social media data to identify fake news with high accuracy by leveraging LLMs, agents, tools, and neuro-symbolic AI.",
+      "funder": "BU Internal Grants",
+      "graduate_students": 1,
+      "status": "Ongoing",
+      "start_year": 2025,
+      "collaborators": [
+        "Bradley University CS&IS Department"
+      ],
+      "publications": []
+    },
+    {
+      "title": "Social Media Sentiment Analysis using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI",
+      "objective": "Compute sentiment scores and classify social media posts into sentiment categories using fine-tuned LLMs, RAG agents, tools, and neuro-symbolic AI.",
+      "funder": "BU Internal Grants",
+      "graduate_students": 2,
+      "status": "Ongoing",
+      "start_year": 2025,
+      "collaborators": [
+        "Bradley University CS&IS Department"
+      ],
+      "publications": []
+    },
+    {
+      "title": "Understanding Adolescent Obesity from Social Media Data using LLMs",
+      "objective": "Analyze social media data to understand adolescent obesity and healthy diet trends to support healthcare provider guidance.",
+      "funder": "BU OSF HealthCare IFH Grant",
+      "graduate_students": 1,
+      "status": "Ongoing",
+      "start_year": 2024,
+      "collaborators": [
+        "OSF HealthCare",
+        "Bradley University",
+        "Innovation for Health (IFH)"
+      ],
+      "publications": [
+        "Cross-Platform Sentiment Intelligence for Adolescent Health (Under Review)"
+      ]
+    },
+    {
+      "title": "Accurate Hospital Patient Message Classification using Fine-Tuned LLMs",
+      "objective": "Automate classification of large volumes of hospital patient messages using fine-tuned LLMs to improve response efficiency.",
+      "funder": "BU OSF HealthCare IFH Grant",
+      "graduate_students": 2,
+      "status": "Ongoing",
+      "start_year": 2024,
+      "collaborators": [
+        "OSF HealthCare",
+        "Bradley University"
+      ],
+      "publications": []
+    },
+    {
+      "title": "Studying V2X Communication for Improved Safety and Traffic Modeling",
+      "objective": "Investigate Vehicle-to-Everything (V2X) communication to enhance road safety and traffic conditions.",
+      "funder": "BU Internal Grant",
+      "graduate_students": 2,
+      "status": "Ongoing",
+      "start_year": 2023,
+      "collaborators": [
+        "Bradley University",
+        "Transportation Research Collaborators"
+      ],
+      "publications": []
+    }
+  ]
+}
