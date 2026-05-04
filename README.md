@@ -8,3 +8,7 @@ npm install
 # How to run: 
 
 npm start
+
+
+# To create Json file from a resume: 
+npm run generate-json resumes/resume.docx

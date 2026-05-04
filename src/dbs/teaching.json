@@ -1,0 +1,142 @@
+{
+  "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/",
+  "categories": [
+    {
+      "level": "Undergraduate",
+      "courses": [
+        {
+          "courseCode": "CS 102",
+          "title": "Data Structures",
+          "toolsTopics": [
+            "Java"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CS 321",
+          "title": "Operating Systems",
+          "toolsTopics": [
+            "Linux shell",
+            "kernel"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CIS 393",
+          "title": "Web Technologies and Systems",
+          "toolsTopics": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MySQL",
+            "MongoDB",
+            "React"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        }
+      ]
+    },
+    {
+      "level": "Graduate",
+      "courses": [
+        {
+          "courseCode": "CS 514",
+          "title": "Algorithms",
+          "toolsTopics": [
+            "C++",
+            "Java"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CS 531",
+          "title": "Web Development Technologies",
+          "toolsTopics": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "MySQL",
+            "MongoDB",
+            "React"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CS 571",
+          "title": "Database Design and Management",
+          "toolsTopics": [
+            "Relational Algebra",
+            "SQL",
+            "ERDPlus",
+            "Full-stack web development"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        }
+      ]
+    },
+    {
+      "level": "Undergraduate & Graduate Cross-listed",
+      "courses": [
+        {
+          "courseCode": "CIS 445/545",
+          "title": "Integrative Programming & Technology",
+          "toolsTopics": [
+            "Linux shell",
+            "Git",
+            "GitHub",
+            "Full-stack web development",
+            "Network security"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CS 462/562",
+          "title": "Machine Learning",
+          "toolsTopics": [
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "Seaborn",
+            "Scikit-learn",
+            "Keras",
+            "TensorFlow"
+          ],
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        }
+      ]
+    },
+    {
+      "level": "Expecting to develop & offer in FA 26",
+      "courses": [
+        {
+          "courseCode": "CS 111",
+          "title": "AI for All - Artificial Intelligence for Life, Society, and Disciplines",
+          "toolsTopics": [
+            "Artificial Intelligence",
+            "AI literacy",
+            "Society",
+            "Disciplines"
+          ],
+          "expectedOffering": "FA 26",
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        },
+        {
+          "courseCode": "CS 466",
+          "title": "NLP & LLM",
+          "fullTitle": "Natural Language Processing and Large Language Model",
+          "toolsTopics": [
+            "Natural Language Processing",
+            "Large Language Models"
+          ],
+          "expectedOffering": "FA 26",
+          "catalogUrl": "https://catalog.bradley.edu/undergraduate/course-descriptions/cs/"
+        }
+      ]
+    }
+  ]
+}

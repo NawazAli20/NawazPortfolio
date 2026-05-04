@@ -1,0 +1,248 @@
+{
+  "2026": [
+    {
+      "id": 32,
+      "agency": "Faculty Scholarship Community Partnership BU-UICOMP Seed Award",
+      "title": "Curriculum-aligned Fine-tuned AI Assistant for Preclinical Medical Students",
+      "status": "Under Review",
+      "amountRequested": "$12K"
+    },
+    {
+      "id": 31,
+      "agency": "Interdisciplinary Scholarship Award (IDS)",
+      "title": "Use of Supervised Machine Learning and Neural Network Models to Understand the Impact of Climate Change on US Midwest Road Infrastructure",
+      "status": "Under Review",
+      "amountRequested": "$15K"
+    },
+    {
+      "id": 30,
+      "agency": "Student Engagement Award",
+      "title": "Development of a Fine-Tuned LLM with RAG for Assisting Students and Faculty with Bradley University Information Retrieval",
+      "status": "Under Review",
+      "amountRequested": "$6K"
+    },
+    {
+      "id": 29,
+      "agency": "NSF IUSE: EDU Level 1 Grant",
+      "title": "Bridging the Gap: An Integrated Narrative (Storytelling) for Ethical Data Science Approach",
+      "status": "Under Review",
+      "amountRequested": "$399,357"
+    },
+    {
+      "id": 28,
+      "agency": "IFH (Innovation for Health) Award",
+      "title": "Multimodal Sentiment Analysis about Adolescent Obesity from Social Media Data and Recommendations for Healthcare Providers (Phase II)",
+      "status": "Not Funded",
+      "amountRequested": "$79,996"
+    }
+  ],
+
+  "2025": [
+    {
+      "id": 27,
+      "agency": "Liberal Arts and Sciences Undergraduate Summer Research and Artistry Fellowship Program",
+      "title": "Cyberpunk 2020 Character Creation Website Tool",
+      "status": "Not Funded",
+      "amountRequested": "$6K"
+    },
+    {
+      "id": 26,
+      "agency": "Interdisciplinary Undergraduate Research and Creative Projects Summer Fellowship Program",
+      "title": "Developing Gizmos Recycling Game: A Game-based Learning Tools for Kids",
+      "status": "Not Funded",
+      "amountRequested": "$6K"
+    },
+    {
+      "id": 25,
+      "agency": "Faculty Scholarship Award",
+      "title": "On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network",
+      "status": "Awarded",
+      "amountAwarded": "$6K"
+    },
+    {
+      "id": 24,
+      "agency": "Illinois Water Resources Center (IWRC) Annual Research Grant",
+      "title": "AI-Powered Water Quality Prediction in the Midwestern U.S.",
+      "status": "Not Funded",
+      "amountRequested": "$20K",
+      "role": "Co-PI"
+    },
+    {
+      "id": 23,
+      "agency": "Illinois Space Grant Consortium - Research Seed Grant Award",
+      "title": "Unpacking Public Perception of NASA’s Space Exploration Efforts: A Generative AI-based Approach to Social Media Sentiment Analysis",
+      "status": "Not Funded",
+      "amountRequested": "$8K"
+    },
+    {
+      "id": 22,
+      "agency": "NSF IUSE grant",
+      "title": "Improving Student Learning in Data Science Concentration through Advanced AI and ML Computing Facility and Project-based Curricula",
+      "status": "Not Funded",
+      "amountRequested": "$496,883"
+    }
+  ],
+
+  "2024": [
+    {
+      "id": 21,
+      "agency": "IFH (Innovation for Health) Award",
+      "title": "Understanding the Reactions of Adolescents to Obesity Related Health Messaging Residing in the Tri-county Area (Peoria, Tazewell, and Woodford Counties) through Social Media Data",
+      "status": "Awarded",
+      "amountAwarded": "$49,954"
+    },
+    {
+      "id": 20,
+      "agency": "Bradley's CTEL SoTL Award",
+      "title": "Learning Machine Learning (ML) and Artificial Intelligence (AI) with Fun: A Cross-listed Course Re-design",
+      "status": "Awarded",
+      "amountAwarded": "$3.5K"
+    },
+    {
+      "id": 18,
+      "agency": "Illinois Space Grant Consortium - Research Seed Grant Award",
+      "title": "Performance analysis of 5G New Radio and DSRC networks for V2X Communications",
+      "status": "Not Funded",
+      "amountRequested": "$10K"
+    },
+    {
+      "id": 17,
+      "agency": "Caterpillar Fellowship Award",
+      "title": "On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network",
+      "status": "Not Funded",
+      "amountRequested": "$5K"
+    }
+  ],
+
+  "2023": [
+    {
+      "id": 19,
+      "agency": "IFH (Innovation for Health) Award",
+      "title": "An Automated Message Classification and Response based System Empowered by Customized OpenAI Application",
+      "status": "Awarded",
+      "amountAwarded": "$50K"
+    },
+    {
+      "id": 16,
+      "agency": "Student Engagement Award",
+      "title": "Performance analysis of 5G New Radio and DSRC networks for V2X Communications",
+      "status": "Awarded",
+      "amountAwarded": "$6K"
+    },
+    {
+      "id": 15,
+      "agency": "Caterpillar Fellowship Award",
+      "title": "Performance Analysis and Enhancement of 5G New Radio Vehicular Communication",
+      "status": "Awarded",
+      "amountAwarded": "$5K"
+    },
+    {
+      "id": 14,
+      "agency": "Faculty Scholarship Award",
+      "title": "Enhanced Cooperative Perception for Connected and Autonomous Vehicles",
+      "status": "Awarded",
+      "amountAwarded": "$6K"
+    },
+    {
+      "id": 13,
+      "agency": "Caterpillar Fellowship Award",
+      "title": "Smooth Seamless Inter-working between Cellular and DSRC: A Futuristic Framework for a Secured Connected Driving Experience",
+      "status": "Awarded",
+      "amountAwarded": "$5K"
+    }
+  ],
+
+  "2022": [
+    {
+      "id": 12,
+      "agency": "CTEL Paired Course Initiative Award",
+      "title": "Paired Courses Initiative (CIS 445/545 & ECE 444/544) for Fall 22",
+      "status": "Awarded",
+      "amountAwarded": "$1K"
+    },
+    {
+      "id": 11,
+      "agency": "Sherry Endowment Student/Faculty Collaborative Project Award",
+      "title": "A Survey on Machine Learning Methods in Autonomous Vehicles",
+      "status": "Awarded",
+      "amountAwarded": "$800"
+    }
+  ],
+
+  "2021": [
+    {
+      "id": 10,
+      "agency": "Bradley University Startup Grant",
+      "title": "C-V2X radios for a reliable and smooth V2X communication",
+      "status": "Awarded",
+      "amountAwarded": "$10K"
+    },
+    {
+      "id": 9,
+      "agency": "WV Open Education Resource (OER) Grant",
+      "title": "Develop and offer Object-Oriented Programming course using open education resources",
+      "status": "Awarded",
+      "amountAwarded": "$1K"
+    }
+  ],
+
+  "2020": [
+    {
+      "id": 8,
+      "agency": "NSF Quick Response Award Program",
+      "title": "Machine learning based prediction of the consequences of not wearing a facemask in public transport during the COVID-19 pandemic",
+      "status": "Not Funded"
+    }
+  ],
+
+  "2019": [
+    {
+      "id": 7,
+      "agency": "US DOT ADS Demonstration Grant",
+      "title": "Clemson-Center of Excellence for Automated Driving Systems (C-CEADS)",
+      "status": "Not Funded"
+    }
+  ],
+
+  "2018": [
+    {
+      "id": 6,
+      "agency": "NSF S&AS (Smart & Autonomous System)",
+      "title": "Autonomous Control of Connected Vehicle Traffic Via Distributed Fog Computing",
+      "status": "Not Funded"
+    },
+    {
+      "id": 5,
+      "agency": "NSF CPS (Cyber Physical System)",
+      "title": "Collaborative Situation Awareness in Heterogeneous Traffic",
+      "status": "Not Funded"
+    },
+    {
+      "id": 4,
+      "agency": "Endeavour Fund – Smart Ideas",
+      "title": "Design of Coding Scheme and Random Retrieval for DNA Based Data Storage",
+      "status": "Not Funded"
+    }
+  ],
+
+  "2017": [
+    {
+      "id": 3,
+      "agency": "National Science Challenge",
+      "title": "Smart Places for Elderly in Smart Nation: Ageing well in New Zealand (A prototype system for elderly smart care)",
+      "status": "Not Funded"
+    },
+    {
+      "id": 2,
+      "agency": "Huawei Innovation Research Program (HIRP)",
+      "title": "Future Software Defined 5G Cellular-V2X: A Complete Futuristic Framework for a Secured Automated Driving Experience",
+      "status": "Not Funded"
+    },
+    {
+      "id": 1,
+      "agency": "Endeavour Fund – Smart Ideas",
+      "title": "Advance Accident Detection for Vehicle Collision Avoidance for Future Intelligent Transport System",
+      "status": "Not Funded"
+    }
+  ]
+}
