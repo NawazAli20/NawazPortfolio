@@ -23,7 +23,7 @@ function NavBar(){
 function App(){
     return(
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/NawazPortfolio">
                 <NavBar/>
                 <Home/> {/** default route*/}
                 <Routes>
