@@ -1,4 +1,4 @@
-This repo will serve as a starting repo for working with react using parcel build 
+# Dr. G G MD Nawaz Ali's Portfolio
 
 # Install dependecies 
 After cloning the repo, issue: 
