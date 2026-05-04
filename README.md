@@ -114,36 +114,6 @@ OR (recommended):
 import img from "../assets/Nawaz1.jpg";
 <img src={img} />
 ```
-
----
-
-## ⚠️ Common Issues
-
-* **Blank page after deploy** → Check `basename` in `BrowserRouter`
-* **Images not loading** → Fix path with `/NawazPortfolio/`
-* **Old version showing** → Hard refresh (`Ctrl+Shift+R` or `Cmd+Shift+R`)
-* **404 on refresh** → GitHub Pages does not support client-side routing (use HashRouter if needed)
-
----
-
-## ✅ Optional (Fix Refresh 404 Issue)
-
-Replace:
-
-```jsx
-<BrowserRouter basename="/NawazPortfolio">
-```
-
-with:
-
-```jsx
-import { HashRouter } from "react-router-dom";
-
-<HashRouter>
-```
-
----
-
 ## 🎉 Done!
 
 Your React portfolio is now live on GitHub Pages.
