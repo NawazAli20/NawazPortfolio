@@ -5,8 +5,18 @@ h1 {
   background-color: red;
   border-radius: 30px;
   width: 80%;
-  margin-bottom: 20px;
+  padding: 5px;
   font-size: 2.2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  border-radius: 30px;
+  width: 80%;
+  margin-bottom: 30px;
+  padding: 1px;
 }
 
 .nav {
@@ -24,6 +34,7 @@ ul > li {
 
 .year, .category {
   text-align: center;
+  color: #000;
   background-color: #f0f8ff;
   border: 5px solid red;
   border-radius: 7px;
@@ -55,10 +66,6 @@ ul > li {
   display: flex;
 }
 
-.projects-container {
-  padding: 20px;
-}
-
 .project-card {
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -70,4 +77,9 @@ ul > li {
 .project-card h2 {
   color: #2c3e50;
 }
-/*# sourceMappingURL=Portfolio.aa5dde08.css.map */
+
+.projectTitle {
+  color: #8a2be2;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=Portfolio.e5a9195e.css.map */

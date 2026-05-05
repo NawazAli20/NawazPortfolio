@@ -17414,16 +17414,18 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _home = require("./components/home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
-var _profileJs = require("./components/Profile.js");
-var _profileJsDefault = parcelHelpers.interopDefault(_profileJs);
-var _publicationsJs = require("./components/publications.js");
-var _publicationsJsDefault = parcelHelpers.interopDefault(_publicationsJs);
-var _teachingJs = require("./components/teaching.js");
-var _teachingJsDefault = parcelHelpers.interopDefault(_teachingJs);
-var _grantsJs = require("./components/grants.js");
-var _grantsJsDefault = parcelHelpers.interopDefault(_grantsJs);
-var _projectsJs = require("./components/projects.js");
-var _projectsJsDefault = parcelHelpers.interopDefault(_projectsJs);
+var _profile = require("./components/Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _publications = require("./components/publications");
+var _publicationsDefault = parcelHelpers.interopDefault(_publications);
+var _teaching = require("./components/teaching");
+var _teachingDefault = parcelHelpers.interopDefault(_teaching);
+var _grants = require("./components/grants");
+var _grantsDefault = parcelHelpers.interopDefault(_grants);
+var _projects = require("./components/projects");
+var _projectsDefault = parcelHelpers.interopDefault(_projects);
+var _appointments = require("./components/Appointments");
+var _appointmentsDefault = parcelHelpers.interopDefault(_appointments);
 var _reactRouterDom = require("react-router-dom");
 function NavBar() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -17437,21 +17439,6 @@ function NavBar() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 14,
-                        columnNumber: 35
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 14,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "elem",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/profile",
-                        children: "Profile"
-                    }, void 0, false, {
-                        fileName: "src/app.js",
                         lineNumber: 15,
                         columnNumber: 35
                     }, this)
@@ -17463,8 +17450,8 @@ function NavBar() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "elem",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/teaching",
-                        children: "Teaching"
+                        to: "/profile",
+                        children: "Profile"
                     }, void 0, false, {
                         fileName: "src/app.js",
                         lineNumber: 16,
@@ -17478,8 +17465,8 @@ function NavBar() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "elem",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/publications",
-                        children: "Publications"
+                        to: "/appointments",
+                        children: "Professional-Appointments"
                     }, void 0, false, {
                         fileName: "src/app.js",
                         lineNumber: 17,
@@ -17493,8 +17480,8 @@ function NavBar() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "elem",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/grants",
-                        children: "Grants"
+                        to: "/teaching",
+                        children: "Teaching"
                     }, void 0, false, {
                         fileName: "src/app.js",
                         lineNumber: 18,
@@ -17508,8 +17495,8 @@ function NavBar() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "elem",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/projects",
-                        children: "Projects"
+                        to: "/publications",
+                        children: "Publications"
                     }, void 0, false, {
                         fileName: "src/app.js",
                         lineNumber: 19,
@@ -17519,11 +17506,41 @@ function NavBar() {
                     fileName: "src/app.js",
                     lineNumber: 19,
                     columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "elem",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/grants",
+                        children: "Grants"
+                    }, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 20,
+                        columnNumber: 35
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 20,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "elem",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/projects",
+                        children: "Projects"
+                    }, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 21,
+                        columnNumber: 35
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 21,
+                    columnNumber: 13
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 9
         }, this)
     }, void 0, false);
@@ -17537,12 +17554,12 @@ function App() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavBar, {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 36,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, this),
                 " ",
@@ -17550,34 +17567,10 @@ function App() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/profile",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 39,
-                                columnNumber: 53
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 39,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/teaching",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _teachingJsDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 40,
-                                columnNumber: 54
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 40,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/publications",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsJsDefault.default), {}, void 0, false, {
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
                                 lineNumber: 41,
-                                columnNumber: 58
+                                columnNumber: 53
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
@@ -17585,11 +17578,11 @@ function App() {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/grants",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _grantsJsDefault.default), {}, void 0, false, {
+                            path: "/appointments",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appointmentsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
                                 lineNumber: 42,
-                                columnNumber: 52
+                                columnNumber: 58
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
@@ -17597,8 +17590,8 @@ function App() {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/projects",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsJsDefault.default), {}, void 0, false, {
+                            path: "/teaching",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _teachingDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
                                 lineNumber: 43,
                                 columnNumber: 54
@@ -17607,17 +17600,53 @@ function App() {
                             fileName: "src/app.js",
                             lineNumber: 43,
                             columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/publications",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 44,
+                                columnNumber: 58
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 44,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/grants",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _grantsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 45,
+                                columnNumber: 52
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 45,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/projects",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 46,
+                                columnNumber: 54
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 46,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/app.js",
-                    lineNumber: 37,
+                    lineNumber: 39,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 34,
+            lineNumber: 36,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -17633,7 +17662,7 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./components/home":"jYN9H","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/projects.js":"CyEwo","./components/Profile.js":"2hgHB","./components/publications.js":"gPifD","./components/teaching.js":"9PZB1","./components/grants.js":"i2D0v"}],"jYN9H":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./components/home":"jYN9H","./components/Profile":"2hgHB","./components/publications":"gPifD","./components/teaching":"9PZB1","./components/grants":"i2D0v","./components/projects":"CyEwo","./components/Appointments":"9b9MI","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jYN9H":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$844a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$844a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -17650,90 +17679,181 @@ var _nawaz1Jpg = require("../assets/Nawaz1.jpg");
 var _nawaz1JpgDefault = parcelHelpers.interopDefault(_nawaz1Jpg);
 var _bradleyLogo2Png = require("../assets/Bradley logo2.png");
 var _bradleyLogo2PngDefault = parcelHelpers.interopDefault(_bradleyLogo2Png);
+var _profileCss = require("../assets/profile.css");
 function Home() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+    return(// <section>
+    //   <h1>{portfolioData.profile.name}</h1>
+    //   <p>{portfolioData.profile.title}</p>
+    //   <p>{portfolioData.profile.affiliation}</p>
+    //   <p>{portfolioData.profile.location}</p>
+    //   <p>E-mail: {portfolioData.profile.email}</p>
+    //   <p>Phone: {portfolioData.profile.phone}</p>
+    //   <p>
+    //     <a href={portfolioData.profile.website} target="_blank">Website</a>
+    //     &nbsp; &nbsp;<a href={portfolioData.profile.GoogleScholar} target="_blank">Google Scholar</a>
+    //   </p>
+    // </section>
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: (0, _portfolioJsonDefault.default).profile.name
             }, void 0, false, {
                 fileName: "src/components/home.js",
-                lineNumber: 8,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: (0, _portfolioJsonDefault.default).profile.title
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "profile-section",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "profile-card",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "profile-header",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    children: (0, _portfolioJsonDefault.default).profile.title
+                                }, void 0, false, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 25,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "profile-affiliation",
+                                    children: (0, _portfolioJsonDefault.default).profile.affiliation
+                                }, void 0, false, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 26,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "profile-location",
+                                    children: (0, _portfolioJsonDefault.default).profile.location
+                                }, void 0, false, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 29,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: "Office:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/home.js",
+                                            lineNumber: 32,
+                                            columnNumber: 12
+                                        }, this),
+                                        " BR 297, Bradley Hall"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 32,
+                                    columnNumber: 9
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/home.js",
+                            lineNumber: 24,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "profile-contact",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: "Email:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/home.js",
+                                            lineNumber: 37,
+                                            columnNumber: 9
+                                        }, this),
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: `mailto:${(0, _portfolioJsonDefault.default).profile.email}`,
+                                            children: (0, _portfolioJsonDefault.default).profile.email
+                                        }, void 0, false, {
+                                            fileName: "src/components/home.js",
+                                            lineNumber: 38,
+                                            columnNumber: 9
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 36,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: "Phone:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/home.js",
+                                            lineNumber: 44,
+                                            columnNumber: 9
+                                        }, this),
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: `tel:${(0, _portfolioJsonDefault.default).profile.phone}`,
+                                            children: (0, _portfolioJsonDefault.default).profile.phone
+                                        }, void 0, false, {
+                                            fileName: "src/components/home.js",
+                                            lineNumber: 45,
+                                            columnNumber: 9
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 43,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/home.js",
+                            lineNumber: 35,
+                            columnNumber: 5
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "profile-links",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _portfolioJsonDefault.default).profile.website,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: "Website"
+                                }, void 0, false, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 52,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _portfolioJsonDefault.default).profile.GoogleScholar,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: "Google Scholar"
+                                }, void 0, false, {
+                                    fileName: "src/components/home.js",
+                                    lineNumber: 60,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/home.js",
+                            lineNumber: 51,
+                            columnNumber: 5
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/home.js",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "src/components/home.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: (0, _portfolioJsonDefault.default).profile.affiliation
-            }, void 0, false, {
-                fileName: "src/components/home.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: (0, _portfolioJsonDefault.default).profile.location
-            }, void 0, false, {
-                fileName: "src/components/home.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    "E-mail: ",
-                    (0, _portfolioJsonDefault.default).profile.email
-                ]
-            }, void 0, true, {
-                fileName: "src/components/home.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    "Phone: ",
-                    (0, _portfolioJsonDefault.default).profile.phone
-                ]
-            }, void 0, true, {
-                fileName: "src/components/home.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: (0, _portfolioJsonDefault.default).profile.website,
-                        target: "_blank",
-                        children: "Website"
-                    }, void 0, false, {
-                        fileName: "src/components/home.js",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, this),
-                    "\xa0 \xa0",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: (0, _portfolioJsonDefault.default).profile.GoogleScholar,
-                        target: "_blank",
-                        children: "Google Scholar"
-                    }, void 0, false, {
-                        fileName: "src/components/home.js",
-                        lineNumber: 19,
-                        columnNumber: 22
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/home.js",
-                lineNumber: 17,
-                columnNumber: 7
+                lineNumber: 22,
+                columnNumber: 8
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "src/components/home.js",
-        lineNumber: 7,
-        columnNumber: 5
-    }, this);
+    }, void 0, true));
 }
 _c = Home;
 exports.default = Home;
@@ -17745,10 +17865,10 @@ $RefreshReg$(_c, "Home");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../dbs/portfolio.json":"aCdcl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../assets/Bradley logo2.png":"17jNK","../assets/Nawaz1.jpg":"lAEGO"}],"aCdcl":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../dbs/portfolio.json":"aCdcl","../assets/Nawaz1.jpg":"lAEGO","../assets/Bradley logo2.png":"17jNK","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../assets/profile.css":"bIFRc"}],"aCdcl":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse('{"profile":{"name":"Welcome to Dr. Nawaz Ali\'s Portfolio","email":"nali@fsmail.bradley.edu","phone":"(864) 349-8961","website":"https://www.bradley.edu/faculty-staff/g-g-md-nawaz-ali/","GoogleScholar":"https://scholar.google.com/citations?user=q-iNMVsAAAAJ&hl=en","title":"Dr. G G Md Nawaz Ali","affiliation":"Assistant Professor, Department of Computer Science","location":"Bradley University, Peoria, IL 61625, USA","education":[],"experience":[],"Bio":["Dr. G. G. Md. Nawaz Ali\'s sincere desire is to be an excellent faculty member in Computer Science and a potential researcher in the AI and LLMs, vehicular cyber-physical system, data and sentiment analytics, and the wireless communication and computation research community.","Dr. Ali joined the Department of CS&IS at Bradley University as an Assistant Professor in Fall 2021. Since then, he has been very active for securing internal and external funds. He is the recipient of 2024 Caterpillar Faculty Achievement Award for Scholarship, 2024-25, and 2023-24 IFH (Innovation for health) grant, 2022-23 and 2023-24 Caterpillar fellowship award, FSA\u201925, SEA\'23, FSA\'22 award, CTEL paired course initiative award\'22 and Sherry Endowment student/faculty collaborative project award\'22. He has active research collaboration with different universities in the US and outside. Before joining Bradley community, he worked as an Assistant Professor with the Department of Applied Computer Science at University of Charleston, WV, USA. He is the recipient of 2021 Open Education Resource (OER) grant from West Virginia Higher Education Policy Commission (WVHPEC). He submitted several NSF grant proposals with the collaboration of International Center for Automotive Research (ICAR), Clemson University, SC, USA. He was a postdoctoral fellow in a US DOE funded CAV project at Clemson University from March 2018 to July 2019. He also has a post-doctoral research fellow experience in NTU-NXP 24/7 live V2X testbed project from Oct. 2015 to Feb. 2018. He has published more than 78 international conferences and journal articles and book chapters. He is currently a member of IEEE and editorial board member of several international journals in his field."],"teaching":[]},"publications":["Thesis","1. G. G. Md. Nawaz Ali, Design and Performance Evaluation of On-demand Scheduling Algorithms in Real-time Wireless Broadcasting, PhD thesis, October 2013","2. G. G. Md. Nawaz Ali, and Md. Waheduzzaman,  A Comparative Performance Evaluation of Different Adaptive Algorithms for Web Crawlers, Undergraduate thesis, February, 2006.","Journals","(*: Corresponding author, ___: student author)","45. Hamed .A. Baseer, Ali, G. G. Md. Nawaz  Ali, Machine Learning-Based Compressive Strength Prediction in Pervious Concrete.\xa0CivilEng\xa02026,\xa07, 3. https://doi.org/10.3390/civileng7010003","44. Amima Shifa, G. G. Md. Nawaz Ali*, & Roopa Foulger (2025). Leveraging Large Language Models for Automating Outpatients\u2019 Message Classifications of Electronic Medical Records.\xa0Healthcare,\xa013(23), 3052. https://doi.org/10.3390/healthcare13233052","43. Imran Fayyaz,  G. G. Md. Nawaz Ali*, & Samantha S. Khairunnesa, S. (2025). Advanced Feature Engineering and Machine Learning Techniques for High Accurate Price Prediction of Heterogeneous Pre-Own Cars.\xa0Vehicles,\xa07(3), 94. https://doi.org/10.3390/vehicles7030094","42. Abdul Moid K. Mohammed, G. G. Md Nawaz Ali* and Samantha S. Khairunnesa (2025), \u201CGSAF: An ML based Sentiment Analytics Framework for Understanding Contemporary Public Sentiment and Trends on Key Societal Issues\u201D, Information,\xa0March, 2025,\xa016(4), 271;\xa0https://doi.org/10.3390/info16040271","41. Md Abu Sayed, Md Amjad Hossain, Md Mokhlesur Rahman, G. G. Md. Nawaz Ali*,","Mohammad Anwarul Islam, Kamal Chandra Paul and Xiao Qin, \u201CMachine Learning based Public Sentiment Analytics on Roadway Work-zone Tweets, Data Science and Management, Elsevier, April, 2025, https://www.sciencedirect.com/science/article/pii/S2666764925000189","40. Ghosh, Anay, Saiyed Umer, Bibhas Chandra Dhara, and G. G. Md. Nawaz Ali*, \\"A Multimodal Pain Sentiment Analysis System Using Ensembled Deep Learning Approaches for IoT-Enabled Healthcare Framework\\",\xa0Sensors, February\xa02025, no. 4: 1223. https://doi.org/10.3390/s25041223","39. G. G. Md. Nawaz Ali*, M.N. Sadat, M.S. Miah, S.A. Sharief, Y.  Wang, \u201CA Comprehensive Study and Analysis of the Third Generation Partnership Project\u2019s 5G New Radio for Vehicle-to-Everything Communication\u201D.\xa0Future Internet\xa02024,\xa016, 21. https://doi.org/10.3390/fi16010021","38. Md. Shahinoor Rahman, Kamal Chandra Paul, Md. Mokhlesur Rahman, Jim Samuel, Jean-Claude Thill, Md. Amjad Hossain, G. G. Md. Nawaz Ali, \u201CPandemic vulnerability index of US cities: A hybrid knowledge-based and data-driven approach\u201D, Sustainable Cities and Society, V. 95, August 2023, article ID: 104570.","37. Chiputa, Masoto, Minglong Zhang, G. G. Md. Nawaz Ali, Peter H.J. Chong, Hakilo Sabit, Arun Kumar, and Hui Li, 2022, \u201CEnhancing Handover for 5G mmWave Mobile Networks Using Jump Markov Linear System and Deep Reinforcement Learning\u201D,\xa0Sensors\xa022, no. 3: 746. https://doi.org/10.3390/s22030746","36. Hota, Lopamudra, Biraja P. Nayak, Arun Kumar, Bibhudatta Sahoo, and G. G. Md. Nawaz Ali*, 2022. \\"A Performance Analysis of VANETs Propagation Models and Routing Protocols\\"\xa0Sustainability\xa014, no. 3: 1379. https://doi.org/10.3390/su14031379","35. Hota, Lopamudra, Biraja P. Nayak, Arun Kumar, G. G. Md. Nawaz Ali, and Peter H.J. Chong. 2021. \u201CAn Analysis on Contemporary MAC Layer Protocols in Vehicular Networks: State-of-the-Art and Future Directions\u201D, Future Internet 13, no. 11: 287. https://doi.org/10.3390/fi13110287","34. G. G. Md. Nawaz Ali*, M. M. Rahman, M. A. Hossain, M. S. Rahman, K. C. Paul, J.-C Thill and J. Samuel, \u201CPublic Perceptions about COVID-19 Vaccines: Policy Implications from US Spatiotemporal Sentiment Analytics\u201D, Healthcare 2021, 9, 1110. https://doi.org/10.3390/healthcare9091110","33. C Yang, X Yu, A Kumar, G. G. Md. Nawaz Ali, PHJ Chong, P Lam, \u201CSocial Video Advertisement Replacement and its Evaluation in Convolutional Neural Networks\u201D, ELCVIA Electronic Letters on Computer Vision and Image Analysis, 20 (1), pp. 117-136, 2021.","32. M. M. Rahman, K. C. Paul, M. A. Hossain, G. G. Md. Nawaz Ali*, M. S. Rahman and J. -C. Thill, \\"Machine Learning on the COVID-19 Pandemic, Human Mobility and Air Quality: A Review,\\" in IEEE Access, vol. 9, pp. 72420-72450, 2021, doi: 10.1109/ACCESS.2021.3079121","31. DoHyun Yoon, Beshah Ayalew, and G. G. Md. Nawaz Ali, \u201CPerformance of Decentralized Cooperative Perception in V2V Connected Traffic\u201D, in IEEE Transactions on Intelligent Transportation Systems, 2021, Available online: doi: 10.1109/TITS.2021.3063107.","30.  M. M. Rahman, G. G. Md. Nawaz Ali*, Xue Jun Li, Jim Samuel, K.C. Paul, Peter H.J. Chong, and M. Yakubov, \u201CSocioeconomic Factors Analysis for COVID-19 US Reopening Sentiment with Twitter and Census Data\u201D, in Heliyon, 7 (2), 2021, Available online: https://doi.org/10.1016/j.heliyon.2021.e06200.","29. Hazim Jarrah, G. G. Md. Nawaz Ali, Arun Kumar, Peter H. J. Chong, Nurul I. Sarkar, and Jairo Gutierrez, \u201CThe Time-Free Comparison Model for Fault Diagnosis in Wireless Ad hoc Networks\u201D, in Mobile Networks and Applications, Springer, November 2020, Available online: https://doi.org/10.1007/s11036-020-01691-4","28. M. Noor-A-Rahim, Z. Liu, H. Lee, G. G. Md. Nawaz Ali, D. Pesch and P. Xiao, \\"A Survey on Resource Allocation in Vehicular Networks,\\" in\xa0IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2020.3019322. September 2020, Available online: https://ieeexplore.ieee.org/document/9186820","27. J. Samuel, M. M. Rahman, G. G. Md. Nawaz Ali*, Yana Samuel, A. Pelaez, Peter H.J. Chong, and M. Yakubov, \u201CFeeling Positive About Reopening? New Normal Scenarios From COVID-19 US Reopen Sentiment Analytics,\u201D in IEEE Access, vol. 8, pp. 142173-142190, 2020, doi: 10.1109/ACCESS.2020.3013933, Available online: https://ieeexplore.ieee.org/document/9154672","26. Jim Samuel, G. G. Md. Nawaz Ali*, Md. Mokhlesur Rahman, Ek Esawi, and Yana Samuel, \u201CCOVID-19 Public Sentiment Insights and Machine Learning for Tweets Classification\u201D, Information, June 2020, Available online: https://www.mdpi.com/2078-2489/11/6/314\u2019","25. G. G. Md. Nawaz Ali*, Beshah Ayalew, Ardalan Vahidi, and Md. Noor-A-Rahim, \u201CFeedbackless Relaying for Enhancing Reliability of Connected Vehicles\u201D, IEEE Transactions on Vehicular Technology, March 2020, (SCI, 5-year Impact factor: 4.066), Available online: https://ieeexplore.ieee.org/document/9037108","24. G. G. Md. Nawaz Ali*, Victor C.S. Lee, Yuxuan Meng, Peter H. J. Chong, and Jun Chen, \u201CPerformance Analysis of On-Demand Scheduling with and without Network Coding in Wireless Broadcast\u201D, Future Internet, November, 2019, Available online: https://www.mdpi.com/1999-5903/11/12/248","23. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali, Y. L. Guan, Beshah Ayalew, Peter H.J. Chong, and Dirk Pesch, \u201CBroadcasting Performance Analysis and Improvement of LTE-V2V Autonomous Mode at Road Intersection\u201D, IEEE Transactions on Vehicular Technology, August 2019, Available online: 10.1109/TVT.2019.2936799 (SCI, 5-year Impact factor: 4.066).","22. G. G. Md. Nawaz Ali*, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Beshah Ayalew, Peter H.J. Chong, and Y.L. Guan, \u201CCooperative Cache Transfer based On-demand Network Coded Broadcast in Vehicular Networks\u201D, ACM Transactions on Embedded Computing Systems,\xa0Volume 18 Issue 4, August 2019, Available online:\xa0https://dl.acm.org/citation.cfm?id=3340300.3329865, (SCI, 5-year Impact factor: 1.367).","21. Minglong Zhang, G. G. Md. Nawaz Ali, Peter H.J. Chong, Boon-Chong Seet, and Arun Kumar, \u201CA Novel Hybrid MAC Protocol for Basic Safety Message Broadcasting in Vehicular Networks\u201D, IEEE Transactions on Intelligent Transportation Systems, September 2019, Available online: 10.1109/TITS.2019.2939378 (SCI, 5-year Impact factor: 4.051).","20. G. G. Md. Nawaz Ali, Kai Liu, Victor C.S. Lee, Peter Han Joo Chong, Y. Liang Guan, and Jun Chen, \u201CTowards Efficient and Scalable Implementation for Coding-based On-demand Data Broadcast\u201D, Computer Networks, Elsevier. 2019, ISSN 1389-1286, Available online: https://doi.org/10.1016/j.comnet.2019.02.012 (SCI, 5-year Impact factor: 2.589).","19.  Md. Noor-A-Rahim, M. O. Khyam, G. G. Md. Nawaz Ali, Y. L. Guan, Dirk Peschz, Peter H. Chong, \u201CReliable State Estimation of an Unmanned Aerial Vehicle Over a Distributed Wireless IoT Network\u201D, IEEE Transactions on Reliability, 2019, Available online: DOI: 10.1109/TR.2019.2891994, (SCI, 5-year Impact factor: 2.729)","18. G. G. M. Nawaz Ali*, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Syeda Khairunnesa Samantha, Peter Han Joo Chong, and Yong Liang Guan, \u201CEfficient Real-time Coding-assisted Heterogeneous Data Access in Vehicular Networks\u201D,  IEEE Internet of Things Journal, 2018, Available online, DOI: 10.1109/JIOT.2018.2830315, (SCI, 5-year Impact factor: 7.596)","17. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali, Nguyen Hieu, and Guan Yong Liang, \u201CPerformance Analysis of IEEE 802.11p Safety Message Broadcast with and without Relaying at Road Intersection,\\" IEEE Access, 2018, Available online, DOI: 10.1109/ACCESS.2018.2829897 (SCI Impact factor: 3.244)","16. G. G. Md. Nawaz Ali, Md. Noor-A-Rahim, Peter Han Joo Chong, and Yong Liang Guan, \u201CAnalysis and improvement of reliability through coding for safety message broadcasting in urban vehicular networks\u201D, IEEE Transactions on vehicular Technology, vol. 67, no. 8, pp. 6774-6787, Aug. 2018, Available online: DOI: 10.1109/TVT.2018.2820458, (SCI, 5-year Impact factor: 4.066)","15. M. Noor-A-Rahim, M. O. Khyam, Y. L. Guan, G. G. Md. Nawaz Ali, K. D. Nguyen and G. Lechner, \\"Delay-Universal Channel Coding with Feedback,\\" in IEEE Access, 2018, Available online, DOI: 10.1109/ACCESS.2018.2853140 (SCI Impact factor: 3.244)","14. Arindom Mondal, Kazi Md. Rokibul Alam, G. G. Md. Nawaz Ali*, Peter Han Joo Chong and Yasuhiko Morimoto, \u201CA Multi-Stage Encryption Technique to Enhance the Secrecy of Image,\u201D to appear in KSII Transactions on Internet and Information Systems, 2018, (SCI impact factor: 0.611)","13. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali , Guan Yong Liang, \u201CPractical Relay Code Design Based on Protograph Codes\u201D, IET Communications, 2017, DOI:  10.1049/iet-com.2017.1002  (SCI, 5-year Impact Factor: 1.023).","12. Kazi Md. Rokibul Alam, Adnan Maruf, Md. Rezaur Rahman Rakib, G. G. Md. Nawaz Ali*, Peter Han Joo Chong, and Yasuhiko Morimoto, \u201CAn Untraceable Voting Scheme Based on Pairs of Signatures,\u201D  International Journal of Network Security , Vol. 20, pp. 774-787, 2018, DOI: 10.6633/IJNS.201807 20(4).20 (Scopus)","11. Md. A. A. R. Kutubi, K. M. Rokibul Alam, Rafaf Tahsin, G. G. Md. Nawaz Ali*, Peter Han Joo Chong, and Yasuhiko Morimoto, \u201CAn Off-line Electronic Payment System Based on Untraceable Blind Signature Scheme,\u201D KSII Transactions on Internet and Information Systems, 2017, Vol. 11, No.5, May 31, 2017, pp. 2628- 2645, DOI: 10.3837/tiis.2017.05.018 (SCI, 5-Year impact factor-2016: 0.611)","10. Cherry Ye Aung, G. G. Md. Nawaz Ali and Peter Han Joo Chong, \u201CCluster-based Cooperative Data Forwarding with Multi-radio Multi-channel for Multi-flow Wireless Networks,\u201D KSII Transactions on Internet and Information Systems, Volume 10, No.12, December 31, 2016, pp. 5149-5173, DOI: 10.3837/tiis.2016.12.002  (SCI, 5-Year impact factor-2018: 0.611)","9.  G. G. Md. Nawaz Ali*, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha, Peter Han Joo Chong, and Yong Liang Guan, \\"On Striking the Balance Between the Fairness and Throughput in RSU-based Vehicular Ad Hoc Networks (VANET)\\", International Journal of Vehicle Autonomous System, Inderscience, Volume 13, Issue 2, 2016, DOI: 10.1504/IJVAS.2016.078812 (Scopus)","8. G. G. Md. Nawaz Ali*, Peter Han Joo Chong, Syeda Khairunnesa Samantha, and Edward Chan, \u201CEfficient Data Dissemination in Cooperative Multi-RSU Vehicular Ad Hoc Networks (VANETs)\u201D, Journal of Systems and Software, Elsevier, Volume 117, Issue C, July 2016, pp. 508-527, DOI: 10.1016/j.jss.2016.04.005 (SCI, 5-Year impact factor-2016: 2.619)","7. G. G. Md. Nawaz Ali, V. C.S. Lee, Edward Chan, Minming Li, Jingsong Lv, J. Chen , and K. Liu, \u201CAdmission Control based Multi-channel Broadcasting for Real-time Multi-item Queries,\u201D IEEE Transactions on Broadcasting, IEEE, Volume 60, Issue 4, November 2014, pp. 589-605, available at DOI: 10.1109/TBC.2014.2364533. (SCI, 5-Year impact factor-2016: 3.765)","6. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"On Scheduling Data Access with Cooperative Load Balancing in Vehicular Ad Hoc Networks (VANETs),\\" journal of Supercomputing, Springer, Volume 67, Issue 2, February 2014, pp. 438-468, available at DOI: 10.1007/s11227-013-1011-y (SCI, 5-Year impact factor-2016: 1.326)","5. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"Supporting Real-time Multiple Data Items Query in Multi-RSU Vehicular Ad Hoc Networks (VANETs),\\"  Journal of Systems and Software, Elsevier, Volume 86, Issue 8, August 2013, pp. 2127\u20132142, available at http://dx.doi.org/10.1016/j.jss.2013.03.073 (SCI, 5-Year impact factor-2016: 2.619)","4. J. Chen, V.C.S. Lee, K. Liu, G. G. Md. Nawaz Ali, and Edward Chan, \\"Efficient Processing of requests with network coding in on-demand data broadcast environments,\\"  Information Sciences, Elsevier, Volume 232, Issue 20, May 2013, pp. 27-43, available at http://dx.doi.org/10.1016/j.ins.2012.12.044 (SCI, 5-Year impact factor-2016: 4.732)","3. G. G. Md. Nawaz Ali*, and Edward Chan, \\"Co-operative Load Balancing in Vehicular Ad Hoc Networks (VANETs),\\" International Journal of Wireless Network and Broadband Technologies (IJWNBT), IGI-Global, Volume 1, Issue 4, 2011, pp. 1-21, available at DOI: 10.4018/ijwnbt.2011100101 (ACM DL)","2. G. G. Md. Nawaz Ali*, Rajib Chakraborty, Md. Shihabul Alam and Edward Chan, \\"An Efficient Approach for Generalized Load Balancing in Multi-path Packet Switched Networks,\\" the special issue of International Journal of Computer Networks and Communications (IJCNC), Volume 2, Issue 2, 2010, pp. 142-153, available at http://arxiv.org/abs/1003.3312","1. G. G. Md. Nawaz Ali*, \u201COn-demand Scheduling Strategies in Road Site Units (RSUs)-based Vehicular Ad Hoc Networks (VANETs),\u201D Computer Science and Engineering"],"projects":["Fake news identification using fine-tuned LLMs and agents and neuro-symbolic AI","-The objective of this project is to analyze news and social media data to identify fake news with high accuracy augmenting LLMs, Agents, Tools and Neuro-symbolic AI.","Understanding adolescence obesity from social media data using LLMs","-The objective of this project is to analyze social media data to understand the adolescence obesity and healthy diet related social media post which can be later used as a guidance for the healthcare providers","Data Analytics on Public Sentiments","-The objective of this project is to analyze public sentiments on issues related to COVID-19","Connected Autonomous Vehicle for Energy Efficiency","-The objective of this project is to demonstrate a minimum of 10% energy savings in mixed traffic streams of human-driven and Connected and Autonomous Vehicles (CAVs).","Network Coding for Network Load Reduction for V2X Communication","- Study and designing network coding based information dissemination protocols at road intersections in vehicular safety message communication.","Software Defined vehicular Networks:","-To apply Software Defined Networking (SDN) in Vehicular networks to improve the efficiency and modularity of VANETs.","Vehicular Cyber Physical System (VCPS)","-To develop routing protocol, data analytics and enhance data dissemination performance in VCPS.","Simulation/Programming"],"grants":[],"awards":["2024 Caterpillar Faculty Achievement Award for Scholarship.","CDER Summer Training Workshop 2024 awarded by UMASS Amherst from the project of NSF/IEEE-TCPP Curriculum Initiative for"],"skills":[],"service":["18. M. A. Moyeen, G. G. Md. Nawaz Ali, Peter Han Joo Chong, and Nazmul Islam, \u201CAn Automatic Layout Faults Detection Technique in Responsive Web Pages Considering JavaScript Defined Dynamic Layouts\u201D, In the proceedings of the\xa03rd International Conference on Electrical Engineering and Information Technology (iCEEiCT 2016), 22-24 September 2016, Dhaka, Bangladesh. |Link|","17. Md Abu Hanif Shaikh, K.M. Azharul Hasan, G. G. Md. Nawaz Ali, Marwa Chafii, and Peter Han Joo Chong, \u201CEfficient Matricization of n-D Array with CUDA and Its Evaluation\u201D, In the proceedings of the 19th IEEE International Conference on Computational Science and Engineering (CSE\u20192016), August 24-26, 2016, Paris, France. |Link|","16. M. Zhao, A. Kumar, G. G. Md. Nawaz Ali and Peter Han Joo Chong, \\"A Cloud-Based Network Architecture for Big Data Services,\\" 2016 IEEE 14th Intl Conf on Dependable, Autonomic and Secure Computing, 14th Intl Conf on Pervasive Intelligence and Computing, 2nd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech), Auckland, New Zealand, August 8-12, 2016, pp. 654-659,  |Link|","15. Md. Ashiqur. Rahman, G. G. Md. Nawaz Ali, Peter Han Joo Chong, Syeda Khairunnesa Samantha, Md. Fahim Muntasir and Chen Chen, \\"On Scheduling Real-Time Multi-item Query with Network Coding in Multi-RSU Vehicular Networks,\\" In the proceedings of the 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA\u20192016), Daegu, 17 \u2013 19 August, 2016, pp. 218-227, doi: 10.1109/RTCSA.2016.49 |Link|","14. G. G. Md. Nawaz Ali, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha,  Peter Han Joo Chong, Yong Liang Guan, \\"A Novel Approach on Striking the Balance Between the Fairness and Throughput in Vehicular Networks\\", In the proceedings of the 2016 The 15th International Conference on Wireless Networks (ICWN\'16), July 25-28, 2016, Las Vegas, USA. |Link|","13. Cherry Ye Aung, G. G. Md. Nawaz Ali, Ming Zhao, Ruojun Cai, and Peter Han Joo Chong, \u201CInformation Epidemics Control for Data Delivery in Opportunistic Networks\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2016), 23-27 May 2016, Kuala Lumpur, Malaysia, pp. 1-6, DOI: 10.1109/ICC.2016.7510978. |Link|","12. Ruo Jun Cai, G. G. Md. Nawaz Ali, Cherry Ye Aung, Ming Zhao, and Peter Han Joo Chong, \u201CSimulation Study of Routing Attacks Under Network Coding Environment\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2016), 23-27 May 2016, Kuala Lumpur, Malaysia, pp. 1-6. DOI: 10.1109/ICC.2016.7511292. |Link|","11. Nazmul Islam, Md. Kowsar Hossain, G. G. Md. Nawaz Ali, and Peter Han Joo Chong, \u201CAn Expedite Group Key Establishment Protocol for Flying Ad-Hoc Network (FANET)\u201D, In the proceedings of the 5th International Conference on Informatics, Electronics and Vision (ICIEV 2016), May 13-14, 2016, Dhaka Bangladesh. |Link|","10. G. G. Md. Nawaz Ali, Md. Ashiqur Rahman,\xa0 Peter Han Joo Chong, and Syeda Khairunnesa Samantha, \\"On Efficient Data Dissemination using Network Coding in Multi-RSU Vehicular Ad Hoc Networks\\", In the proceedings of the 2016 IEEE 83rd Vehicular Technology Conference: VTC2016-Spring, 15\u201318 May 2016, Nanjing, China, pp. 1-5, DOI: 10.1109/VTCSpring.2016.7504371. |Link|","9. G. G. Md. Nawaz Ali, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha, Saifuddin Mahmud, \u201CAn Efficient Cooperative Load Balancing Approach in RSU-based Vehicular Ad Hoc Networks (VANETs)\u201D, in Proceedings of the 4th IEEE International Conference on Control System, Computing and Engineering (ICCSCE\u201914), 28-30 November, 2014, Penang, Malaysia, pp. 52-57, DOI: 10.1109/ICCSCE.2014.7072688. |Link|","8. G. G. Md. Nawaz Ali, Yuxuan Meng, Victor C. S. Lee, Kai Liu and Edward Chan, \\"Performance Improvement in Applying Network Coding to On-demand Scheduling Algorithms for Broadcasts in Wireless Networks\\", In  the proceedings of the 9th International Multi-Conference on Computing in the Global Information Technology (IARIA ICCGI\u201914), Seville, Spain, June 22-26, 2014 (Best Paper Award) |Link|","7. G. G. Md. Nawaz Ali,  Edward Chan,  and Wenzhong Li, \\"On Scheduling Real-time Multi-item Queries in Multi-RSU Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 27th IEEE International Conference of Advanced Information Networking and Applications (AINA\u201913) Workshop, Barcelona, Spain, March 25-28, 2013, pp. 7-12, DOI: 10.1109/WAINA.2013.25. |Link|","6. G. G. Md. Nawaz Ali,  and Edward Chan, \\"Multiple Road Side Units (RSUs)-based Co-operative Scheduling in Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the Australasian Telecommunication Networks and Applications Conference (ATNAC\u201911), Melbourne, Australia, November 9-11, 2011, pp. 1-6, DOI:10.1109/ATNAC.2011.6096651(Awarded Student Travel Grant) |Link|","5. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"Two-step Joint Scheduling Scheme for Road Side Units (RSUs)-based Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 16th Database Systems for Advanced Applications (DASFAA\u2019 11) Workshop, Hong Kong, April 22-25, 2011. |Link|","4. G. G. Md. Nawaz Ali,\xa0 and Edward Chan, \\"Co-operative Data Access in Multiple RSUs-based vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 5th PhD Student Workshop, Suzhou, China, April 18-19, 2011.","3. G. G. Md. Nawaz Ali, Reshma Shahin, Nushrika Mowna, \\"Fair Slots Assignment Mechanisms of IEEE 802.11 Networks for Multiple Access Points,\\" In  the proceedings of the 12th International Conference of Computer and Information Technology (ICCIT\u201909), Dhaka, Bangladesh, December 21-23, 2009, pp. 94-99, DOI: 10.1109/ICCIT.2009.5407158 |Link|","2. G. G. Md. Nawaz Ali, Rajib Chakraborty, Md. Shihabul Alam, \\"Performance Analysis of Different Routing Algorithms for Load Distribution in Multipath Packet Switched Networks,\\" In  the proceedings of the IEEE 9th International Conference of Computer and Information Technology (CIT\u201909) Workshop, Xiamen, China, October 11-14, 2009, pp. 325-330, DOI: 10.1109/CIT.2009.73 |Link|","1. G. G. Md. Nawaz Ali, S. M. Ashik Eftakhar, Md. Waheduzzaman, \\"An Efficient Rank Based Adaptive Algorithm for Designing Web Crawlers Using Similarity Criterion,\\" In the proceedings of the 9th International Conference on Computer & Information Technology (ICCIT\u201906),\xa0Dhaka, Bangladesh, December 21-23, 2006. |Link|","Book Chapter","2. Yun Wang, Mohammad Nazmus Sadat,  G. G. Md. Nawaz Ali, and Yanping Zhang. \u201CComputational Modeling and Analysis of Wireless Sensor Networks\u201D, in the book of Computational Modeling and Simulation of Advanced Wireless Communication Systems, CRC Press, Taylor & Francis Group, Jan. 2024","1. Masoto Chiputa, Minglong Zhang, Arun Kumar, G. G. Md. Nawaz Ali, Md. Akbar Hossain and Peter Han Joo Chong, \\"Cognitive Radio Technologies in 5G Mmwave Cellular Networks: Challenges and Solutions\\", published in Advances in Engineering"],"rawText":"\\n\\nCurriculum Vitae\\n\\nof\\n\\nDr. G. G. Md. NAWAZ ALI\\n\\n\\n\\nAssistant Professor\\n\\nDepartment of Computer Science and Information Systems \\n\\nBradley University\\n\\n1501 W Bradley Ave, Peoria, IL 61625\\n\\nE-mail: nali@fsmail.bradley.edu \\n\\nP: (864) 349-8961 \\n\\nUniversity Web | Google Scholar | ResearchGate | \\n\\n_______________________________________________________________\\n\\n\\n\\nBrief Bio\\n\\nDr. G. G. Md. Nawaz Ali\u2019s sincere desire is to be an excellent faculty member in Computer Science and a potential researcher in the AI and LLMs, vehicular cyber-physical system, data and sentiment analytics, and the wireless communication and computation research community. \\n\\nDr. Ali joined the Department of CS&IS at Bradley University as an Assistant Professor in Fall 2021. Since then, he has been very active for securing internal and external funds. He is the recipient of 2024 Caterpillar Faculty Achievement Award for Scholarship, 2024-25, and 2023-24 IFH (Innovation for health) grant, 2022-23 and 2023-24 Caterpillar fellowship award, FSA\u201925, SEA\'23, FSA\'22 award, CTEL paired course initiative award\'22 and Sherry Endowment student/faculty collaborative project award\'22. He has active research collaboration with different universities in the US and outside. Before joining Bradley community, he worked as an Assistant Professor with the Department of Applied Computer Science at University of Charleston, WV, USA. He is the recipient of 2021 Open Education Resource (OER) grant from West Virginia Higher Education Policy Commission (WVHPEC). He submitted several NSF grant proposals with the collaboration of International Center for Automotive Research (ICAR), Clemson University, SC, USA. He was a postdoctoral fellow in a US DOE funded CAV project at Clemson University from March 2018 to July 2019. He also has a post-doctoral research fellow experience in NTU-NXP 24/7 live V2X testbed project from Oct. 2015 to Feb. 2018. He has published more than 78 international conferences and journal articles and book chapters. He is currently a member of IEEE and editorial board member of several international journals in his field. \\n\\nDr. Ali\u2019s research got a significant attention from the research community with an h-index of 21 and with over 2,200 citations and still counting. \\n\\n\\n\\nAcademic Qualifications\\n\\n\\n\\nOctober 2013\\n\\nPh.D. in Computer Science, City University of Hong Kong, Hong Kong (achieved Outstanding Academic Performance Award for the academic session 2012-13)\\n\\nFebruary 2006\\n\\nB.Sc. Engg. in Computer Science and Engineering, Khulna University of Engineering & Technology (KUET), Bangladesh. Ranked 2nd in the combined merit position. \\n\\n\\n\\nProfessional Appointments\\n\\n \\n\\nAssistant Professor\\n\\nDepartment of Computer Science and Information Systems, Bradley University, Peoria, IL, USA (Aug 2021- Present)\\n\\nAssistant Professor\\n\\nDepartment of Applied Computer Science, University of Charleston, WV, USA (Aug 2019- May 2021).\\n\\nPost-Doctoral Fellow:\\n\\nDepartment of Automotive Engineering, Clemson University, SC, USA, (March 2018 \u2013 July 2019).\\n\\nResearch Fellow:\\n\\nSchool of Electrical and Electronic Engineering, Nanyang Technological University (NTU), Singapore, (Oct. 2015 \u2013 March 2018).\\n\\nAssistant Professor:\\n\\nDepartment of Computer Science and Engineering, Khulna University of Engineering & Technology, Bangladesh, (Jan. 2014 \u2013 Oct. 2015).\\n\\nSenior Research Assistant:\\n\\nDepartment of Computer Science, City University of Hong Kong, (Sept. 2013 \u2013 Dec. 2013).\\n\\nLecturer:\\n\\nDepartment of Computer Science and Engineering, Khulna University of Engineering & Technology, Bangladesh, (May 2006 \u2013 Aug. 2009).\\n\\nDr. Nawaz\u2019s current research interest includes, Vehicular Cyber Physical System (VCPS), Data and Sentiment Analytics, Network Coding, On-demand scheduling, Data Broadcasting, Real-time Scheduling, Vehicular Networks (V2X communication), Software-defined Vehicular Networks (SDN-VANET), and Mobile Computing.\\n\\n\\n\\nDr. Nawaz has been actively working in the following projects:\\n\\nFake news identification using fine-tuned LLMs and agents and neuro-symbolic AI\\n\\n-The objective of this project is to analyze news and social media data to identify fake news with high accuracy augmenting LLMs, Agents, Tools and Neuro-symbolic AI. \\n\\n\\n\\nUnderstanding adolescence obesity from social media data using LLMs\\n\\n-The objective of this project is to analyze social media data to understand the adolescence obesity and healthy diet related social media post which can be later used as a guidance for the healthcare providers\\n\\n\\n\\nData Analytics on Public Sentiments\\n\\n-The objective of this project is to analyze public sentiments on issues related to COVID-19   \\n\\n\\n\\nConnected Autonomous Vehicle for Energy Efficiency \\n\\n-The objective of this project is to demonstrate a minimum of 10% energy savings in mixed traffic streams of human-driven and Connected and Autonomous Vehicles (CAVs).\\n\\n\\n\\nNetwork Coding for Network Load Reduction for V2X Communication \\n\\n- Study and designing network coding based information dissemination protocols at road intersections in vehicular safety message communication.\\n\\n\\n\\nSoftware Defined vehicular Networks: \\n\\n-To apply Software Defined Networking (SDN) in Vehicular networks to improve the efficiency and modularity of VANETs.\\n\\n\\n\\nVehicular Cyber Physical System (VCPS)\\n\\n-To develop routing protocol, data analytics and enhance data dissemination performance in VCPS.\\n\\n\\n\\n\\n\\nSimulation/Programming Experience\\n\\n\\n\\nC/C++, Network Simulator (Ns-3), C Simulator (CSIM), Python (Numpy, Pandas, matplotlib, seaborn, Scikit-learn, TensorFlow), LLMs Transformer architecture, MATLAB, VISSIM, Java, PHP, MYSQL, HTML, CSS, JavaScripts, NodeJS Simulation of Urban MObility (SUMO), Linux Kernel, ITS framework, Cohda MK5 Box, DriverModel.dll, Shell programming, CISCO packet tracer  etc.\\n\\n\\n\\n\\n\\nTeaching experiences at Bradley University\\n\\n\\n\\nUndergraduate: \\n\\n\\n\\nCS 102 Data Structures (using Java)\\n\\nCS 321 Operating Systems (using Linux shell & kernel)\\n\\nCIS 393 Web Technologies and Systems (HTML, CSS, JS, NodeJS, Express, MySQL, MongoDB, React)\\n\\nGraduate: \\n\\n\\n\\nCS 514 Algorithms (using C++/Java)\\n\\nCS 531 Web Development Technologies (using HTML, CSS, JS, NodeJS, Express, MySQL, MongoDB, React)\\n\\nCS 571 Database Design and Management (Using Relational Algebra, SQL, ERDPlus, Full-stack web development)\\n\\nUndergraduate & Graduate Cross-listed: \\n\\n\\n\\nCIS 445/545 Integrative Programming & Technology (using Linux shell, git & github, full-stack web development and network security)\\n\\nCS 462/562 Machine Learning (using python, numpy, pandas, matplotlib, seaborn, scikitlearn, keras, TensorFlow)\\n\\nExpecting to develop & offer in FA 26: \\n\\n\\n\\nCS 111 (AI for All - Artificial Intelligence for Life, Society, and Disciplines)\\n\\nCS 466 NLP (Natural Language Processing) & LLM (Large Language Model) \\n\\n\\n\\nResearch grant/proposal writing experiences\\n\\n\\n\\n28. 2025 IFH (Innovation for Health) Award\\n\\nProject title: Multimodal Sentiment Analysis about Adolescent Obesity from Social Media Data and Recommendations for Healthcare Providers (Phase II) (Under review, requested $79,996).\\n\\n\\n\\n27.  2025 Liberal Arts and Sciences Undergraduate Summer Research and Artistry Fellowship Program\\n\\nProject title: Cyberpunk 2020 Character Creation Website Tool (Not Funded, Requested $6K)\\n\\n\\n\\n26. 2025 Interdisciplinary Undergraduate Research and\\n\\nCreative Projects Summer Fellowship Program\\n\\nProject title: Developing Gizmos Recycling Game: A Game-based Learning Tools for Kids (Not Funded, Requested $6K)\\n\\n\\n\\n25.  2025-26 Faculty Scholarship Award \\n\\nProject title: On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network (Awarded $6K)\\n\\n\\n\\n24. 2025-26 Illinois Water Resources Center (IWRC) Annual Research Grant\\n\\nProject title: AI-Powered Water Quality Prediction in the Midwestern U.S. (Not funded, requested: $20K), jointly submitted as Co-PI, John Marino, Dept. of Biology, BU. \\n\\n\\n\\n23. 2025-26 Illinois Space Grant Consortium - Research Seed Grant Award\\n\\nProject title: Unpacking Public Perception of NASA\u2019s Space Exploration Efforts: A Generative AI-based Approach to Social Media Sentiment Analysis (Not Funded, Requested: $8K)\\n\\n\\n\\n22. 2025-27 NSF IUSE grant\\n\\nProject title: Improving Student Learning in Data Science Concentration through Advanced AI and ML Computing Facility and Project-based Curricula. (Not Funded, requested: $496,883.)\\n\\n\\n\\n21. 2024-25 IFH (Innovation for Health) Award \\n\\nProject title: Understanding the Reactions of Adolescents to Obesity Related Health Messaging Residing in the Tri-county Area (Peoria, Tazewell, and Woodford Counties) through Social Media Data.\\n\\n(Awarded $49,954)\\n\\n\\n\\n20. 2024- 25Bradley\'s CTEL SoTL award awarded by Bradley\'s CTEL (Center for Teaching and Learning) for Teaching and Research \\n\\nProject title: Learning Machine Learning (ML) and Artificial Intelligence (AI) with Fun: A Cross-listed Course Re-design \\n\\n(Awarded $3.5K)\\n\\n\\n\\n19. 2023-24 IFH (Innovation for Health) Award \\n\\nProject title: An Automated Message Classification and Response based System Empowered by Customized OpenAI Application \\n\\n(Awarded $50K)\\n\\n\\n\\n18. 2024-25 Illinois Space Grant Consortium -  Research Seed Grant Award\\n\\nProject title: Performance analysis of 5G New Radio and DSRC networks for V2X Communications\\n\\n(Not Funded, Requested $10K)\\n\\n\\n\\n17. 2024-25 Caterpillar Fellowship Award \\n\\nProject title: On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network\\n\\n(Not Funded, Requested $5K)\\n\\n\\n\\n16. 2023-24 Student Engagement Award \\n\\nProject title: Performance analysis of 5G New Radio and DSRC networks for V2X Communications\\n\\n(Awarded $6K)\\n\\n\\n\\n15. 2023-24 Caterpillar Fellowship Award \\n\\nProject title: Performance Analysis and Enhancement of 5G New Radio Vehicular Communication\\n\\n(Awarded $5K)\\n\\n\\n\\n14. 2022-23 Faculty Scholarship Award \\n\\nProject title: Enhanced Cooperative Perception for Connected and Autonomous Vehicles \\n\\n(Awarded $6K)\\n\\n \\n\\n13. 2022-23 Caterpillar Fellowship Award \\n\\nProject title: Smooth Seamless Inter-working between Cellular and DSRC: A Futuristic Framework for a Secured Connected Driving Experience \\n\\n(Awarded $5K)\\n\\n\\n\\n12. 2022 CTEL paired course initiative award \\n\\nProject title: Paired Courses Initiative (CIS 445/545 & ECE 444/544) for Fall 22 (Awarded $1K) \\n\\n\\n\\n11. 2022 Sherry Endowment student/faculty collaborative project award\'22\\n\\nProject title: A Survey on Machine Learning Methods in Autonomous Vehicles \\n\\n(Awarded $800)\\n\\n\\n\\n10. 2021 Bradley University startup grant \\n\\nProject title: C-V2X radios for a reliable and smooth V2X communication \\n\\n(Awarded $10K).\\n\\n\\n\\n9. 2021 WV Open Education Resource (OER) Grant \\n\\nProject title: Develop and offer Object-Oriented Programming course using open education resources (Awarded $1K).  \\n\\n\\n\\n8. 2020 NSF and the Natural Hazards Center\'s Quick Response Award Program: Submitted as PI\\n\\nProject title: Machine learning based prediction of the consequences of not wearing a facemask in public transport during the COVID-19 pandemic. (Not Funded)\\n\\n\\n\\n7. 2019 US DOT ADS Demonstration Grant: Jointly submitted with Prof. Beshah Ayalew, Prof. Ardalan Vahidi, Prof. Y. Jia and Prof. Jim Martin, Clemson University, USA. \\n\\nProject title: Clemson-Center of Excellence for Automated Driving Systems (C-CEADS) (Not Funded)\\n\\n \\n\\n6. 2018 NSF S&AS (Smart & Autonomous System): Jointly submitted with Prof. Beshah Ayalew, Prof. Ardalan Vahidi and Prof. Jim Martin, Clemson University, USA. \\n\\nProject title: Autonomous Control of Connected Vehicle Traffic Via Distributed Fog Computing, 2018. (Not Funded)\\n\\n\\n\\n5. 2018 NSF CPS (Cyber Physical System): Jointly submitted with Prof. Beshah Ayalew, Prof. Yunyi Jia, and Prof. Ioannis Karamouzas, Clemson University, USA.\\n\\nProject title: Collaborative Situation Awareness in Heterogeneous Traffic, 2018. (Not Funded)\\n\\n\\n\\n4. 2018 Endeavour Fund \u2013 Smart Ideas: Jointly submitted with Prof. Peter Chong, AUT, NZ and Dr. Md. Noor-A-Rahim, NTU, Singapore.\\n\\nProject title: Design of Coding Scheme and Random Retrieval for DNA Based Data Storage, 2018 (Not Funded)\\n\\n\\n\\n3. National Science Challenge: Building better Home, Towns and Cities: Jointly submitted with Prof. Peter Chong, AUT, NZ. \\n\\nProject title: Smart Places for Elderly in Smart Nation: Ageing well in New Zealand (A prototype system for elderly smart care), 2017 (Not Funded)\\n\\n \\n\\n2. HIRP (The Huawei Innovation Research Program) OPEN proposal\u20192017: Jointly submitted with Prof. Peter Chong, AUT, NZ. \\n\\nProject title: Future Software Defined 5G Cellular-V2X: A Complete Futuristic Framework for a Secured Automated Driving Experience, 2017. (Not Funded)\\n\\n\\n\\n1. 2017 Endeavour Fund \u2013 Smart Ideas: Jointly submitted with Prof. Peter Chong, AUT, NZ. Project title: Advance Accident Detection for Vehicle Collision Avoidance for Future Intelligent Transport System, 2017.  (Not Funded)\\n\\n\\n\\nPublications\\n\\n\\n\\nThesis\\n\\n1. G. G. Md. Nawaz Ali, Design and Performance Evaluation of On-demand Scheduling Algorithms in Real-time Wireless Broadcasting, PhD thesis, October 2013\\n\\n2. G. G. Md. Nawaz Ali, and Md. Waheduzzaman,  A Comparative Performance Evaluation of Different Adaptive Algorithms for Web Crawlers, Undergraduate thesis, February, 2006. \\n\\n\\n\\nJournals \\n\\n(*: Corresponding author, ___: student author)\\n\\n\\n\\n45. Hamed .A. Baseer, Ali, G. G. Md. Nawaz  Ali, Machine Learning-Based Compressive Strength Prediction in Pervious Concrete.\xa0CivilEng\xa02026,\xa07, 3. https://doi.org/10.3390/civileng7010003 \\n\\n\\n\\n44. Amima Shifa, G. G. Md. Nawaz Ali*, & Roopa Foulger (2025). Leveraging Large Language Models for Automating Outpatients\u2019 Message Classifications of Electronic Medical Records.\xa0Healthcare,\xa013(23), 3052. https://doi.org/10.3390/healthcare13233052\\n\\n\\n\\n43. Imran Fayyaz,  G. G. Md. Nawaz Ali*, & Samantha S. Khairunnesa, S. (2025). Advanced Feature Engineering and Machine Learning Techniques for High Accurate Price Prediction of Heterogeneous Pre-Own Cars.\xa0Vehicles,\xa07(3), 94. https://doi.org/10.3390/vehicles7030094\\n\\n\\n\\n42. Abdul Moid K. Mohammed, G. G. Md Nawaz Ali* and Samantha S. Khairunnesa (2025), \u201CGSAF: An ML based Sentiment Analytics Framework for Understanding Contemporary Public Sentiment and Trends on Key Societal Issues\u201D, Information,\xa0March, 2025,\xa016(4), 271;\xa0https://doi.org/10.3390/info16040271\\n\\n\\n\\n41. Md Abu Sayed, Md Amjad Hossain, Md Mokhlesur Rahman, G. G. Md. Nawaz Ali*,\\n\\nMohammad Anwarul Islam, Kamal Chandra Paul and Xiao Qin, \u201CMachine Learning based Public Sentiment Analytics on Roadway Work-zone Tweets, Data Science and Management, Elsevier, April, 2025, https://www.sciencedirect.com/science/article/pii/S2666764925000189\\n\\n\\n\\n40. Ghosh, Anay, Saiyed Umer, Bibhas Chandra Dhara, and G. G. Md. Nawaz Ali*, \\"A Multimodal Pain Sentiment Analysis System Using Ensembled Deep Learning Approaches for IoT-Enabled Healthcare Framework\\",\xa0Sensors, February\xa02025, no. 4: 1223. https://doi.org/10.3390/s25041223\\n\\n\\n\\n39. G. G. Md. Nawaz Ali*, M.N. Sadat, M.S. Miah, S.A. Sharief, Y.  Wang, \u201CA Comprehensive Study and Analysis of the Third Generation Partnership Project\u2019s 5G New Radio for Vehicle-to-Everything Communication\u201D.\xa0Future Internet\xa02024,\xa016, 21. https://doi.org/10.3390/fi16010021\\n\\n\\n\\n38. Md. Shahinoor Rahman, Kamal Chandra Paul, Md. Mokhlesur Rahman, Jim Samuel, Jean-Claude Thill, Md. Amjad Hossain, G. G. Md. Nawaz Ali, \u201CPandemic vulnerability index of US cities: A hybrid knowledge-based and data-driven approach\u201D, Sustainable Cities and Society, V. 95, August 2023, article ID: 104570.\\n\\n\\n\\n37. Chiputa, Masoto, Minglong Zhang, G. G. Md. Nawaz Ali, Peter H.J. Chong, Hakilo Sabit, Arun Kumar, and Hui Li, 2022, \u201CEnhancing Handover for 5G mmWave Mobile Networks Using Jump Markov Linear System and Deep Reinforcement Learning\u201D,\xa0Sensors\xa022, no. 3: 746. https://doi.org/10.3390/s22030746\\n\\n\\n\\n36. Hota, Lopamudra, Biraja P. Nayak, Arun Kumar, Bibhudatta Sahoo, and G. G. Md. Nawaz Ali*, 2022. \\"A Performance Analysis of VANETs Propagation Models and Routing Protocols\\"\xa0Sustainability\xa014, no. 3: 1379. https://doi.org/10.3390/su14031379\\n\\n\\n\\n35. Hota, Lopamudra, Biraja P. Nayak, Arun Kumar, G. G. Md. Nawaz Ali, and Peter H.J. Chong. 2021. \u201CAn Analysis on Contemporary MAC Layer Protocols in Vehicular Networks: State-of-the-Art and Future Directions\u201D, Future Internet 13, no. 11: 287. https://doi.org/10.3390/fi13110287\\n\\n\\n\\n34. G. G. Md. Nawaz Ali*, M. M. Rahman, M. A. Hossain, M. S. Rahman, K. C. Paul, J.-C Thill and J. Samuel, \u201CPublic Perceptions about COVID-19 Vaccines: Policy Implications from US Spatiotemporal Sentiment Analytics\u201D, Healthcare 2021, 9, 1110. https://doi.org/10.3390/healthcare9091110\\n\\n\\n\\n33. C Yang, X Yu, A Kumar, G. G. Md. Nawaz Ali, PHJ Chong, P Lam, \u201CSocial Video Advertisement Replacement and its Evaluation in Convolutional Neural Networks\u201D, ELCVIA Electronic Letters on Computer Vision and Image Analysis, 20 (1), pp. 117-136, 2021. \\n\\n\\n\\n32. M. M. Rahman, K. C. Paul, M. A. Hossain, G. G. Md. Nawaz Ali*, M. S. Rahman and J. -C. Thill, \\"Machine Learning on the COVID-19 Pandemic, Human Mobility and Air Quality: A Review,\\" in IEEE Access, vol. 9, pp. 72420-72450, 2021, doi: 10.1109/ACCESS.2021.3079121\\n\\n \\n\\n31. DoHyun Yoon, Beshah Ayalew, and G. G. Md. Nawaz Ali, \u201CPerformance of Decentralized Cooperative Perception in V2V Connected Traffic\u201D, in IEEE Transactions on Intelligent Transportation Systems, 2021, Available online: doi: 10.1109/TITS.2021.3063107.\\n\\n\\n\\n30.  M. M. Rahman, G. G. Md. Nawaz Ali*, Xue Jun Li, Jim Samuel, K.C. Paul, Peter H.J. Chong, and M. Yakubov, \u201CSocioeconomic Factors Analysis for COVID-19 US Reopening Sentiment with Twitter and Census Data\u201D, in Heliyon, 7 (2), 2021, Available online: https://doi.org/10.1016/j.heliyon.2021.e06200. \\n\\n\\n\\n29. Hazim Jarrah, G. G. Md. Nawaz Ali, Arun Kumar, Peter H. J. Chong, Nurul I. Sarkar, and Jairo Gutierrez, \u201CThe Time-Free Comparison Model for Fault Diagnosis in Wireless Ad hoc Networks\u201D, in Mobile Networks and Applications, Springer, November 2020, Available online: https://doi.org/10.1007/s11036-020-01691-4\\n\\n\\n\\n28. M. Noor-A-Rahim, Z. Liu, H. Lee, G. G. Md. Nawaz Ali, D. Pesch and P. Xiao, \\"A Survey on Resource Allocation in Vehicular Networks,\\" in\xa0IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2020.3019322. September 2020, Available online: https://ieeexplore.ieee.org/document/9186820\\n\\n\\n\\n27. J. Samuel, M. M. Rahman, G. G. Md. Nawaz Ali*, Yana Samuel, A. Pelaez, Peter H.J. Chong, and M. Yakubov, \u201CFeeling Positive About Reopening? New Normal Scenarios From COVID-19 US Reopen Sentiment Analytics,\u201D in IEEE Access, vol. 8, pp. 142173-142190, 2020, doi: 10.1109/ACCESS.2020.3013933, Available online: https://ieeexplore.ieee.org/document/9154672\\n\\n\\n\\n26. Jim Samuel, G. G. Md. Nawaz Ali*, Md. Mokhlesur Rahman, Ek Esawi, and Yana Samuel, \u201CCOVID-19 Public Sentiment Insights and Machine Learning for Tweets Classification\u201D, Information, June 2020, Available online: https://www.mdpi.com/2078-2489/11/6/314\u2019\\n\\n\\n\\n25. G. G. Md. Nawaz Ali*, Beshah Ayalew, Ardalan Vahidi, and Md. Noor-A-Rahim, \u201CFeedbackless Relaying for Enhancing Reliability of Connected Vehicles\u201D, IEEE Transactions on Vehicular Technology, March 2020, (SCI, 5-year Impact factor: 4.066), Available online: https://ieeexplore.ieee.org/document/9037108\\n\\n\\n\\n24. G. G. Md. Nawaz Ali*, Victor C.S. Lee, Yuxuan Meng, Peter H. J. Chong, and Jun Chen, \u201CPerformance Analysis of On-Demand Scheduling with and without Network Coding in Wireless Broadcast\u201D, Future Internet, November, 2019, Available online: https://www.mdpi.com/1999-5903/11/12/248  \\n\\n\\n\\n23. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali, Y. L. Guan, Beshah Ayalew, Peter H.J. Chong, and Dirk Pesch, \u201CBroadcasting Performance Analysis and Improvement of LTE-V2V Autonomous Mode at Road Intersection\u201D, IEEE Transactions on Vehicular Technology, August 2019, Available online: 10.1109/TVT.2019.2936799 (SCI, 5-year Impact factor: 4.066).\\n\\n\\n\\n22. G. G. Md. Nawaz Ali*, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Beshah Ayalew, Peter H.J. Chong, and Y.L. Guan, \u201CCooperative Cache Transfer based On-demand Network Coded Broadcast in Vehicular Networks\u201D, ACM Transactions on Embedded Computing Systems,\xa0Volume 18 Issue 4, August 2019, Available online:\xa0https://dl.acm.org/citation.cfm?id=3340300.3329865, (SCI, 5-year Impact factor: 1.367). \\n\\n\\n\\n21. Minglong Zhang, G. G. Md. Nawaz Ali, Peter H.J. Chong, Boon-Chong Seet, and Arun Kumar, \u201CA Novel Hybrid MAC Protocol for Basic Safety Message Broadcasting in Vehicular Networks\u201D, IEEE Transactions on Intelligent Transportation Systems, September 2019, Available online: 10.1109/TITS.2019.2939378 (SCI, 5-year Impact factor: 4.051). \\n\\n\\n\\n20. G. G. Md. Nawaz Ali, Kai Liu, Victor C.S. Lee, Peter Han Joo Chong, Y. Liang Guan, and Jun Chen, \u201CTowards Efficient and Scalable Implementation for Coding-based On-demand Data Broadcast\u201D, Computer Networks, Elsevier. 2019, ISSN 1389-1286, Available online: https://doi.org/10.1016/j.comnet.2019.02.012 (SCI, 5-year Impact factor: 2.589). \\n\\n\\n\\n19.  Md. Noor-A-Rahim, M. O. Khyam, G. G. Md. Nawaz Ali, Y. L. Guan, Dirk Peschz, Peter H. Chong, \u201CReliable State Estimation of an Unmanned Aerial Vehicle Over a Distributed Wireless IoT Network\u201D, IEEE Transactions on Reliability, 2019, Available online: DOI: 10.1109/TR.2019.2891994, (SCI, 5-year Impact factor: 2.729) \\n\\n\\n\\n18. G. G. M. Nawaz Ali*, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Syeda Khairunnesa Samantha, Peter Han Joo Chong, and Yong Liang Guan, \u201CEfficient Real-time Coding-assisted Heterogeneous Data Access in Vehicular Networks\u201D,  IEEE Internet of Things Journal, 2018, Available online, DOI: 10.1109/JIOT.2018.2830315, (SCI, 5-year Impact factor: 7.596) \\n\\n\\n\\n17. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali, Nguyen Hieu, and Guan Yong Liang, \u201CPerformance Analysis of IEEE 802.11p Safety Message Broadcast with and without Relaying at Road Intersection,\\" IEEE Access, 2018, Available online, DOI: 10.1109/ACCESS.2018.2829897 (SCI Impact factor: 3.244)  \\n\\n\\n\\n16. G. G. Md. Nawaz Ali, Md. Noor-A-Rahim, Peter Han Joo Chong, and Yong Liang Guan, \u201CAnalysis and improvement of reliability through coding for safety message broadcasting in urban vehicular networks\u201D, IEEE Transactions on vehicular Technology, vol. 67, no. 8, pp. 6774-6787, Aug. 2018, Available online: DOI: 10.1109/TVT.2018.2820458, (SCI, 5-year Impact factor: 4.066)\\n\\n\\n\\n15. M. Noor-A-Rahim, M. O. Khyam, Y. L. Guan, G. G. Md. Nawaz Ali, K. D. Nguyen and G. Lechner, \\"Delay-Universal Channel Coding with Feedback,\\" in IEEE Access, 2018, Available online, DOI: 10.1109/ACCESS.2018.2853140 (SCI Impact factor: 3.244)\\n\\n\\n\\n14. Arindom Mondal, Kazi Md. Rokibul Alam, G. G. Md. Nawaz Ali*, Peter Han Joo Chong and Yasuhiko Morimoto, \u201CA Multi-Stage Encryption Technique to Enhance the Secrecy of Image,\u201D to appear in KSII Transactions on Internet and Information Systems, 2018, (SCI impact factor: 0.611)\\n\\n\\n\\n13. Md. Noor-A-Rahim, G. G. Md. Nawaz Ali , Guan Yong Liang, \u201CPractical Relay Code Design Based on Protograph Codes\u201D, IET Communications, 2017, DOI:  10.1049/iet-com.2017.1002  (SCI, 5-year Impact Factor: 1.023).\\n\\n\\n\\n12. Kazi Md. Rokibul Alam, Adnan Maruf, Md. Rezaur Rahman Rakib, G. G. Md. Nawaz Ali*, Peter Han Joo Chong, and Yasuhiko Morimoto, \u201CAn Untraceable Voting Scheme Based on Pairs of Signatures,\u201D  International Journal of Network Security , Vol. 20, pp. 774-787, 2018, DOI: 10.6633/IJNS.201807 20(4).20 (Scopus)\\n\\n\\n\\n11. Md. A. A. R. Kutubi, K. M. Rokibul Alam, Rafaf Tahsin, G. G. Md. Nawaz Ali*, Peter Han Joo Chong, and Yasuhiko Morimoto, \u201CAn Off-line Electronic Payment System Based on Untraceable Blind Signature Scheme,\u201D KSII Transactions on Internet and Information Systems, 2017, Vol. 11, No.5, May 31, 2017, pp. 2628- 2645, DOI: 10.3837/tiis.2017.05.018 (SCI, 5-Year impact factor-2016: 0.611)\\n\\n\\n\\n10. Cherry Ye Aung, G. G. Md. Nawaz Ali and Peter Han Joo Chong, \u201CCluster-based Cooperative Data Forwarding with Multi-radio Multi-channel for Multi-flow Wireless Networks,\u201D KSII Transactions on Internet and Information Systems, Volume 10, No.12, December 31, 2016, pp. 5149-5173, DOI: 10.3837/tiis.2016.12.002  (SCI, 5-Year impact factor-2018: 0.611)\\n\\n\\n\\n9.  G. G. Md. Nawaz Ali*, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha, Peter Han Joo Chong, and Yong Liang Guan, \\"On Striking the Balance Between the Fairness and Throughput in RSU-based Vehicular Ad Hoc Networks (VANET)\\", International Journal of Vehicle Autonomous System, Inderscience, Volume 13, Issue 2, 2016, DOI: 10.1504/IJVAS.2016.078812 (Scopus)\\n\\n\\n\\n8. G. G. Md. Nawaz Ali*, Peter Han Joo Chong, Syeda Khairunnesa Samantha, and Edward Chan, \u201CEfficient Data Dissemination in Cooperative Multi-RSU Vehicular Ad Hoc Networks (VANETs)\u201D, Journal of Systems and Software, Elsevier, Volume 117, Issue C, July 2016, pp. 508-527, DOI: 10.1016/j.jss.2016.04.005 (SCI, 5-Year impact factor-2016: 2.619)\\n\\n\\n\\n7. G. G. Md. Nawaz Ali, V. C.S. Lee, Edward Chan, Minming Li, Jingsong Lv, J. Chen , and K. Liu, \u201CAdmission Control based Multi-channel Broadcasting for Real-time Multi-item Queries,\u201D IEEE Transactions on Broadcasting, IEEE, Volume 60, Issue 4, November 2014, pp. 589-605, available at DOI: 10.1109/TBC.2014.2364533. (SCI, 5-Year impact factor-2016: 3.765)\\n\\n\\n\\n6. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"On Scheduling Data Access with Cooperative Load Balancing in Vehicular Ad Hoc Networks (VANETs),\\" journal of Supercomputing, Springer, Volume 67, Issue 2, February 2014, pp. 438-468, available at DOI: 10.1007/s11227-013-1011-y (SCI, 5-Year impact factor-2016: 1.326)\\n\\n\\n\\n5. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"Supporting Real-time Multiple Data Items Query in Multi-RSU Vehicular Ad Hoc Networks (VANETs),\\"  Journal of Systems and Software, Elsevier, Volume 86, Issue 8, August 2013, pp. 2127\u20132142, available at http://dx.doi.org/10.1016/j.jss.2013.03.073 (SCI, 5-Year impact factor-2016: 2.619)\\n\\n\\n\\n4. J. Chen, V.C.S. Lee, K. Liu, G. G. Md. Nawaz Ali, and Edward Chan, \\"Efficient Processing of requests with network coding in on-demand data broadcast environments,\\"  Information Sciences, Elsevier, Volume 232, Issue 20, May 2013, pp. 27-43, available at http://dx.doi.org/10.1016/j.ins.2012.12.044 (SCI, 5-Year impact factor-2016: 4.732)\\n\\n\\n\\n3. G. G. Md. Nawaz Ali*, and Edward Chan, \\"Co-operative Load Balancing in Vehicular Ad Hoc Networks (VANETs),\\" International Journal of Wireless Network and Broadband Technologies (IJWNBT), IGI-Global, Volume 1, Issue 4, 2011, pp. 1-21, available at DOI: 10.4018/ijwnbt.2011100101 (ACM DL)\\n\\n\\n\\n2. G. G. Md. Nawaz Ali*, Rajib Chakraborty, Md. Shihabul Alam and Edward Chan, \\"An Efficient Approach for Generalized Load Balancing in Multi-path Packet Switched Networks,\\" the special issue of International Journal of Computer Networks and Communications (IJCNC), Volume 2, Issue 2, 2010, pp. 142-153, available at http://arxiv.org/abs/1003.3312\\n\\n\\n\\n1. G. G. Md. Nawaz Ali*, \u201COn-demand Scheduling Strategies in Road Site Units (RSUs)-based Vehicular Ad Hoc Networks (VANETs),\u201D Computer Science and Engineering Research Journal, Volume 7, 2011, Bangladesh, Pages 01-08\\n\\n\\n\\n\\n\\nConferences\\n\\n\\n\\n\\n\\n37. Imran Fayyaz, G. G. Md Nawaz Ali and Samantha S. Khairunnesa, \u201CLLMs in Fake News Detection: A Comparative Study of Zero-Shot and Fine-Tuned Open-Source Models\u201D, in the conference proceedings of 20th IEEE International Conference on Semantic Computing (ICSC 2026), February, 2026, California, USA.\\n\\n\\n\\n36. Amima Shifa, G. G. Md Nawaz Ali and Dylan Henricks, \u201CBridging Lexical and Contextual Semantics for Adolescents\u2019 Health Sentiment Analysis: A Cross-Platform Study Using Large Language Models\u201D, in the conference proceedings of IEEE SCSN 2026 Workshop, co-located with the 20th IEEE International Conference on Semantic Computing (ICSC 2026), February, 2026, California, USA.\\n\\n\\n\\n35. Sajan Poudel, Nazmus Sadat and G. G. Md Nawaz Ali, \u201CTruth in the Age of AI: Fine-Tuning LLMs for Reliable Fake News Detection\u201D, in the conference proceedings of IEEE SCSN 2026 Workshop, co-located with the 20th IEEE International Conference on Semantic Computing (ICSC 2026), February, 2026, California, USA.\\n\\n\\n\\n34. Abdul Moid K. Mohammed, G. G. Md Nawaz Ali and Samantha S. Khairunnesa, \u201CUnderstanding Contemporary Public Sentiment and Trends on Key Societal Issues\u201D, in the conference proceedings of 13th Computing Conference 2025, June, 2025, London, UK. \\n\\n\\n\\n33. G. G. Md. Nawaz Ali, Sameer Ahmed Sharief, Mohammad Nazmus Sadat, and Md. Suruz Miah. \u201CPerformance Analysis of 5G New Radio V2X Communication\\". In the proceedings of 23rd IEEE WAMICON conference, April 2023.\\n\\n\\n\\n32. F. Zheng, C. Yang, P. H. J. Chong, G. Wang, G. G. M. Nawaz Ali and P. Lam, \u201CDeep Learning Algorithm for Picture Frame Detection on Social Media Videos\u201D, 2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS), 2021, pp. 149-155, doi: 10.1109/IoTaIS53735.2021.9628865.\\n\\n\\n\\n31. Deepika Mohan, G. G. M. Nawaz Ali, and Peter HJ Chong, \u201CMachine Learning Algorithm for NLOS Millimeter Wave in 5G V2X Communication\u201D, In the proceedings of the 7th International Conference on Computer Networks & Communications (CCNET 2020), December 12~13, 2020, Dubai, UAE. DOI: https://arxiv.org/abs/2012.12123\\n\\n\\n\\n30.  G. G. M. Nawaz Ali,  Beshah Ayalew, Ardalan Vahidi, and Md. Noor-A-Rahim, \u201CAnalysis of Reliabilities Under Different Path Loss Models in Urban/Sub-urban Vehicular Networks\u201D, In the proceedings of IEEE 90th Vehicular Technology Conference (IEEE VTC-Fall\u201919), 22\u201325 September 2019, Honolulu, Hawaii, USA. |Link| \\n\\n\\n\\n29.  DoHyun Daniel Yoon , G. G. M. Nawaz Ali,  and Beshah Ayalew, \u201CCooperative Perception in Connected Vehicle Traffic under Field-of-View and Participation Variations\u201D, In the proceedings of IEEE 90th Vehicular Technology Conference (IEEE VTC-Fall\u201919) Workshop (2nd IEEE Connected and Automated Vehicles Symposium (CAVS)), 22\u201325 September 2019, Honolulu, Hawaii, USA. |Link|\\n\\n\\n\\n28.  Manveen Kaur, G. G. M. Nawaz Ali,  Anjan Rayamajhi, Beshah Ayalew, and Jim Martin, \u201CNetwork driven performance analysis in connected vehicular networks\u201D, In the proceedings of IEEE 90th Vehicular Technology Conference (IEEE VTC-Fall\u201919) Workshop (Network-assisted Collaborative Automated Driving), 22\u201325 September 2019, Honolulu, Hawaii, USA. |Link|\\n\\n\\n\\n27. DoHyun Daniel Yoon, G. G. M. Nawaz Ali, and Beshah Ayalew, \u201CData Association and Fusion Framework for Decentralized Multi-Vehicle Cooperative Perception\u201D, In the proceedings of Proceedings of the ASME 2019 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC/CIE\u20192019), August 18-21, 2019, Anaheim, CA, USA. (Received best paper award) |Link|\\n\\n26. G. G. M. Nawaz Ali, Md. Noor-A-Rahim, Md. Ashiqur Rahman, Syeda Khairunnesa Samantha, Peter Han Joo Chong, and Yong Liang Guan, \u201CAn Efficient Cross-layer Coding-assisted Heterogeneous Data Access in Vehicular Networks\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2018), May 20-24, 2018, Kansas City, MO, USA. |Link|\\n\\n25. G. G. M. Nawaz Ali, Md. Ashiqur Rahman, Syeda Khairunnesa Samantha, Yumeng Gao, Peter Han Joo Chong, and Yong Liang Guan, \u201CEfficient Coding based Heterogeneous Data Access in Vehicular Networks\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2017), May 21-25, 2017, Paris, France. |Link|\\n\\n24. K. L. Kushan Sudheera, Maode Ma, G. G. Md. Nawaz Ali, and Peter Han Joo Chong, \u201CDelay Efficient Software Defined Networking based Architecture for Vehicular Networks\u201D, In  the proceedings of the 15th IEEE International Conference on Communication Systems (IEEE ICCS 2016), 14-16 December, 2016, Shenzhen, China. |Link|\\n\\n23. Yumeng Gao, G. G. Md. Nawaz Ali, Peter Han Joo Chong, and Yong Liang Guan, \\"Network Coding based BSM Broadcasting at Road Intersection in V2V Communication\\", In the proceedings of the 2016 IEEE 84th Vehicular Technology Conference: VTC2016-Fall, 18\u201321 September 2016, Montr\xe9al, Canada. |Link|\\n\\n22. Md. Ashiqur Rahman, G. G. Md. Nawaz Ali, Yumeng Gao, Syeda Khairunnesa Samantha, and Peter Han Joo Chong, \\"On Accessing Heterogeneous Data Items using Network Coding in Wireless Broadcast\\", In the proceedings of the 2016 IEEE 84th Vehicular Technology Conference: VTC2016-Fall, 18\u201321 September 2016, Montr\xe9al, Canada. |Link|\\n\\n21.\xa0 Ming Zhao, G. G. Md. Nawaz Ali, RongXing Lu, and Peter Han Joo Chong, \\"An Energy-Efficient and Self-regioning based RPL for Low-power and Lossy Networks\\", In the proceedings of the 2016 IEEE 84th Vehicular Technology Conference: VTC2016-Fall, 18\u201321 September 2016, Montr\xe9al, Canada. |Link|\\n\\n20. Md Abu Hanif Shaikh, G. G. Md. Nawaz Ali, Peter Han Joo Chong and Guan Yong Liang, \u201CParallel Matricization for n-D Array Operations\u201D, In the proceedings of the IEEE TENCON 2016 \u2013 Technologies for Smart Nations, 22-25 November 2016, Marina Bay Sands, Singapore. |Link|\\n\\n\\n\\n19. M. A. Moyeen, G. G. Md. Nawaz Ali, Peter Han Joo Chong, and Nazmul Islam, \u201CA Wireless Vehicular Traffic Service Management Scheme\u201D, In the proceedings of the\xa03rd International Conference on Electrical Engineering and Information Technology (iCEEiCT 2016), 22-24 September 2016, Dhaka, Bangladesh. |Link|\\n\\n\\n\\n18. M. A. Moyeen, G. G. Md. Nawaz Ali, Peter Han Joo Chong, and Nazmul Islam, \u201CAn Automatic Layout Faults Detection Technique in Responsive Web Pages Considering JavaScript Defined Dynamic Layouts\u201D, In the proceedings of the\xa03rd International Conference on Electrical Engineering and Information Technology (iCEEiCT 2016), 22-24 September 2016, Dhaka, Bangladesh. |Link|\\n\\n\\n\\n17. Md Abu Hanif Shaikh, K.M. Azharul Hasan, G. G. Md. Nawaz Ali, Marwa Chafii, and Peter Han Joo Chong, \u201CEfficient Matricization of n-D Array with CUDA and Its Evaluation\u201D, In the proceedings of the 19th IEEE International Conference on Computational Science and Engineering (CSE\u20192016), August 24-26, 2016, Paris, France. |Link|\\n\\n\\n\\n16. M. Zhao, A. Kumar, G. G. Md. Nawaz Ali and Peter Han Joo Chong, \\"A Cloud-Based Network Architecture for Big Data Services,\\" 2016 IEEE 14th Intl Conf on Dependable, Autonomic and Secure Computing, 14th Intl Conf on Pervasive Intelligence and Computing, 2nd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress(DASC/PiCom/DataCom/CyberSciTech), Auckland, New Zealand, August 8-12, 2016, pp. 654-659,  |Link|\\n\\n\\n\\n15. Md. Ashiqur. Rahman, G. G. Md. Nawaz Ali, Peter Han Joo Chong, Syeda Khairunnesa Samantha, Md. Fahim Muntasir and Chen Chen, \\"On Scheduling Real-Time Multi-item Query with Network Coding in Multi-RSU Vehicular Networks,\\" In the proceedings of the 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA\u20192016), Daegu, 17 \u2013 19 August, 2016, pp. 218-227, doi: 10.1109/RTCSA.2016.49 |Link|\\n\\n\\n\\n14. G. G. Md. Nawaz Ali, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha,  Peter Han Joo Chong, Yong Liang Guan, \\"A Novel Approach on Striking the Balance Between the Fairness and Throughput in Vehicular Networks\\", In the proceedings of the 2016 The 15th International Conference on Wireless Networks (ICWN\'16), July 25-28, 2016, Las Vegas, USA. |Link|\\n\\n\\n\\n13. Cherry Ye Aung, G. G. Md. Nawaz Ali, Ming Zhao, Ruojun Cai, and Peter Han Joo Chong, \u201CInformation Epidemics Control for Data Delivery in Opportunistic Networks\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2016), 23-27 May 2016, Kuala Lumpur, Malaysia, pp. 1-6, DOI: 10.1109/ICC.2016.7510978. |Link|\\n\\n\\n\\n12. Ruo Jun Cai, G. G. Md. Nawaz Ali, Cherry Ye Aung, Ming Zhao, and Peter Han Joo Chong, \u201CSimulation Study of Routing Attacks Under Network Coding Environment\u201D, In the proceedings of the IEEE International Conference on Communications (IEEE ICC 2016), 23-27 May 2016, Kuala Lumpur, Malaysia, pp. 1-6. DOI: 10.1109/ICC.2016.7511292. |Link|\\n\\n\\n\\n11. Nazmul Islam, Md. Kowsar Hossain, G. G. Md. Nawaz Ali, and Peter Han Joo Chong, \u201CAn Expedite Group Key Establishment Protocol for Flying Ad-Hoc Network (FANET)\u201D, In the proceedings of the 5th International Conference on Informatics, Electronics and Vision (ICIEV 2016), May 13-14, 2016, Dhaka Bangladesh. |Link|\\n\\n\\n\\n10. G. G. Md. Nawaz Ali, Md. Ashiqur Rahman,\xa0 Peter Han Joo Chong, and Syeda Khairunnesa Samantha, \\"On Efficient Data Dissemination using Network Coding in Multi-RSU Vehicular Ad Hoc Networks\\", In the proceedings of the 2016 IEEE 83rd Vehicular Technology Conference: VTC2016-Spring, 15\u201318 May 2016, Nanjing, China, pp. 1-5, DOI: 10.1109/VTCSpring.2016.7504371. |Link|\\n\\n\\n\\n9. G. G. Md. Nawaz Ali, Md. Abdus Salim Mollah, Syeda Khairunnesa Samantha, Saifuddin Mahmud, \u201CAn Efficient Cooperative Load Balancing Approach in RSU-based Vehicular Ad Hoc Networks (VANETs)\u201D, in Proceedings of the 4th IEEE International Conference on Control System, Computing and Engineering (ICCSCE\u201914), 28-30 November, 2014, Penang, Malaysia, pp. 52-57, DOI: 10.1109/ICCSCE.2014.7072688. |Link|\\n\\n\\n\\n8. G. G. Md. Nawaz Ali, Yuxuan Meng, Victor C. S. Lee, Kai Liu and Edward Chan, \\"Performance Improvement in Applying Network Coding to On-demand Scheduling Algorithms for Broadcasts in Wireless Networks\\", In  the proceedings of the 9th International Multi-Conference on Computing in the Global Information Technology (IARIA ICCGI\u201914), Seville, Spain, June 22-26, 2014 (Best Paper Award) |Link|\\n\\n\\n\\n7. G. G. Md. Nawaz Ali,  Edward Chan,  and Wenzhong Li, \\"On Scheduling Real-time Multi-item Queries in Multi-RSU Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 27th IEEE International Conference of Advanced Information Networking and Applications (AINA\u201913) Workshop, Barcelona, Spain, March 25-28, 2013, pp. 7-12, DOI: 10.1109/WAINA.2013.25. |Link|\\n\\n\\n\\n6. G. G. Md. Nawaz Ali,  and Edward Chan, \\"Multiple Road Side Units (RSUs)-based Co-operative Scheduling in Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the Australasian Telecommunication Networks and Applications Conference (ATNAC\u201911), Melbourne, Australia, November 9-11, 2011, pp. 1-6, DOI:10.1109/ATNAC.2011.6096651(Awarded Student Travel Grant) |Link|\\n\\n\\n\\n5. G. G. Md. Nawaz Ali, Edward Chan, and Wenzhong Li, \\"Two-step Joint Scheduling Scheme for Road Side Units (RSUs)-based Vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 16th Database Systems for Advanced Applications (DASFAA\u2019 11) Workshop, Hong Kong, April 22-25, 2011. |Link|\\n\\n\\n\\n4. G. G. Md. Nawaz Ali,\xa0 and Edward Chan, \\"Co-operative Data Access in Multiple RSUs-based vehicular Ad Hoc Networks (VANETs),\\" In  the proceedings of the 5th PhD Student Workshop, Suzhou, China, April 18-19, 2011.\\n\\n3. G. G. Md. Nawaz Ali, Reshma Shahin, Nushrika Mowna, \\"Fair Slots Assignment Mechanisms of IEEE 802.11 Networks for Multiple Access Points,\\" In  the proceedings of the 12th International Conference of Computer and Information Technology (ICCIT\u201909), Dhaka, Bangladesh, December 21-23, 2009, pp. 94-99, DOI: 10.1109/ICCIT.2009.5407158 |Link|\\n\\n\\n\\n2. G. G. Md. Nawaz Ali, Rajib Chakraborty, Md. Shihabul Alam, \\"Performance Analysis of Different Routing Algorithms for Load Distribution in Multipath Packet Switched Networks,\\" In  the proceedings of the IEEE 9th International Conference of Computer and Information Technology (CIT\u201909) Workshop, Xiamen, China, October 11-14, 2009, pp. 325-330, DOI: 10.1109/CIT.2009.73 |Link|\\n\\n1. G. G. Md. Nawaz Ali, S. M. Ashik Eftakhar, Md. Waheduzzaman, \\"An Efficient Rank Based Adaptive Algorithm for Designing Web Crawlers Using Similarity Criterion,\\" In the proceedings of the 9th International Conference on Computer & Information Technology (ICCIT\u201906),\xa0Dhaka, Bangladesh, December 21-23, 2006. |Link|\\n\\nBook Chapter \\n\\n\\n\\n2. Yun Wang, Mohammad Nazmus Sadat,  G. G. Md. Nawaz Ali, and Yanping Zhang. \u201CComputational Modeling and Analysis of Wireless Sensor Networks\u201D, in the book of Computational Modeling and Simulation of Advanced Wireless Communication Systems, CRC Press, Taylor & Francis Group, Jan. 2024\\n\\n\\n\\n1. Masoto Chiputa, Minglong Zhang, Arun Kumar, G. G. Md. Nawaz Ali, Md. Akbar Hossain and Peter Han Joo Chong, \\"Cognitive Radio Technologies in 5G Mmwave Cellular Networks: Challenges and Solutions\\", published in Advances in Engineering Research. Volume, 47, Sept. 2022.\\n\\n\\n\\n\\n\\nPoster\\n\\n\\n\\n2025:\\n\\n12. M. A. Moid Khan, Dr. G. G. Md. Nawaz Ali, \u201CBradley AI Based Online Academic Course Planner\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n11. M. A. Moid Khan, Dr. G. G. Md. Nawaz Ali, \u201CGSAF: A Sentiment Analytics Framework for Understanding\\n\\n10. Amima Shifa, Dr. G. G. Md. Nawaz Ali, Dylan Henricks, \u201CObesity, Opinions, and Online Influence Analyzing Health Conversations Using Large Language Models\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n9. Amima Shifa, Dr. G. G. Md. Nawaz Ali, \u201CWhen Every Message Matters: AI That Reads Hospital\\n\\nEmails Before It\'s Too Late\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n8. Mohith C. Yarlagadda, Sathwika C. Narukulla, Dr. G. G. Md. Nawaz Ali, \u201CMulti Model Identity Recognition System using Machine Learning\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n7. Hamed Abdul Baseer, Dr. G. G. Md. Nawaz Ali, \u201CMachine Learning based Compressive Strength Prediction in Pervious Concrete\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n6. Imran Fayyaz, Dr. G. G. Md. Nawaz Ali, Dr. Samantha S. Khairunnesa, \u201CAdvanced Feature Engineering and Machine Learning Techniques for Predicting Pre-owned Car Prices\u201D, Bradley Student Scholarship Expo. April 2025.\xa0\\n\\n\\n\\n2024:\\n\\n5. Madhu Mitha Velampalli, Ananth Kumar Voleti, Dr. G. G. Md. Nawaz Ali, \u201CA Realistic Traffic Simulation with Bradley Traffic and 5G New Radio for Enhanced V2X Communication\u201D, Bradley Student Scholarship Expo. April 2024.\xa0\\n\\n4. Misbahuddin Mohammed, Fawwaz Ali,  Dr. G. G. Md. Nawaz Ali, Dr. Saifuddin Mahmud  \u201CAn Enhanced Approach of Android Malware Detection\u201D, Bradley Student Scholarship Expo. April 2024.\xa0\\n\\n3. Naga L. S. Paruchuri, VijaySimha R. Vudumula, Dr. G. G. Md. Nawaz Ali, \u201CMachine Learning based Autonomous Vehicle Lane Change: A Study\u201D, Bradley Student Scholarship Expo. April 2024.\xa0Received Dean\u2019s Award.\\n\\n2. A. M. K. Mohammed, Dr. G. G. Md. Nawaz Ali, Dr. Samantha S. Khairunnesa, \u201CAn Interactive Platform for Understanding Contemporary Sentiment and Trends on Pressing Societal Issues\u201D, Bradley Student Scholarship Expo. April 2024.\xa0\\n\\n2023:\\n\\n1. Sameer Ahmed Sharief, Aziz Farhan Khan, Dr. G. G. Md. Nawaz Ali, Dr. Mohammad Nazmus Sadat, and Dr. Md. Suruz Miah  \u201CPerformance Analysis of 5G New Radio V2X Communication\u201D, Bradley Student Scholarship Expo. April 2023.\xa0\\n\\n\\n\\nPaper under review/In progress\\n\\n\\n\\n\\n\\nSaiyed Umer, Rahil Akhtar, Soumalya De, Ranjeet Kumar Rout, and G. G. Md. Nawaz Ali, \u201CA Streamlined Client-Server Architecture for Sustainable Sentiment Analysis System Using Textual Data\u201D, Under review, submitted in Peer-to-peer Networking and Applications, August, 2025\\n\\n\\n\\nHemalatha Polasani, Sameer Khan, G. G. Md. Nawaz Ali, \u201CA Review on LLM in Healthcare Applications: Prospect, Limitations and Challenges\u201D, in progress\\n\\n\\n\\nImran Fayyaz, G G Md Nawaz Ali*, Evaluating Large Language Models for Fake News Classification: A Comparative Study of Zero-Shot, Fine-Tuning, and Retrieval-Augmented Generation, Ready for submission in Informatics, Elsevier \\n\\n\\n\\nAmima Shifa, G G Md Nawaz Ali*, Dylan Henricks, Obesity, Online Influence, and Adolescent Health Perceptions: A Cross-Platform Sentiment Analysis Using Large Language Models, under review in IEEE System Journal.\\n\\n\\n\\nDileep Reddy Suram, G G Md Nawaz Ali*, Sentiment in Mind: Evaluating Zero-Shot and Fine-Tuned Open-sourced Large Language Models for Multi-class Mental Health Text Classification, under review in Journal of Data Science and Management, Elesevier.\\n\\n\\n\\n\\n\\n\\n\\nMaster\u2019s Student Thesis: \\n\\nM. A. Moid Khan, \u201CA Unified Sentiment Analysis Platform for Social Media: Framework\\n\\nDevelopment and Large Language Model Evaluation\u201D, graduated in May 2025. \\n\\n\\n\\nDirected Independent Study (DIS): \\n\\n M. A. Moid Khan, \u201CBradley AI Based Online Academic Course Planner\u201D, graduated in May 2025. \\n\\n\\n\\n\\n\\nInvited Talk\\n\\n\\n\\n10. \u201CConnected and Autonomous Vehicle (CAV): Road to the Future Intelligent Transportation System\u201D, invited talk, NIT, Rourkela, India, July 2024. \\n\\n\\n\\n9. \u201CFuture on Connected and Autonomous Vehicle\u201D, invited talk, NIT, Rourkela, India, September 2023. \\n\\n\\n\\n8. \u201CMobility for Tomorrow: Connected and Autonomous Vehicle Perspective\u201D, CS&IS department talk, Bradley University, USA, October 8, 2021\\n\\n \\n\\n7. \u201CMobility for Tomorrow: Connected and Autonomous Vehicle Perspective\u201D, IEEE ANTS conference\u201920, IIT Delhi, India, December 2020. \\n\\n\\n\\n6. \u201CA Large Scale Smart Mobility Test Bed (SMTB) for Intelligent Transportation System (ITS): Connected vehicle perspective\u201D, April 13, 2018, Center for Connected Multimodal Mobility (C2M2), Clemson University, USA. \\n\\n\\n\\n5. \u201CMobility for Tomorrow- A Large Scale Smart Mobility Test Bed (SMTB) for Intelligent Transportation System (ITS) in Singapore\u201D, October 9, 2016, South East University, Dhaka, Bangladesh.\\n\\n\\n\\n4. \u201CTowards an Efficient and Adaptive Safety Data Dissemination in V2X Communications\u201D, September 1, 2016, Khulna University of Engineering & Technology, University Day Technical Seminar, Khulna, Bangladesh.\\n\\n\\n\\n3. \u201CNetwork Coding based On-demand Wireless Data Broadcasting\u201D, February 22, 2016, Centre for Infocomm Technology (INFINITUS), School of EEE, NTU, Singapore. \\n\\n\\n\\n2. \u201CDesign and Performance Evaluation of On-demand Scheduling Algorithms in Real-time Wireless Broadcasting Environment\u201D, September 1, 2014, Khulna University of Engineering & Technology, University Day Technical Seminar, Khulna, Bangladesh.\\n\\n\\n\\n1. \u201COn-demand Scheduling Algorithms in Real-time Wireless Broadcasting\u201D, May 9, 2014, Faculty of EEE, Khulna University of Engineering & Technology, Khulna, Bangladesh.\\n\\n\\n\\n\\n\\nScholarships/Awards\\n\\n2024 Caterpillar Faculty Achievement Award for Scholarship.\\n\\nCDER Summer Training Workshop 2024 awarded by UMASS Amherst from the project of NSF/IEEE-TCPP Curriculum Initiative for Teaching, National.\\n\\nNSF IUSE Summit 2024 participation award awarded by AAAS for Scholarship/Research.\\n\\nBradley\'s CTEL SoTL award awarded by Bradley\'s CTEL (Center for Teaching and Learning) for Teaching\\n\\n2024 Student Scholarship Expo Award awarded by Bradly University for Scholarship/Research.\\n\\nInnovation for Health (IFH) award 2023 awarded by OSF Healthcare and BU for Scholarship/Research. \\n\\nStudent Engagement Award (SEA) 2023 awarded by Bradley\u2019s OSP advisory board. \\n\\nCaterpillar Fellowship Award 2022 awarded by Bradley\u2019s Caterpillar Inc. endowment fund. \\n\\nFaculty Scholarship Award (FSA) 2022 awarded by Bradley\u2019s OSP advisory board. \\n\\nCaterpillar Fellowship Award 2022 awarded by Bradley\u2019s Caterpillar Inc. endowment fund. \\n\\nCenter for Teaching Excellence and Learning (CTEL) Paired Courses Initiatives award 2022 awarded by Bradley\'s CTEL. \\n\\nOpen Education Resource Grant (OER) 2021 awarded by West Virginia Higher Education Policy Commission (WVHEPC).\\n\\nBest Paper Award, In the proceedings of Proceedings of the ASME 2019 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC/CIE\u20192019), August 18-21, 2019, Anaheim, CA, USA. \\n\\nBest Poster Award, University Day Poster Exhibition, Khulna University of Engineering & Technology, Bangladesh, September 1, 2014.\\n\\nBest Paper Award, In the 9th International Multi-Conference on Computing in the Global Information Technology (IARIA ICCGI\u201914), Seville, Spain, June 22-26, 2014. \\n\\nOutstanding Academic Performance Award for research degree students at City University of Hong Kong in the academic year 2012-13. \\n\\nStudent Grant Award of the Australasian Telecommunications Networks and Applications Conference (ATNAC\u201911), November, 2011. \\n\\nePortfolio Design Award of City University of Hong Kong ePortfolio Design Competition, April, 2010. \\n\\nPostgraduate Student Scholarship from City University of Hong Kong since September 1, 2009 to August 31, 2013.\\n\\nUniversity Merit scholarship from Khulna University of Engineering & Technology, Bangladesh for the duration of Feb 2002 \u2013 Feb 2006.\\n\\nEducation Board Scholarship from Dhaka College, Dhaka, Bangladesh for the duration of Aug 1999 \u2013 May 2001.\\n\\nGovernment Junior Scholarship from the Ministry of Education of Bangladesh Government for the duration of Jan 1994 \u2013 April 1999.\\n\\nAdministrative Experiences\\n\\n\\n\\nChair of curriculum committee of Department of CS&IS of Bradley University, USA, Fall 2023- till date.\\n\\nMember and chair of faculty search committee of Department of CS&IS of Bradley University, USA 2022- Fall 2023.\\n\\nMember of undergraduate syllabus committee member of Department of Data and Computer Science of University Charleston, WV, USA 2019-21.\\n\\nDeputy Director of Students\u2019 Welfare of Khulna university of Engineering & Technology, Khulna, Bangladesh, May 2014 to October 2015. \\n\\nMember of undergraduate and postgraduate syllabus committee member of Department of Computer Science and Engineering of Khulna University of Engineering & Technology, Bangladesh, 2014-15.\\n\\nTeacher-in-charge of undergraduate exam committee of Computer Science and Engineering of Khulna University of Engineering & Technology, Bangladesh, 2014-15.\\n\\n \\n\\nMemberships & Academic Contributions\\n\\nMember of IEEE, The Institute of Electrical and Electronics Engineers\\n\\nMember of IEB, The Institute of Engineers Bangladesh \\n\\nEditorial board member of Ubiquitous Computing and Communication Journal\\n\\nMember of the organizing committee of 11th International Conference of Computer and Information Technology (ICCIT\u201909), Khulna, Bangladesh\\n\\nCoach of  the university team of ACM International Collegiate Programming Contest, Dhaka site, Bangladesh, December 2007\\n\\nLeading Guest Editor of the journal special issues: \\n\\n\\n\\nComputers, Materials and Continue Special issue: Sentiment Analysis for Social Media Data: Lexicon-Based and Large Language Model Approaches\\n\\nElsevier Special Issue:\xa0VSI:SUSCOM_Sustainable 5G\xa0in\xa0Sustainable Computing: Informatics and Systems\xa0\\n\\nSensors \\n\\nWireless Sensor Network and IoT Technologies for Smart Cities\\n\\nMachine Learning for Connected and Autonomous Vehicle for Mixed Traffic Environment\\n\\nSustainability\\n\\nVehicular Networks and Sustainability\\n\\nVehicles \\n\\nV2X (vehicle-to-everything) Communication\\n\\n \\n\\nReviewers of: \\n\\nNSF STEM EDU panel reviewer October 2024\\n\\nIEEE Transactions on Intelligent Transportation Systems\\n\\nIEEE Transactions on Vehicular Technology\\n\\nIEEE Transactions on Communications\\n\\nIEEE Access\\n\\nIEEE Sensors\\n\\nIEEE IoT\\n\\nComputers & Electrical Engineering, Elsevier\\n\\nFuture Generation Computer Systems, Elsevier\\n\\nEngineering Applications of Artificial Intelligence, Elsevier\\n\\nWINET, Wireless Networks Journal, Springer\\n\\nJournal of Supercomputing, Springer\\n\\nMDPI Sensors, Future Internet\\n\\nMDPI Journal of Sensor and Actuator Networks\\n\\nSecurity and Communication Networks, John Wiley & Sons Ltd \\n\\nEURASIP Journal on Wireless Communications and Networking, Springer\\n\\nKSII Transactions on Internet and Information Systems\\n\\nVTC, Vehicular Technology Conference\\n\\nJournal of Computer Communication & Collaboration(CCC)\\n\\nIJCNC, International Journal of Computer Networks & Communication\\n\\nEditorial board member of Ubiquitous Computing and Communication Journal\\n\\n==End==\\n\\n"}');
 
-},{}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{}],"lAEGO":[function() {},{}],"17jNK":[function() {},{}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -20056,7 +20176,1107 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"17jNK":[function() {},{}],"lAEGO":[function() {},{}],"61z4w":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"bIFRc":[function() {},{}],"2hgHB":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$7e5d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$7e5d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7e5d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _portfolioJson = require("../dbs/portfolio.json");
+var _portfolioJsonDefault = parcelHelpers.interopDefault(_portfolioJson);
+var _researchSkills = require("./researchSkills");
+var _researchSkillsDefault = parcelHelpers.interopDefault(_researchSkills);
+var _profileCss = require("../assets/profile.css");
+function Profile() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Profile"
+            }, void 0, false, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "profile-bio-card",
+                children: (0, _portfolioJsonDefault.default).profile.Bio.map((paragraph, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "bio",
+                        children: paragraph
+                    }, index, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _researchSkillsDefault.default), {}, void 0, false, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = Profile;
+exports.default = Profile;
+var _c;
+$RefreshReg$(_c, "Profile");
+
+  $parcel$ReactRefreshHelpers$7e5d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../dbs/portfolio.json":"aCdcl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./researchSkills":"i9iIA","../assets/profile.css":"bIFRc"}],"i9iIA":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$60ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$60ba.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$60ba.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _researchSkillsCss = require("../assets/researchSkills.css");
+function ResearchSkills() {
+    const researchInterests = [
+        "Data and Sentiment Analytics",
+        "Large Language Models (LLMs)",
+        "Network Coding",
+        "On-demand Scheduling",
+        "Data Broadcasting",
+        "Real-time Scheduling",
+        "Vehicular Networks (V2X Communication)",
+        "Vehicular Cyber Physical Systems (VCPS)",
+        "Software-defined Vehicular Networks (SDN-VANETs)"
+    ];
+    const programmingSkills = [
+        "C/C++",
+        "Python (NumPy, Pandas, Matplotlib, Scikit-learn, Keras, TensorFlow)",
+        "Java",
+        "PHP",
+        "MySQL",
+        "HTML, CSS, JavaScript",
+        "React, NodeJS",
+        "MATLAB",
+        "Network Simulator (NS-3)",
+        "C Simulator (CSIM)",
+        "SUMO (Simulation of Urban Mobility)",
+        "PTV VISSIM",
+        "Linux Kernel",
+        "ITS Framework",
+        "Cohda MK5 Box",
+        "DriverModel.dll",
+        "Shell Programming",
+        "Cisco Packet Tracer",
+        "LLM Transformer Architecture"
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "research-skills",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Research Interests & Skills"
+            }, void 0, false, {
+                fileName: "src/components/researchSkills.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "section-block",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Research Interests"
+                    }, void 0, false, {
+                        fileName: "src/components/researchSkills.js",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "tag-container",
+                        children: researchInterests.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "tag",
+                                children: item
+                            }, index, false, {
+                                fileName: "src/components/researchSkills.js",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "src/components/researchSkills.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/researchSkills.js",
+                lineNumber: 44,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "section-block",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Simulation / Programming Experience"
+                    }, void 0, false, {
+                        fileName: "src/components/researchSkills.js",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "tag-container",
+                        children: programmingSkills.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "tag skill",
+                                children: item
+                            }, index, false, {
+                                fileName: "src/components/researchSkills.js",
+                                lineNumber: 60,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "src/components/researchSkills.js",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/researchSkills.js",
+                lineNumber: 56,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/researchSkills.js",
+        lineNumber: 40,
+        columnNumber: 5
+    }, this);
+}
+_c = ResearchSkills;
+exports.default = ResearchSkills;
+var _c;
+$RefreshReg$(_c, "ResearchSkills");
+
+  $parcel$ReactRefreshHelpers$60ba.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/researchSkills.css":"kMv2o","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"kMv2o":[function() {},{}],"bIFRc":[function() {},{}],"gPifD":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e1fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e1fd.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e1fd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _publicationsJson = require("../dbs/publications.json");
+var _publicationsJsonDefault = parcelHelpers.interopDefault(_publicationsJson);
+function Publications() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Publications"
+            }, void 0, false, {
+                fileName: "src/components/publications.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            Object.keys((0, _publicationsJsonDefault.default)).sort((a, b)=>b - a) // latest year first
+            .map((year)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "year",
+                            children: year
+                        }, void 0, false, {
+                            fileName: "src/components/publications.js",
+                            lineNumber: 12,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: (0, _publicationsJsonDefault.default)[year].map((pub, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: pub.title
+                                        }, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 17,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 17,
+                                            columnNumber: 47
+                                        }, this),
+                                        pub.authors,
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 19,
+                                            columnNumber: 33
+                                        }, this),
+                                        pub.journal && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                            children: pub.journal
+                                        }, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 21,
+                                            columnNumber: 35
+                                        }, this),
+                                        " ",
+                                        pub.booktitle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                            children: pub.booktitle
+                                        }, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 22,
+                                            columnNumber: 37
+                                        }, this),
+                                        " \xa0 \xa0",
+                                        pub.urlSource ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: pub.urlSource,
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "View Paper"
+                                        }, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 26,
+                                            columnNumber: 21
+                                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: pub.url,
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "Search"
+                                        }, void 0, false, {
+                                            fileName: "src/components/publications.js",
+                                            lineNumber: 30,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, index, true, {
+                                    fileName: "src/components/publications.js",
+                                    lineNumber: 16,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/components/publications.js",
+                            lineNumber: 14,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, year, true, {
+                    fileName: "src/components/publications.js",
+                    lineNumber: 11,
+                    columnNumber: 11
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/components/publications.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = Publications;
+exports.default = Publications;
+var _c;
+$RefreshReg$(_c, "Publications");
+
+  $parcel$ReactRefreshHelpers$e1fd.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../dbs/publications.json":"ecTq2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ecTq2":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('{"2006":[{"entryType":"article","citationKey":"aliefficient","title":"AN EFFICIENT RANK BASED ADAPTIVE ALGORITHM FOR DESIGNING WEB CRAWLERS USING SIMILARITY CRITERION","authors":"Ali, GG Md Nawaz and Eftakhar, SM Ashik and Waheduzzaman, Md","url":"https://scholar.google.com/scholar?q=AN+EFFICIENT+RANK+BASED+ADAPTIVE+ALGORITHM+FOR+DESIGNING+WEB+CRAWLERS+USING+SIMILARITY+CRITERION","urlSource":"https://www.researchgate.net/publication/299834624_An_Efficient_Rank_Based_Adaptive_Algorithm_for_Designing_Web_Crawlers_Using_Similarity_Criterion"}],"2009":[{"entryType":"inproceedings","citationKey":"ali2009fair","title":"Fair slots assignment mechanisms of IEEE 802.11 networks for multiple access points","authors":"Ali, GG Md Nawaz and Shahin, Rashma and Mowna, Nushrika","booktitle":"2009 12th International Conference on Computers and Information Technology","pages":"94--99","year":"2009","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Fair+slots+assignment+mechanisms+of+IEEE+802.11+networks+for+multiple+access+points","urlSource":"https://ieeexplore.ieee.org/abstract/document/5407158"},{"entryType":"inproceedings","citationKey":"ali2009performance","title":"Performance analysis of different routing algorithms for load distribution in multipath packet switched network","authors":"Ali, GG Md Nawaz and Chakraborty, Rajib and Alam, Md Shihabul","booktitle":"2009 Ninth IEEE International Conference on Computer and Information Technology","volume":"2","pages":"325--330","year":"2009","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+different+routing+algorithms+for+load+distribution+in+multipath+packet+switched+network","urlSource":"https://ieeexplore.ieee.org/abstract/document/5329070"}],"2010":[{"entryType":"article","citationKey":"ali2010efficient","title":"An Efficient Approach for Generalized Load Balancing in Multipath Packet Switched Networks","authors":"Ali, GG and Chakraborty, Rajib and Alam, Md Shihabul and Chan, Edward","journal":"arXiv preprint arXiv:1003.3312","year":"2010","url":"https://scholar.google.com/scholar?q=An+Efficient+Approach+for+Generalized+Load+Balancing+in+Multipath+Packet+Switched+Networks","urlSource":"https://arxiv.org/abs/1003.3312"}],"2011":[{"entryType":"inproceedings","citationKey":"ali2011co","title":"Co-operative data access in multiple road side units (rsus)-based vehicular ad hoc networks (vanets)","authors":"Ali, GG Md Nawaz and Chan, Edward","booktitle":"2011 Australasian Telecommunication Networks and Applications Conference (ATNAC)","pages":"1--6","year":"2011","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Co-operative+data+access+in+multiple+road+side+units+%28rsus%29-based+vehicular+ad+hoc+networks+%28vanets%29","urlSource":"https://ieeexplore.ieee.org/abstract/document/6096651"},{"entryType":"article","citationKey":"ali2011co","title":"Co-operative load balancing in vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward","journal":"International Journal of Wireless Networks and Broadband Technologies (IJWNBT)","volume":"1","number":"4","pages":"1--21","year":"2011","publisher":"IGI Global Scientific Publishing","url":"https://scholar.google.com/scholar?q=Co-operative+load+balancing+in+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.igi-global.com/article/content/64624"},{"entryType":"inproceedings","citationKey":"ali2011two","title":"Two-step joint scheduling scheme for road side units (RSUs)-based vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","booktitle":"International Conference on Database Systems for Advanced Applications","pages":"453--464","year":"2011","organization":"Springer Berlin Heidelberg Berlin, Heidelberg","url":"https://scholar.google.com/scholar?q=Two-step+joint+scheduling+scheme+for+road+side+units+%28RSUs%29-based+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://link.springer.com/chapter/10.1007/978-3-642-20244-5_43"}],"2013":[{"entryType":"inproceedings","citationKey":"ali2013scheduling","title":"On Scheduling Real-Time Multi-item Queries in Multi-RSU Vehicular Ad Hoc Networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","booktitle":"2013 27th International Conference on Advanced Information Networking and Applications Workshops","pages":"7--12","year":"2013","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+Scheduling+Real-Time+Multi-item+Queries+in+Multi-RSU+Vehicular+Ad+Hoc+Networks+%28VANETs%29","urlSource":"https://ieeexplore.ieee.org/abstract/document/6550365"},{"entryType":"article","citationKey":"ali2013supporting","title":"Supporting real-time multiple data items query in multi-RSU vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","journal":"Journal of Systems and Software","volume":"86","number":"8","pages":"2127--2142","year":"2013","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Supporting+real-time+multiple+data+items+query+in+multi-RSU+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.sciencedirect.com/science/article/pii/S0164121213000769"},{"entryType":"article","citationKey":"chen2013efficient","title":"Efficient processing of requests with network coding in on-demand data broadcast environments","authors":"Chen, Jun and Lee, Victor CS and Liu, Kai and Ali, GG Md Nawaz and Chan, Edward","journal":"Information Sciences","volume":"232","pages":"27--43","year":"2013","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Efficient+processing+of+requests+with+network+coding+in+on-demand+data+broadcast+environments","urlSource":"https://dl.acm.org/doi/10.1016/j.ins.2012.12.044"}],"2014":[{"entryType":"article","citationKey":"ali2014scheduling","title":"On scheduling data access with cooperative load balancing in vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","journal":"The Journal of Supercomputing","volume":"67","number":"2","pages":"438--468","year":"2014","publisher":"Springer US Boston","url":"https://scholar.google.com/scholar?q=On+scheduling+data+access+with+cooperative+load+balancing+in+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2014efficient","title":"An efficient cooperative load balancing approach in rsu-based vehicular ad hoc networks (vanets)","authors":"Ali, GG Md Nawaz and Mollah, Md Abdus Salim and Samantha, Syeda Khairunnesa and Mahmud, Saifuddin","booktitle":"2014 IEEE International Conference on Control System, Computing and Engineering (ICCSCE 2014)","pages":"52--57","year":"2014","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+efficient+cooperative+load+balancing+approach+in+rsu-based+vehicular+ad+hoc+networks+%28vanets%29","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2014performance","title":"Performance improvement in applying network coding to on-demand scheduling algorithms for broadcasts in wireless networks","authors":"Ali, G and Meng, Yuxuan and Lee, V and Liu, Kai and Chan, Edward","booktitle":"International Multi-Conference on Computing in the Global Information Technology (ICCGI)","year":"2014","url":"https://scholar.google.com/scholar?q=Performance+improvement+in+applying+network+coding+to+on-demand+scheduling+algorithms+for+broadcasts+in+wireless+networks","urlSource":"https://d1wqtxts1xzle7.cloudfront.net/84435802/download_full-libre.pdf?1650337841=&response-content-disposition=inline%3B+filename%3DICCGI_2014_The_Ninth_International_Multi.pdf&Expires=1777837271&Signature=cHqFNFwWVFurH6DrLSBDidujB3VX8Xm6Ka37s8ZmiR-FYkotCdZuJA6FIJ1xsEQJbKO8vh5WnFjZqbk~K~g8aKil3wJiatUF0281bsn262Kgv6rYE0F2Q0ewmXTRuMb-1cjmJu7hd~Xduckh3J8RpVlZ9rLHf2lSyXhYs~bf7nQEjt1YzkwM3riTX4fMF~zNabIealStvVGrcflnjBSu~VkfoXRMZfuPiAIFzieabRzYPRu-jTP7nh-jcwADsQuox1INzo6Pl7bx~WpTixAyEy3oONC5sWFK-3hucID6OPGJWZHPqnv01jSOY62S3QTPM1b1dPC828-7B3tNPsAiww__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=148"},{"entryType":"article","citationKey":"ali2014admission","title":"Admission control-based multichannel data broadcasting for real-time multi-item queries","authors":"Ali, GG Md Nawaz and Lee, Victor CS and Chan, Edward and Li, Minming and Liu, Kai and Lv, Jingsong and Chen, Jun","journal":"IEEE Transactions on Broadcasting","volume":"60","number":"4","pages":"589--605","year":"2014","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Admission+control-based+multichannel+data+broadcasting+for+real-time+multi-item+queries","urlSource":"https://doi.org/10.1109/TBC.2014.2364533"}],"2016":[{"entryType":"inproceedings","citationKey":"zhao2016energy","title":"An energy-efficient and self-regioning based RPL for low-power and lossy networks","authors":"Zhao, Ming and Ali, GG Md Nawaz and Lu, Rongxing and Chong, Peter Han Joo","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+energy-efficient+and+self-regioning+based+RPL+for+low-power+and+lossy+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"moyeen2016automatic","title":"An automatic layout faults detection technique in responsive web pages considering JavaScript defined dynamic layouts","authors":"Moyeen, MA and Ali, GG Md Nawaz and Chong, Peter Han Joo and Islam, Nazmul","booktitle":"2016 3rd International Conference on Electrical Engineering and Information Communication Technology (ICEEICT)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+automatic+layout+faults+detection+technique+in+responsive+web+pages+considering+JavaScript+defined+dynamic+layouts","urlSource":null},{"entryType":"inproceedings","citationKey":"shaikh2016parallel","title":"Parallel matricization for nD array operations","authors":"Shaikh, Md Abu Hanif and Ali, GG Md Nawaz and Chong, Peter Han Joo and Guan, Yong Liang","booktitle":"2016 IEEE Region 10 Conference (TENCON)","pages":"2432--2435","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Parallel+matricization+for+nD+array+operations","urlSource":null},{"entryType":"inproceedings","citationKey":"sudheera2016delay","title":"Delay efficient software defined networking based architecture for vehicular networks","authors":"Sudheera, KL Kushan and Ma, Maode and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communication Systems (ICCS)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Delay+efficient+software+defined+networking+based+architecture+for+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"ali2016striking","title":"On striking the balance between the fairness of service and throughput in roadside units based vehicular ad hoc networks","authors":"Ali, GG Md Nawaz and Mollah, Md Abdus Salim and Samantha, Syeda Khairunnesa and Chong, Peter Han Joo and Guan, Yong Liang","journal":"International Journal of Vehicle Autonomous Systems","volume":"13","number":"2","pages":"168--187","year":"2016","publisher":"Inderscience Publishers (IEL)","url":"https://scholar.google.com/scholar?q=On+striking+the+balance+between+the+fairness+of+service+and+throughput+in+roadside+units+based+vehicular+ad+hoc+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"zhao2016cloud","title":"A cloud-based network architecture for big data services","authors":"Zhao, Ming and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 IEEE 14th Intl Conf on Dependable, Autonomic and Secure Computing, 14th Intl Conf on Pervasive Intelligence and Computing, 2nd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress (DASC/PiCom/DataCom/CyberSciTech)","pages":"654--659","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=A+cloud-based+network+architecture+for+big+data+services","urlSource":null},{"entryType":"inproceedings","citationKey":"shaikh2016efficient","title":"Efficient matricization of nD array with CUDA and its evaluation","authors":"Shaikh, Md Abu Hanif and Hasan, KM Azharul and Ali, GG Md Nawaz and Chafii, Marwa and Chong, Peter Han Joo","booktitle":"2016 IEEE Intl Conference on Computational Science and Engineering (CSE) and IEEE Intl Conference on Embedded and Ubiquitous Computing (EUC) and 15th Intl Symposium on Distributed Computing and Applications for Business Engineering (DCABES)","pages":"246--252","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Efficient+matricization+of+nD+array+with+CUDA+and+its+evaluation","urlSource":null},{"entryType":"inproceedings","citationKey":"aung2016information","title":"Information epidemics control for data delivery in opportunistic networks","authors":"Aung, Cherry Ye and Ali, GG Md Nawaz and Zhao, Ming and Cai, Ruojun and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communications (ICC)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Information+epidemics+control+for+data+delivery+in+opportunistic+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2016efficient","title":"On efficient data dissemination using network coding in multi-rsu vehicular ad hoc networks","authors":"Ali, GG Md Nawaz and Rahman, Md Ashiqur and Chong, Peter Han Joo and Samantha, Syeda Khairunnesa","booktitle":"2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+efficient+data+dissemination+using+network+coding+in+multi-rsu+vehicular+ad+hoc+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"rahman2016accessing","title":"On Accessing Heterogeneous Data Items using Network Coding in Wireless Broadcast","authors":"Rahman, Md Ashiqur and Ali, GG Md Nawaz and Gao, Yumeng and Samantha, Syeda K and Chong, Peter HJ","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+Accessing+Heterogeneous+Data+Items+using+Network+Coding+in+Wireless+Broadcast","urlSource":null},{"entryType":"inproceedings","citationKey":"islam2016expedite","title":"An expedite group key establishment protocol for Flying Ad-Hoc Network (FANET)","authors":"Islam, Nazmul and Hossain, Md Kowsar and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 5th International Conference on Informatics, Electronics and Vision (ICIEV)","pages":"312--315","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+expedite+group+key+establishment+protocol+for+Flying+Ad-Hoc+Network+%28FANET%29","urlSource":null},{"entryType":"inproceedings","citationKey":"moyeen2016wireless","title":"A wireless vehicular traffic service management scheme","authors":"Moyeen, MA and Ali, GG Md Nawaz and Chong, Peter Han Joo and Islam, Nazmul","booktitle":"2016 3rd International Conference on Electrical Engineering and Information Communication Technology (ICEEICT)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=A+wireless+vehicular+traffic+service+management+scheme","urlSource":null},{"entryType":"inproceedings","citationKey":"gao2016network","title":"Network coding based BSM broadcasting at road intersection in V2V communication","authors":"Gao, Yumeng and Ali, GG Md Nawaz and Chong, Peter Han Joo and Guan, Yong Liang","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Network+coding+based+BSM+broadcasting+at+road+intersection+in+V2V+communication","urlSource":null},{"entryType":"article","citationKey":"aung2016cluster","title":"Cluster-based cooperative data forwarding with multi-radio multi-channel for multi-flow wireless networks","authors":"Aung, Cherry Ye and Ali, GG Md Nawaz and Chong, Peter Han Joo","year":"2016","url":"https://scholar.google.com/scholar?q=Cluster-based+cooperative+data+forwarding+with+multi-radio+multi-channel+for+multi-flow+wireless+networks","urlSource":null},{"entryType":"article","citationKey":"ali2016efficient","title":"Efficient data dissemination in cooperative multi-RSU vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chong, Peter Han Joo and Samantha, Syeda Khairunnesa and Chan, Edward","journal":"Journal of Systems and Software","volume":"117","pages":"508--527","year":"2016","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Efficient+data+dissemination+in+cooperative+multi-RSU+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.sciencedirect.com/science/article/abs/pii/S0164121216300218"},{"entryType":"inproceedings","citationKey":"cai2016simulation","title":"Simulation study of routing attacks under network coding environment","authors":"Cai, Ruo Jun and Ali, GG Md Nawaz and Aung, Cherry Ye and Zhao, Ming and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communications (ICC)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Simulation+study+of+routing+attacks+under+network+coding+environment","urlSource":null}],"2017":[{"entryType":"article","citationKey":"morimoto2017offline","title":"An offline electronic payment system based on an untraceable blind signature scheme","authors":"Morimoto, Yasuhiko and Ali, GG Md Nawaz and Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Chong, Peter Han Joo","year":"2017","url":"https://scholar.google.com/scholar?q=An+offline+electronic+payment+system+based+on+an+untraceable+blind+signature+scheme","urlSource":null},{"entryType":"article","citationKey":"kutubi2017offline","title":"An offline electronic payment system based on an untraceable blind signature scheme","authors":"Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Ali, GG and Chong, Peter Han Joo and Morimoto, Yasuhiko","journal":"KSII Transactions on Internet and Information Systems (TIIS)","volume":"11","number":"5","pages":"2628--2645","year":"2017","publisher":"Korean Society for Internet Information","url":"https://scholar.google.com/scholar?q=An+offline+electronic+payment+system+based+on+an+untraceable+blind+signature+scheme","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2017multiple","title":"Multiple UPFCs mathematical model enhancing multi-machine power system control","authors":"Ali, GM and Al-Mawsawi, SA","booktitle":"2017 10th Jordanian International Electrical and Electronics Engineering Conference (JIEEEC)","pages":"1--4","year":"2017","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Multiple+UPFCs+mathematical+model+enhancing+multi-machine+power+system+control","urlSource":null}],"2018":[{"entryType":"article","citationKey":"ali2018efficient","title":"Efficient real-time coding-assisted heterogeneous data access in vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, Md and Rahman, Md Ashiqur and Samantha, Syeda Khairunnesa and Chong, Peter Han Joo and Guan, Yong Liang","journal":"IEEE Internet of Things Journal","volume":"5","number":"5","pages":"3499--3512","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Efficient+real-time+coding-assisted+heterogeneous+data+access+in+vehicular+networks","urlSource":null},{"entryType":"misc","citationKey":"majeed2018trauma","title":"","authors":"Majeed, M Azam and Gill, Peter and Etokakpan, Mboutidem and MacGillivray, Sherry and Choudhary, Deepak and Rodrigue, Nathalie and Haran, Shankar and Lockwood, Joel and Fuselli, Pamela and Akaraborworn, Osaree and others","year":"2018","publisher":"Canadian Journal of Surgery","url":"https://scholar.google.com/scholar?q=Majeed%2C+M+Azam+and+Gill%2C+Peter+and+Etokakpan%2C+Mboutidem+and+MacGillivray%2C+Sherry+and+Choudhary%2C+Deepak+and+Rodrigue%2C+Nathalie+and+Haran%2C+Shankar+and+Lockwood%2C+Joel+and+Fuselli%2C+Pamela+and+Akaraborworn%2C+Osaree+and+others+2018","urlSource":null},{"entryType":"article","citationKey":"alam2018untraceable","title":"An Untraceable Voting Scheme Based on Pairs of Signatures.","authors":"Alam, Kazi Md Rokibul and Maruf, Adnan and Rakib, Md Rezaur Rahman and Ali, GG Md Nawaz and Chong, Peter Han Joo and Morimoto, Yasuhiko","journal":"Int. J. Netw. Secur.","volume":"20","number":"4","pages":"774--787","year":"2018","url":"https://scholar.google.com/scholar?q=An+Untraceable+Voting+Scheme+Based+on+Pairs+of+Signatures.","urlSource":null},{"entryType":"article","citationKey":"noor2018practical","title":"Practical relay code design based on protograph codes","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Guan, Yong Liang","journal":"IET Communications","volume":"12","number":"3","pages":"334--339","year":"2018","publisher":"Wiley Online Library","url":"https://scholar.google.com/scholar?q=Practical+relay+code+design+based+on+protograph+codes","urlSource":null},{"entryType":"article","citationKey":"ali2018analysis","title":"Analysis and improvement of reliability through coding for safety message broadcasting in urban vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, Md and Chong, Peter Han Joo and Guan, Yong Liang","journal":"IEEE Transactions on Vehicular Technology","volume":"67","number":"8","pages":"6774--6787","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Analysis+and+improvement+of+reliability+through+coding+for+safety+message+broadcasting+in+urban+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"noor2018performance","title":"Performance analysis of IEEE 802.11 p safety message broadcast with and without relaying at road intersection","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Nguyen, Hieu and Guan, Yong Liang","journal":"IEEE Access","volume":"6","pages":"23786--23799","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+IEEE+802.11+p+safety+message+broadcast+with+and+without+relaying+at+road+intersection","urlSource":null},{"entryType":"article","citationKey":"noor2018delay","title":"Delay-universal channel coding with feedback","authors":"Noor-A-Rahim, Md and Khyam, Mohammad Omar and Guan, Yong Liang and Ali, GG Md Nawaz and Nguyen, Khoa D and Lechner, Gottfried","journal":"IEEE Access","volume":"6","pages":"37918--37931","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Delay-universal+channel+coding+with+feedback","urlSource":null}],"2019":[{"entryType":"article","citationKey":"ali2019towards","title":"Towards efficient and scalable implementation for coding-based on-demand data broadcast","authors":"Ali, GG Md Nawaz and Liu, Kai and Lee, Victor CS and Chong, Peter HJ and Guan, Yong Liang and Chen, Jun","journal":"Computer Networks","volume":"154","pages":"88--104","year":"2019","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Towards+efficient+and+scalable+implementation+for+coding-based+on-demand+data+broadcast","urlSource":"https://www.sciencedirect.com/science/article/pii/S138912861930221X"},{"entryType":"article","citationKey":"mondal2019multi","title":"A Multi-Stage Encryption Technique to Enhance the Secrecy of Image.","authors":"Mondal, Arindom and Alam, Kazi Md Rokibul and Ali, GG and Chong, Peter Han Joo and others","journal":"KSII Transactions on Internet & Information Systems","volume":"13","number":"5","year":"2019","url":"https://scholar.google.com/scholar?q=A+Multi-Stage+Encryption+Technique+to+Enhance+the+Secrecy+of+Image.","urlSource":null},{"entryType":"inproceedings","citationKey":"kaur2019network","title":"Network driven performance analysis in connected vehicular networks","authors":"Kaur, Manveen and Ali, GG Md Nawaz and Rayamajhi, Anjan and Ayalew, Beshah and Martin, Jim","booktitle":"2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Network+driven+performance+analysis+in+connected+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"noor2019reliable","title":"Reliable state estimation of an unmanned aerial vehicle over a distributed wireless IoT network","authors":"Noor-A-Rahim, MD and Khyam, Mohammad Omar and Ali, GG Md Nawaz and Liu, Zilong and Pesch, Dirk and Chong, Peter HJ","journal":"IEEE Transactions on Reliability","volume":"68","number":"3","pages":"1061--1069","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Reliable+state+estimation+of+an+unmanned+aerial+vehicle+over+a+distributed+wireless+IoT+network","urlSource":"https://doi.org/10.1109/TR.2019.2891994"},{"entryType":"article","citationKey":"zhang2019novel","title":"A novel hybrid mac protocol for basic safety message broadcasting in vehicular networks","authors":"Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Seet, Boon-Chong and Kumar, Arun","journal":"IEEE Transactions on Intelligent Transportation Systems","volume":"21","number":"10","pages":"4269--4282","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=A+novel+hybrid+mac+protocol+for+basic+safety+message+broadcasting+in+vehicular+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"yoon2019cooperative","title":"Cooperative perception in connected vehicle traffic under field-of-view and participation variations","authors":"Yoon, DoHyun Daniel and Ali, GG Md Nawaz and Ayalew, Beshah","booktitle":"2019 IEEE 2nd Connected and Automated Vehicles Symposium (CAVS)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Cooperative+perception+in+connected+vehicle+traffic+under+field-of-view+and+participation+variations","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2019analysis","title":"Analysis of reliabilities under different path loss models in urban/sub-urban vehicular networks","authors":"Ali, GG Md Nawaz and Ayalew, Beshah and Vahidi, Ardalan and Noor-A-Rahim, Md","booktitle":"2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Analysis+of+reliabilities+under+different+path+loss+models+in+urban%2Fsub-urban+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"ali2019cooperative","title":"Cooperative cache transfer-based on-demand network coded broadcast in vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, MD and Rahman, Md Ashiqur and Ayalew, Beshah and Chong, Peter HJ and Guan, Yong Liang","journal":"ACM Transactions on Embedded Computing Systems (TECS)","volume":"18","number":"4","pages":"1--20","year":"2019","publisher":"ACM New York, NY, USA","url":"https://scholar.google.com/scholar?q=Cooperative+cache+transfer-based+on-demand+network+coded+broadcast+in+vehicular+networks","urlSource":"https://dl.acm.org/doi/abs/10.1145/3329865"},{"entryType":"inproceedings","citationKey":"yoon2019data","title":"Data association and fusion framework for decentralized multi-vehicle cooperative perception","authors":"Yoon, DoHyun Daniel and Ali, GG Md Nawaz and Ayalew, Beshah","booktitle":"International Design Engineering Technical Conferences and Computers and Information in Engineering Conference","volume":"59216","pages":"V003T01A019","year":"2019","organization":"American Society of Mechanical Engineers","url":"https://scholar.google.com/scholar?q=Data+association+and+fusion+framework+for+decentralized+multi-vehicle+cooperative+perception","urlSource":null},{"entryType":"article","citationKey":"ali2019performance","title":"Performance Analysis of On-Demand Scheduling with and without Network Coding in Wireless Broadcast","authors":"Ali, GG Md Nawaz and Lee, Victor CS and Meng, Yuxuan and Chong, Peter HJ and Chen, Jun","journal":"Future internet","volume":"11","number":"12","pages":"248","year":"2019","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Performance+Analysis+of+On-Demand+Scheduling+with+and+without+Network+Coding+in+Wireless+Broadcast","urlSource":null},{"entryType":"article","citationKey":"noor2019broadcast","title":"Broadcast performance analysis and improvements of the LTE-V2V autonomous mode at road intersection","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk","journal":"IEEE Transactions on Vehicular Technology","volume":"68","number":"10","pages":"9359--9369","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Broadcast+performance+analysis+and+improvements+of+the+LTE-V2V+autonomous+mode+at+road+intersection","urlSource":"https://doi.org/10.1109/TVT.2019.2936799"},{"entryType":"article","citationKey":"ali2019broadcast","title":"Broadcast performance analysis and improvements of the LTE-V2V autonomous mode at road intersection","authors":"Ali, GG and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk and others","year":"2019","publisher":"Institute of Electrical and Electronics Engineers (IEEE)","url":"https://scholar.google.com/scholar?q=Broadcast+performance+analysis+and+improvements+of+the+LTE-V2V+autonomous+mode+at+road+intersection","urlSource":"https://doi.org/10.1109/TVT.2019.2936799"}],"2020":[{"entryType":"article","citationKey":"rahman2020twitter","title":"Twitter and census data analytics to explore socioeconomic factors for post-covid-19 reopening sentiment","authors":"Rahman, Md Mokhlesur and Ali, GG and Li, Xue Jun and Paul, Kamal Chandra and Chong, Peter HJ","journal":"arXiv preprint arXiv:2007.00054","year":"2020","url":"https://scholar.google.com/scholar?q=Twitter+and+census+data+analytics+to+explore+socioeconomic+factors+for+post-covid-19+reopening+sentiment","urlSource":"https://arxiv.org/abs/2007.00054"},{"entryType":"article","citationKey":"ali2020feedbackless","title":"Feedbackless relaying for enhancing reliability of connected vehicles","authors":"Ali, GG Md Nawaz and Ayalew, Beshah and Vahidi, Ardalan and Noor-A-Rahim, Md","journal":"IEEE Transactions on Vehicular Technology","volume":"69","number":"5","pages":"4621--4634","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Feedbackless+relaying+for+enhancing+reliability+of+connected+vehicles","urlSource":"https://doi.org/10.1109/TVT.2020.2980848"},{"entryType":"techreport","citationKey":"vahidi2020boosting","title":"Boosting Energy Efficiency of Heterogeneous Connected Automated Vehicle (CAV) Fleets via Anticipative and Cooperative Vehicle Guidance","authors":"Vahidi, Ardalan and Jia, Yunyi and Ayalew, Beshah and Karbowski, Dominik and Taiber, Joachim G and Fayazi, Ali Reza and Ali, G and Dollar, Robert Austin and Ard, Tyler and Guo, Longxiang and others","year":"2020","institution":"Clemson Univ., SC (United States)","url":"https://scholar.google.com/scholar?q=Boosting+Energy+Efficiency+of+Heterogeneous+Connected+Automated+Vehicle+%28CAV%29+Fleets+via+Anticipative+and+Cooperative+Vehicle+Guidance","urlSource":null},{"entryType":"article","citationKey":"samuel2020feeling","title":"Feeling positive about reopening? New normal scenarios from COVID-19 US reopen sentiment analytics","authors":"Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Samuel, Yana and Pelaez, Alexander and Chong, Peter Han Joo and Yakubov, Michael","journal":"Ieee Access","volume":"8","pages":"142173--142190","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Feeling+positive+about+reopening%3F+New+normal+scenarios+from+COVID-19+US+reopen+sentiment+analytics","urlSource":null},{"entryType":"article","citationKey":"noor2020survey","title":"A survey on resource allocation in vehicular networks","authors":"Noor-A-Rahim, Md and Liu, Zilong and Lee, Haeyoung and Ali, GG Md Nawaz and Pesch, Dirk and Xiao, Pei","journal":"IEEE transactions on intelligent transportation systems","volume":"23","number":"2","pages":"701--721","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=A+survey+on+resource+allocation+in+vehicular+networks","urlSource":"https://doi.org/10.1109/TITS.2020.3019322"},{"entryType":"article","citationKey":"samuel2020covid","title":"Covid-19 public sentiment insights and machine learning for tweets classification","authors":"Samuel, Jim and Ali, GG Md Nawaz and Rahman, Md Mokhlesur and Esawi, Ek and Samuel, Yana","journal":"Information","volume":"11","number":"6","pages":"314","year":"2020","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Covid-19+public+sentiment+insights+and+machine+learning+for+tweets+classification","urlSource":"https://www.mdpi.com/2078-2489/11/6/314"},{"entryType":"article","citationKey":"mohan2020machine","title":"Machine Learning Algorithm for NLOS Millimeter Wave in 5G V2X Communication","authors":"Mohan, Deepika and Ali, GG and Chong, Peter Han Joo","journal":"arXiv preprint arXiv:2012.12123","year":"2020","url":"https://scholar.google.com/scholar?q=Machine+Learning+Algorithm+for+NLOS+Millimeter+Wave+in+5G+V2X+Communication","urlSource":"https://arxiv.org/abs/2012.12123"},{"entryType":"article","citationKey":"samuel2020feeling","title":"Feeling like it is time to reopen now? covid-19 new normal scenarios based on reopening sentiment analytics","authors":"Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG and Samuel, Yana and Pelaez, Alexander","journal":"arXiv preprint arXiv:2005.10961","year":"2020","url":"https://scholar.google.com/scholar?q=Feeling+like+it+is+time+to+reopen+now%3F+covid-19+new+normal+scenarios+based+on+reopening+sentiment+analytics","urlSource":"https://arxiv.org/abs/2005.10961"}],"2021":[{"entryType":"article","citationKey":"rahman2021machine","title":"Machine learning on the COVID-19 pandemic, human mobility and air quality: A review","authors":"Rahman, Md Mokhlesur and Paul, Kamal Chandra and Hossain, Md Amjad and Ali, GG Md Nawaz and Rahman, Md Shahinoor and Thill, Jean-Claude","journal":"Ieee Access","volume":"9","pages":"72420--72450","year":"2021","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Machine+learning+on+the+COVID-19+pandemic%2C+human+mobility+and+air+quality%3A+A+review","urlSource":null},{"entryType":"article","citationKey":"hota2021analysis","title":"An analysis on contemporary MAC layer protocols in vehicular networks: State-of-the-art and future directions","authors":"Hota, Lopamudra and Nayak, Biraja Prasad and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo","journal":"Future Internet","volume":"13","number":"11","pages":"287","year":"2021","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=An+analysis+on+contemporary+MAC+layer+protocols+in+vehicular+networks%3A+State-of-the-art+and+future+directions","urlSource":"https://www.mdpi.com/1999-5903/13/11/287"},{"entryType":"article","citationKey":"yang2021social","title":"Social Video Advertisement Replacement and its Evaluation in Convolutional Neural Networks","authors":"Yang, Cheng and Yu, Xiang and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo and Lam, Patrick","journal":"ELCVIA Electronic Letters on Computer Vision and Image Analysis","volume":"20","number":"1","pages":"117--136","year":"2021","url":"https://scholar.google.com/scholar?q=Social+Video+Advertisement+Replacement+and+its+Evaluation+in+Convolutional+Neural+Networks","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2021public","title":"Public perceptions of COVID-19 vaccines: Policy implications from US spatiotemporal sentiment analytics","authors":"Ali, GG Md Nawaz and Rahman, Md Mokhlesur and Hossain, Md Amjad and Rahman, Md Shahinoor and Paul, Kamal Chandra and Thill, Jean-Claude and Samuel, Jim","booktitle":"Healthcare","volume":"9","number":"9","pages":"1110","year":"2021","organization":"MDPI","url":"https://scholar.google.com/scholar?q=Public+perceptions+of+COVID-19+vaccines%3A+Policy+implications+from+US+spatiotemporal+sentiment+analytics","urlSource":null},{"entryType":"inproceedings","citationKey":"zheng2021deep","title":"Deep learning algorithm for picture frame detection on social media videos","authors":"Zheng, Fucheng and Yang, Cheng and Chong, Peter Han Joo and Wang, George and Ali, GG Md Nawaz and Lam, Patrick","booktitle":"2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS)","pages":"149--155","year":"2021","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Deep+learning+algorithm+for+picture+frame+detection+on+social+media+videos","urlSource":null},{"entryType":"article","citationKey":"rahman2021socioeconomic","title":"Socioeconomic factors analysis for COVID-19 US reopening sentiment with Twitter and census data","authors":"Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Li, Xue Jun and Samuel, Jim and Paul, Kamal Chandra and Chong, Peter HJ and Yakubov, Michael","journal":"Heliyon","volume":"7","number":"2","year":"2021","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Socioeconomic+factors+analysis+for+COVID-19+US+reopening+sentiment+with+Twitter+and+census+data","urlSource":null},{"entryType":"article","citationKey":"chiputa2021enhancing","title":"Enhancing Handover for 5G Mobile Networks using Jump Markov Linear System and Deep Reinforcement Learning","authors":"Chiputa, Masoto and Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Sabit, Hakilo and Kumar, Arun and Li, Hui","year":"2021","publisher":"Preprints","url":"https://scholar.google.com/scholar?q=Enhancing+Handover+for+5G+Mobile+Networks+using+Jump+Markov+Linear+System+and+Deep+Reinforcement+Learning","urlSource":null},{"entryType":"article","citationKey":"yoon2021performance","title":"Performance of decentralized cooperative perception in V2V connected traffic","authors":"Yoon, DoHyun Daniel and Ayalew, Beshah and Ali, GG Md Nawaz","journal":"IEEE Transactions on Intelligent Transportation Systems","volume":"23","number":"7","pages":"6850--6863","year":"2021","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+of+decentralized+cooperative+perception+in+V2V+connected+traffic","urlSource":"https://ieeexplore.ieee.org/abstract/document/9387631"}],"2022":[{"entryType":"article","citationKey":"jarrah2022time","title":"The Time-Free Comparison Model for Fault Diagnosis in Wireless Ad Hoc Networks","authors":"Jarrah, Hazim and Ali, GG Md Nawaz and Kumar, Arun and Chong, Peter HJ and Sarkar, Nurul I and Gutierrez, Jairo","journal":"Mobile Networks and Applications","volume":"27","number":"2","pages":"469--482","year":"2022","publisher":"Springer US New York","url":"https://scholar.google.com/scholar?q=The+Time-Free+Comparison+Model+for+Fault+Diagnosis+in+Wireless+Ad+Hoc+Networks","urlSource":null},{"entryType":"article","citationKey":"chiputa2022enhancing","title":"Enhancing handover for 5G mmWave mobile networks using jump Markov linear system and deep reinforcement learning","authors":"Chiputa, Masoto and Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Sabit, Hakilo and Kumar, Arun and Li, Hui","journal":"Sensors","volume":"22","number":"3","pages":"746","year":"2022","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Enhancing+handover+for+5G+mmWave+mobile+networks+using+jump+Markov+linear+system+and+deep+reinforcement+learning","urlSource":"https://www.mdpi.com/1424-8220/22/3/746"},{"entryType":"article","citationKey":"hota2022performance","title":"A performance analysis of VANETs propagation models and routing protocols","authors":"Hota, Lopamudra and Nayak, Biraja Prasad and Kumar, Arun and Sahoo, Bibhudatta and Ali, GG Md Nawaz","journal":"Sustainability","volume":"14","number":"3","pages":"1379","year":"2022","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+performance+analysis+of+VANETs+propagation+models+and+routing+protocols","urlSource":"https://www.mdpi.com/2071-1050/14/3/1379"}],"2023":[{"entryType":"article","citationKey":"rahman2023pandemic","title":"Pandemic vulnerability index of US cities: A hybrid knowledge-based and data-driven approach","authors":"Rahman, Md Shahinoor and Paul, Kamal Chandra and Rahman, Md Mokhlesur and Samuel, Jim and Thill, Jean-Claude and Hossain, Md Amjad and Ali, GG Md Nawaz","journal":"Sustainable Cities and Society","volume":"95","pages":"104570","year":"2023","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Pandemic+vulnerability+index+of+US+cities%3A+A+hybrid+knowledge-based+and+data-driven+approach","urlSource":null},{"entryType":"article","citationKey":"ali2023comprehensive","title":"A Comprehensive Study and Analysis of 3GPP\u2019s 5G New Radio for V2X Communication","authors":"Ali, GG Md Nawaz and Sadat, Mohammad Nazmus and Miah, Md Suruz and Sharief, Sameer Ahmed and Wang, Yun","year":"2023","publisher":"Preprints","url":"https://scholar.google.com/scholar?q=A+Comprehensive+Study+and+Analysis+of+3GPP%E2%80%99s+5G+New+Radio+for+V2X+Communication","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2023performance","title":"Performance analysis of 5G new radio V2X communication","authors":"Ali, GG Md Nawaz and Sharief, Sameer Ahmed and Sadat, Mohammad Nazmus and Miah, Md Suruz","booktitle":"2023 IEEE Wireless and Microwave Technology Conference (WAMICON)","pages":"1--4","year":"2023","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+5G+new+radio+V2X+communication","urlSource":"https://personalpages.bradley.edu/~smiah/Publications/OUT/b2hd-AlShSaMi2023-c1.html"}],"2024":[{"entryType":"article","citationKey":"ali2024comprehensive","title":"A comprehensive study and analysis of the third generation Partnership project\u2019s 5G new radio for Vehicle-to-Everything Communication","authors":"Ali, GG Md Nawaz and Sadat, Mohammad Nazmus and Miah, Md Suruz and Sharief, Sameer Ahmed and Wang, Yun","journal":"Future Internet","volume":"16","number":"1","pages":"21","year":"2024","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+comprehensive+study+and+analysis+of+the+third+generation+Partnership+project%E2%80%99s+5G+new+radio+for+Vehicle-to-Everything+Communication","urlSource":"https://www.mdpi.com/1999-5903/16/1/21"},{"entryType":"article","citationKey":"wang20244","title":"4 Computational Analysis of Wireless Modeling Sensor and","authors":"Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Md Nawaz and Zhang, Yanping","journal":"Computational Modeling and Simulation of Advanced Wireless Communication Systems","pages":"89","year":"2024","publisher":"CRC Press","url":"https://scholar.google.com/scholar?q=4+Computational+Analysis+of+Wireless+Modeling+Sensor+and","urlSource":null},{"entryType":"incollection","citationKey":"wang2024computational","title":"Computational Modeling and Analysis of Wireless Sensor Networks","authors":"Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Nawaz and Zhang, Yanping","booktitle":"Computational Modeling and Simulation of Advanced Wireless Communication Systems","pages":"89--111","year":"2024","publisher":"CRC Press","url":"https://scholar.google.com/scholar?q=Computational+Modeling+and+Analysis+of+Wireless+Sensor+Networks","urlSource":"https://pure.gonzaga.edu/p/en/research-outputs/ldabd7jkhpzg-1a17184e-0b71-4179-8881-7db9bfcdbb5c"}],"2025":[{"entryType":"article","citationKey":"ghosh2025multimodal","title":"A multimodal pain sentiment analysis system using ensembled deep learning approaches for IoT-enabled healthcare framework","authors":"Ghosh, Anay and Umer, Saiyed and Dhara, Bibhas Chandra and Ali, GG Md Nawaz","journal":"Sensors","volume":"25","number":"4","pages":"1223","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+multimodal+pain+sentiment+analysis+system+using+ensembled+deep+learning+approaches+for+IoT-enabled+healthcare+framework","urlSource":"https://www.mdpi.com/1424-8220/25/4/1223"},{"entryType":"article","citationKey":"mohammed2025gsaf","title":"Gsaf: An ML-based sentiment analytics framework for understanding contemporary public sentiment and trends on key societal issues","authors":"Mohammed, Abdul Moid Khan and Ali, GG Md Nawaz and Khairunnesa, Samantha S","journal":"Information","volume":"16","number":"4","pages":"271","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Gsaf%3A+An+ML-based+sentiment+analytics+framework+for+understanding+contemporary+public+sentiment+and+trends+on+key+societal+issues","urlSource":"https://www.mdpi.com/2078-2489/16/4/271"},{"entryType":"article","citationKey":"sayed2025public","title":"Public sentiment analysis of roadway work zones using social media data and machine learning models","authors":"Sayed, Md Abu and Hossain, Md Amjad and Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Islam, Mohammad Anwarul and Paul, Kamal Chandra and Qin, Xiao","journal":"Data Science and Management","year":"2025","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Public+sentiment+analysis+of+roadway+work+zones+using+social+media+data+and+machine+learning+models","urlSource":"https://www.sciencedirect.com/science/article/pii/S2666764925000189"},{"entryType":"inproceedings","citationKey":"shifa2025leveraging","title":"Leveraging Large Language Models for Automating Outpatients\u2019 Message Classifications of Electronic Medical Records","authors":"Shifa, Amima and Ali, GG Md Nawaz and Foulger, Roopa","booktitle":"Healthcare","volume":"13","number":"23","pages":"3052","url":"https://www.mdpi.com/2227-9032/13/23/3052","year":"2025","organization":"MDPI","urlSource":"https://www.mdpi.com/2227-9032/13/23/3052"},{"entryType":"article","citationKey":"fayyaz2025advanced","title":"Advanced Feature Engineering and Machine Learning Techniques for High Accurate Price Prediction of Heterogeneous Pre-Own Cars","authors":"Fayyaz, Imran and Ali, GG Md Nawaz and Khairunnesa, Samantha S","journal":"Vehicles","volume":"7","number":"3","pages":"94","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Advanced+Feature+Engineering+and+Machine+Learning+Techniques+for+High+Accurate+Price+Prediction+of+Heterogeneous+Pre-Own+Cars","urlSource":"https://www.mdpi.com/2624-8921/7/3/94"},{"entryType":"inproceedings","citationKey":"mohammed2025understanding","title":"Understanding Contemporary Public Sentiment and Trends on Key Societal","authors":"Mohammed, Abdul Moid Khan and Ali, GG Md Nawaz","booktitle":"Intelligent Computing: Proceedings of the 2025 Computing Conference, Volume 1","volume":"1","pages":"321","year":"2025","organization":"Springer Nature","url":"https://scholar.google.com/scholar?q=Understanding+Contemporary+Public+Sentiment+and+Trends+on+Key+Societal","urlSource":null},{"entryType":"article","citationKey":"baseer2025machine","title":"Machine Learning-Based Compressive Strength Prediction in Pervious Concrete","authors":"Baseer, Hamed Abdul and Ali, GG Md Nawaz","journal":"CivilEng","volume":"7","number":"1","pages":"3","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Machine+Learning-Based+Compressive+Strength+Prediction+in+Pervious+Concrete","urlSource":"https://www.mdpi.com/2673-4109/7/1/3"}],"2026":[{"entryType":"inproceedings","citationKey":"shifa2026bridging","title":"Bridging Lexical and Contextual Semantics for Adolescents\' Health Sentiment Analysis: A Cross-Platform Study Using Large Language Models","authors":"Shifa, Amima* and Ali, GG Md Nawaz and Henricks, Dylan","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"360--365","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Bridging+Lexical+and+Contextual+Semantics+for+Adolescents%E2%80%99+Health+Sentiment+Analysis%3A+A+Cross-Platform+Study+Using+Large+Language+Models","urlSource":null},{"entryType":"inproceedings","citationKey":"poudel2026truth","title":"Truth in the Age of AI: Fine-Tuning LLMs for Reliable Fake News Detection","authors":"Poudel, Sajan and Sadat, Nazmus and Ali, GG Md Nawaz","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"354--359","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Truth+in+the+Age+of+AI%3A+Fine-Tuning+LLMs+for+Reliable+Fake+News+Detection","urlSource":null},{"entryType":"inproceedings","citationKey":"fayyaz2026llms","title":"LLMs in Fake News Detection: A Comparative Study of Zero-Shot and Fine-Tuned Open-Source Models","authors":"Fayyaz, Imran* and Ali, GG Md Nawaz and Khairunnesa, Samantha S","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"238--245","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=LLMs+in+Fake+News+Detection%3A+A+Comparative+Study+of+Zero-Shot+and+Fine-Tuned+Open-Source+Models","urlSource":null}]}');
+
+},{}],"9PZB1":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a531 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a531.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a531.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _teachingJson = require("../dbs/teaching.json");
+var _teachingJsonDefault = parcelHelpers.interopDefault(_teachingJson);
+function Teaching() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "teaching",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Teaching"
+            }, void 0, false, {
+                fileName: "src/components/teaching.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "catalog",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: (0, _teachingJsonDefault.default).catalogUrl,
+                    target: "_blank",
+                    rel: "noreferrer",
+                    children: "Bradley University CS&IS Course Catalog"
+                }, void 0, false, {
+                    fileName: "src/components/teaching.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/teaching.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            (0, _teachingJsonDefault.default).categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "category",
+                            children: category.level
+                        }, void 0, false, {
+                            fileName: "src/components/teaching.js",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: category.courses.map((course, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: course.courseCode
+                                        }, void 0, false, {
+                                            fileName: "src/components/teaching.js",
+                                            lineNumber: 21,
+                                            columnNumber: 17
+                                        }, this),
+                                        ": ",
+                                        course.title,
+                                        course.fullTitle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/components/teaching.js",
+                                                    lineNumber: 25,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                                    children: course.fullTitle
+                                                }, void 0, false, {
+                                                    fileName: "src/components/teaching.js",
+                                                    lineNumber: 26,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true),
+                                        course.expectedOffering && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/components/teaching.js",
+                                                    lineNumber: 32,
+                                                    columnNumber: 21
+                                                }, this),
+                                                "Expected Offering: ",
+                                                course.expectedOffering
+                                            ]
+                                        }, void 0, true),
+                                        course.toolsTopics && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                    children: "Topics/Tools:"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/teaching.js",
+                                                    lineNumber: 39,
+                                                    columnNumber: 21
+                                                }, this),
+                                                " ",
+                                                course.toolsTopics.join(", ")
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/teaching.js",
+                                            lineNumber: 38,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: course.catalogUrl,
+                                            target: "_blank",
+                                            rel: "noreferrer",
+                                            children: "Course Catalog"
+                                        }, void 0, false, {
+                                            fileName: "src/components/teaching.js",
+                                            lineNumber: 44,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, idx, true, {
+                                    fileName: "src/components/teaching.js",
+                                    lineNumber: 20,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/components/teaching.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, index, true, {
+                    fileName: "src/components/teaching.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/components/teaching.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = Teaching;
+exports.default = Teaching;
+var _c;
+$RefreshReg$(_c, "Teaching");
+
+  $parcel$ReactRefreshHelpers$a531.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../dbs/teaching.json":"3hAgi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"3hAgi":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse("{\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\",\"categories\":[{\"level\":\"Undergraduate\",\"courses\":[{\"courseCode\":\"CS 102\",\"title\":\"Data Structures\",\"toolsTopics\":[\"Java\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 321\",\"title\":\"Operating Systems\",\"toolsTopics\":[\"Linux shell\",\"kernel\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CIS 393\",\"title\":\"Web Technologies and Systems\",\"toolsTopics\":[\"HTML\",\"CSS\",\"JavaScript\",\"Node.js\",\"Express\",\"MySQL\",\"MongoDB\",\"React\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Graduate\",\"courses\":[{\"courseCode\":\"CS 514\",\"title\":\"Algorithms\",\"toolsTopics\":[\"C++\",\"Java\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 531\",\"title\":\"Web Development Technologies\",\"toolsTopics\":[\"HTML\",\"CSS\",\"JavaScript\",\"Node.js\",\"Express\",\"MySQL\",\"MongoDB\",\"React\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 571\",\"title\":\"Database Design and Management\",\"toolsTopics\":[\"Relational Algebra\",\"SQL\",\"ERDPlus\",\"Full-stack web development\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Undergraduate & Graduate Cross-listed\",\"courses\":[{\"courseCode\":\"CIS 445/545\",\"title\":\"Integrative Programming & Technology\",\"toolsTopics\":[\"Linux shell\",\"Git\",\"GitHub\",\"Full-stack web development\",\"Network security\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 462/562\",\"title\":\"Machine Learning\",\"toolsTopics\":[\"Python\",\"NumPy\",\"Pandas\",\"Matplotlib\",\"Seaborn\",\"Scikit-learn\",\"Keras\",\"TensorFlow\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Expecting to develop & offer in FA 26\",\"courses\":[{\"courseCode\":\"CS 111\",\"title\":\"AI for All - Artificial Intelligence for Life, Society, and Disciplines\",\"toolsTopics\":[\"Artificial Intelligence\",\"AI literacy\",\"Society\",\"Disciplines\"],\"expectedOffering\":\"FA 26\",\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 466\",\"title\":\"NLP & LLM\",\"fullTitle\":\"Natural Language Processing and Large Language Model\",\"toolsTopics\":[\"Natural Language Processing\",\"Large Language Models\"],\"expectedOffering\":\"FA 26\",\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]}]}");
+
+},{}],"i2D0v":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ab59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$ab59.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ab59.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _grantsJson = require("../dbs/grants.json");
+var _grantsJsonDefault = parcelHelpers.interopDefault(_grantsJson);
+var _s = $RefreshSig$();
+function Grants() {
+    _s();
+    const [statusFilter, setStatusFilter] = (0, _react.useState)("All");
+    const years = Object.keys((0, _grantsJsonDefault.default)).sort((a, b)=>b - a);
+    const allGrants = years.flatMap((year)=>(0, _grantsJsonDefault.default)[year].map((grant)=>({
+                ...grant,
+                year
+            })));
+    const filteredGrants = statusFilter === "All" ? allGrants : allGrants.filter((grant)=>grant.status === statusFilter);
+    const awardedCount = allGrants.filter((g)=>g.status === "Awarded").length;
+    const underReviewCount = allGrants.filter((g)=>g.status === "Under Review").length;
+    const notFundedCount = allGrants.filter((g)=>g.status === "Not Funded").length;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "grants",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Research Grants / Proposal Writing Experiences"
+            }, void 0, false, {
+                fileName: "src/components/grants.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grant-summary",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "Total:"
+                            }, void 0, false, {
+                                fileName: "src/components/grants.js",
+                                lineNumber: 27,
+                                columnNumber: 12
+                            }, this),
+                            " ",
+                            allGrants.length
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "Awarded:"
+                            }, void 0, false, {
+                                fileName: "src/components/grants.js",
+                                lineNumber: 28,
+                                columnNumber: 12
+                            }, this),
+                            " ",
+                            awardedCount
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 28,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "Under Review:"
+                            }, void 0, false, {
+                                fileName: "src/components/grants.js",
+                                lineNumber: 29,
+                                columnNumber: 12
+                            }, this),
+                            " ",
+                            underReviewCount
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "Not Funded:"
+                            }, void 0, false, {
+                                fileName: "src/components/grants.js",
+                                lineNumber: 30,
+                                columnNumber: 12
+                            }, this),
+                            " ",
+                            notFundedCount
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/grants.js",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "statusFilter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                    children: "Filter by Status: "
+                }, void 0, false, {
+                    fileName: "src/components/grants.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/grants.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                id: "statusFilter",
+                value: statusFilter,
+                onChange: (e)=>setStatusFilter(e.target.value),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: "All",
+                        children: "All"
+                    }, void 0, false, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: "Awarded",
+                        children: "Awarded"
+                    }, void 0, false, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: "Under Review",
+                        children: "Under Review"
+                    }, void 0, false, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: "Not Funded",
+                        children: "Not Funded"
+                    }, void 0, false, {
+                        fileName: "src/components/grants.js",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/grants.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this),
+            years.map((year)=>{
+                const grantsForYear = (0, _grantsJsonDefault.default)[year].filter((grant)=>statusFilter === "All" || grant.status === statusFilter);
+                if (grantsForYear.length === 0) return null;
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "year",
+                            children: year
+                        }, void 0, false, {
+                            fileName: "src/components/grants.js",
+                            lineNumber: 57,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            children: grantsForYear.map((grant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            children: grant.agency
+                                        }, void 0, false, {
+                                            fileName: "src/components/grants.js",
+                                            lineNumber: 62,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/components/grants.js",
+                                            lineNumber: 63,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                                            children: grant.title
+                                        }, void 0, false, {
+                                            fileName: "src/components/grants.js",
+                                            lineNumber: 64,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/components/grants.js",
+                                            lineNumber: 65,
+                                            columnNumber: 19
+                                        }, this),
+                                        "Status: ",
+                                        grant.status,
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                            fileName: "src/components/grants.js",
+                                            lineNumber: 67,
+                                            columnNumber: 19
+                                        }, this),
+                                        grant.amountAwarded && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                "Amount Awarded: ",
+                                                grant.amountAwarded,
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/components/grants.js",
+                                                    lineNumber: 72,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true),
+                                        grant.amountRequested && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                "Amount Requested: ",
+                                                grant.amountRequested,
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/components/grants.js",
+                                                    lineNumber: 79,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true),
+                                        grant.role && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                "Role: ",
+                                                grant.role,
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                    fileName: "src/components/grants.js",
+                                                    lineNumber: 86,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true)
+                                    ]
+                                }, grant.id, true, {
+                                    fileName: "src/components/grants.js",
+                                    lineNumber: 61,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/components/grants.js",
+                            lineNumber: 59,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, year, true, {
+                    fileName: "src/components/grants.js",
+                    lineNumber: 56,
+                    columnNumber: 11
+                }, this);
+            })
+        ]
+    }, void 0, true, {
+        fileName: "src/components/grants.js",
+        lineNumber: 23,
+        columnNumber: 5
+    }, this);
+}
+_s(Grants, "Y2kynHdxxpfyxG49EeZJcf8uEYo=");
+_c = Grants;
+exports.default = Grants;
+var _c;
+$RefreshReg$(_c, "Grants");
+
+  $parcel$ReactRefreshHelpers$ab59.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/grants.json":"l2Cov","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"l2Cov":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('{"2017":[{"id":3,"agency":"National Science Challenge","title":"Smart Places for Elderly in Smart Nation: Ageing well in New Zealand (A prototype system for elderly smart care)","status":"Not Funded"},{"id":2,"agency":"Huawei Innovation Research Program (HIRP)","title":"Future Software Defined 5G Cellular-V2X: A Complete Futuristic Framework for a Secured Automated Driving Experience","status":"Not Funded"},{"id":1,"agency":"Endeavour Fund \u2013 Smart Ideas","title":"Advance Accident Detection for Vehicle Collision Avoidance for Future Intelligent Transport System","status":"Not Funded"}],"2018":[{"id":6,"agency":"NSF S&AS (Smart & Autonomous System)","title":"Autonomous Control of Connected Vehicle Traffic Via Distributed Fog Computing","status":"Not Funded"},{"id":5,"agency":"NSF CPS (Cyber Physical System)","title":"Collaborative Situation Awareness in Heterogeneous Traffic","status":"Not Funded"},{"id":4,"agency":"Endeavour Fund \u2013 Smart Ideas","title":"Design of Coding Scheme and Random Retrieval for DNA Based Data Storage","status":"Not Funded"}],"2019":[{"id":7,"agency":"US DOT ADS Demonstration Grant","title":"Clemson-Center of Excellence for Automated Driving Systems (C-CEADS)","status":"Not Funded"}],"2020":[{"id":8,"agency":"NSF Quick Response Award Program","title":"Machine learning based prediction of the consequences of not wearing a facemask in public transport during the COVID-19 pandemic","status":"Not Funded"}],"2021":[{"id":10,"agency":"Bradley University Startup Grant","title":"C-V2X radios for a reliable and smooth V2X communication","status":"Awarded","amountAwarded":"$10K"},{"id":9,"agency":"WV Open Education Resource (OER) Grant","title":"Develop and offer Object-Oriented Programming course using open education resources","status":"Awarded","amountAwarded":"$1K"}],"2022":[{"id":12,"agency":"CTEL Paired Course Initiative Award","title":"Paired Courses Initiative (CIS 445/545 & ECE 444/544) for Fall 22","status":"Awarded","amountAwarded":"$1K"},{"id":11,"agency":"Sherry Endowment Student/Faculty Collaborative Project Award","title":"A Survey on Machine Learning Methods in Autonomous Vehicles","status":"Awarded","amountAwarded":"$800"}],"2023":[{"id":19,"agency":"IFH (Innovation for Health) Award","title":"An Automated Message Classification and Response based System Empowered by Customized OpenAI Application","status":"Awarded","amountAwarded":"$50K"},{"id":16,"agency":"Student Engagement Award","title":"Performance analysis of 5G New Radio and DSRC networks for V2X Communications","status":"Awarded","amountAwarded":"$6K"},{"id":15,"agency":"Caterpillar Fellowship Award","title":"Performance Analysis and Enhancement of 5G New Radio Vehicular Communication","status":"Awarded","amountAwarded":"$5K"},{"id":14,"agency":"Faculty Scholarship Award","title":"Enhanced Cooperative Perception for Connected and Autonomous Vehicles","status":"Awarded","amountAwarded":"$6K"},{"id":13,"agency":"Caterpillar Fellowship Award","title":"Smooth Seamless Inter-working between Cellular and DSRC: A Futuristic Framework for a Secured Connected Driving Experience","status":"Awarded","amountAwarded":"$5K"}],"2024":[{"id":21,"agency":"IFH (Innovation for Health) Award","title":"Understanding the Reactions of Adolescents to Obesity Related Health Messaging Residing in the Tri-county Area (Peoria, Tazewell, and Woodford Counties) through Social Media Data","status":"Awarded","amountAwarded":"$49,954"},{"id":20,"agency":"Bradley\'s CTEL SoTL Award","title":"Learning Machine Learning (ML) and Artificial Intelligence (AI) with Fun: A Cross-listed Course Re-design","status":"Awarded","amountAwarded":"$3.5K"},{"id":18,"agency":"Illinois Space Grant Consortium - Research Seed Grant Award","title":"Performance analysis of 5G New Radio and DSRC networks for V2X Communications","status":"Not Funded","amountRequested":"$10K"},{"id":17,"agency":"Caterpillar Fellowship Award","title":"On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network","status":"Not Funded","amountRequested":"$5K"}],"2025":[{"id":27,"agency":"Liberal Arts and Sciences Undergraduate Summer Research and Artistry Fellowship Program","title":"Cyberpunk 2020 Character Creation Website Tool","status":"Not Funded","amountRequested":"$6K"},{"id":26,"agency":"Interdisciplinary Undergraduate Research and Creative Projects Summer Fellowship Program","title":"Developing Gizmos Recycling Game: A Game-based Learning Tools for Kids","status":"Not Funded","amountRequested":"$6K"},{"id":25,"agency":"Faculty Scholarship Award","title":"On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network","status":"Awarded","amountAwarded":"$6K"},{"id":24,"agency":"Illinois Water Resources Center (IWRC) Annual Research Grant","title":"AI-Powered Water Quality Prediction in the Midwestern U.S.","status":"Not Funded","amountRequested":"$20K","role":"Co-PI"},{"id":23,"agency":"Illinois Space Grant Consortium - Research Seed Grant Award","title":"Unpacking Public Perception of NASA\u2019s Space Exploration Efforts: A Generative AI-based Approach to Social Media Sentiment Analysis","status":"Not Funded","amountRequested":"$8K"},{"id":22,"agency":"NSF IUSE grant","title":"Improving Student Learning in Data Science Concentration through Advanced AI and ML Computing Facility and Project-based Curricula","status":"Not Funded","amountRequested":"$496,883"}],"2026":[{"id":32,"agency":"Faculty Scholarship Community Partnership BU-UICOMP Seed Award","title":"Curriculum-aligned Fine-tuned AI Assistant for Preclinical Medical Students","status":"Under Review","amountRequested":"$12K"},{"id":31,"agency":"Interdisciplinary Scholarship Award (IDS)","title":"Use of Supervised Machine Learning and Neural Network Models to Understand the Impact of Climate Change on US Midwest Road Infrastructure","status":"Under Review","amountRequested":"$15K"},{"id":30,"agency":"Student Engagement Award","title":"Development of a Fine-Tuned LLM with RAG for Assisting Students and Faculty with Bradley University Information Retrieval","status":"Under Review","amountRequested":"$6K"},{"id":29,"agency":"NSF IUSE: EDU Level 1 Grant","title":"Bridging the Gap: An Integrated Narrative (Storytelling) for Ethical Data Science Approach","status":"Under Review","amountRequested":"$399,357"},{"id":28,"agency":"IFH (Innovation for Health) Award","title":"Multimodal Sentiment Analysis about Adolescent Obesity from Social Media Data and Recommendations for Healthcare Providers (Phase II)","status":"Not Funded","amountRequested":"$79,996"}]}');
+
+},{}],"CyEwo":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$37d3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$37d3.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$37d3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _projectsJson = require("../dbs/projects.json"); // adjust path if needed
+var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
+var _s = $RefreshSig$();
+function Projects() {
+    _s();
+    const [projects, setProjects] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        setProjects((0, _projectsJsonDefault.default).active_research_projects);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "projects-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Active Research Projects"
+            }, void 0, false, {
+                fileName: "src/components/projects.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, this),
+            projects.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "No projects available."
+            }, void 0, false, {
+                fileName: "src/components/projects.js",
+                lineNumber: 16,
+                columnNumber: 9
+            }, this) : projects.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "project-card",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "projectTitle",
+                            children: project.title
+                        }, void 0, false, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 20,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Objective:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 22,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                project.objective
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 22,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Funder:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 23,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                project.funder
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 23,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Graduate Students:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 24,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                project.graduate_students
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 24,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Status:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 25,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                project.status
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 25,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Start Year:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 26,
+                                    columnNumber: 16
+                                }, this),
+                                " ",
+                                project.start_year
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 26,
+                            columnNumber: 13
+                        }, this),
+                        project.collaborators?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Collaborators:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 31,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    children: project.collaborators.map((collab, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: collab
+                                        }, i, false, {
+                                            fileName: "src/components/projects.js",
+                                            lineNumber: 34,
+                                            columnNumber: 21
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 32,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true),
+                        project.publications?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Publications:"
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 43,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    children: project.publications.map((pub, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: pub
+                                        }, i, false, {
+                                            fileName: "src/components/projects.js",
+                                            lineNumber: 46,
+                                            columnNumber: 21
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "src/components/projects.js",
+                                    lineNumber: 44,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                            fileName: "src/components/projects.js",
+                            lineNumber: 52,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, index, true, {
+                    fileName: "src/components/projects.js",
+                    lineNumber: 19,
+                    columnNumber: 11
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "src/components/projects.js",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+_s(Projects, "TSrpuQX6QU8EgjQSxaAzj2u9i4o=");
+_c = Projects;
+exports.default = Projects;
+var _c;
+$RefreshReg$(_c, "Projects");
+
+  $parcel$ReactRefreshHelpers$37d3.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/projects.json":"4vgXm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4vgXm":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse("{\"active_research_projects\":[{\"title\":\"Fake News Identification using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI\",\"objective\":\"Analyze news and social media data to identify fake news with high accuracy by leveraging LLMs, agents, tools, and neuro-symbolic AI.\",\"funder\":\"BU Internal Grants\",\"graduate_students\":1,\"status\":\"Ongoing\",\"start_year\":2025,\"collaborators\":[\"Bradley University CS&IS Department\"],\"publications\":[]},{\"title\":\"Social Media Sentiment Analysis using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI\",\"objective\":\"Compute sentiment scores and classify social media posts into sentiment categories using fine-tuned LLMs, RAG agents, tools, and neuro-symbolic AI.\",\"funder\":\"BU Internal Grants\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2025,\"collaborators\":[\"Bradley University CS&IS Department\"],\"publications\":[]},{\"title\":\"Understanding Adolescent Obesity from Social Media Data using LLMs\",\"objective\":\"Analyze social media data to understand adolescent obesity and healthy diet trends to support healthcare provider guidance.\",\"funder\":\"BU OSF HealthCare IFH Grant\",\"graduate_students\":1,\"status\":\"Ongoing\",\"start_year\":2024,\"collaborators\":[\"OSF HealthCare\",\"Bradley University\",\"Innovation for Health (IFH)\"],\"publications\":[\"Cross-Platform Sentiment Intelligence for Adolescent Health (Under Review)\"]},{\"title\":\"Accurate Hospital Patient Message Classification using Fine-Tuned LLMs\",\"objective\":\"Automate classification of large volumes of hospital patient messages using fine-tuned LLMs to improve response efficiency.\",\"funder\":\"BU OSF HealthCare IFH Grant\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2024,\"collaborators\":[\"OSF HealthCare\",\"Bradley University\"],\"publications\":[]},{\"title\":\"Studying V2X Communication for Improved Safety and Traffic Modeling\",\"objective\":\"Investigate Vehicle-to-Everything (V2X) communication to enhance road safety and traffic conditions.\",\"funder\":\"BU Internal Grant\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2023,\"collaborators\":[\"Bradley University\",\"Transportation Research Collaborators\"],\"publications\":[]}]}");
+
+},{}],"9b9MI":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3a44 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$3a44.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3a44.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _appointmentsJson = require("../dbs/appointments.json");
+var _appointmentsJsonDefault = parcelHelpers.interopDefault(_appointmentsJson);
+var _appointmentsCss = require("../assets/appointments.css");
+function Appointments() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "appointments-section",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "appointments-title",
+                children: "Professional Appointments"
+            }, void 0, false, {
+                fileName: "src/components/Appointments.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "timeline",
+                children: (0, _appointmentsJsonDefault.default).map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "timeline-item",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "timeline-dot"
+                            }, void 0, false, {
+                                fileName: "src/components/Appointments.js",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "timeline-content",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: item.title
+                                    }, void 0, false, {
+                                        fileName: "src/components/Appointments.js",
+                                        lineNumber: 16,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "timeline-department",
+                                        children: item.department
+                                    }, void 0, false, {
+                                        fileName: "src/components/Appointments.js",
+                                        lineNumber: 18,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "timeline-institution",
+                                        children: [
+                                            item.institution,
+                                            ", ",
+                                            item.location
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Appointments.js",
+                                        lineNumber: 22,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "timeline-date",
+                                        children: [
+                                            item.startDate,
+                                            " \u2013 ",
+                                            item.endDate
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Appointments.js",
+                                        lineNumber: 26,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Appointments.js",
+                                lineNumber: 15,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "src/components/Appointments.js",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/components/Appointments.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Appointments.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = Appointments;
+exports.default = Appointments;
+var _c;
+$RefreshReg$(_c, "Appointments");
+
+  $parcel$ReactRefreshHelpers$3a44.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/appointments.json":"1BMqt","../assets/appointments.css":"iKJ5R","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1BMqt":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse("[{\"title\":\"Assistant Professor\",\"department\":\"Department of Computer Science and Information Systems\",\"institution\":\"Bradley University\",\"location\":\"Peoria, IL, USA\",\"startDate\":\"Aug 2021\",\"endDate\":\"Present\"},{\"title\":\"Assistant Professor\",\"department\":\"Department of Applied Computer Science\",\"institution\":\"University of Charleston\",\"location\":\"WV, USA\",\"startDate\":\"Aug 2019\",\"endDate\":\"May 2021\"},{\"title\":\"Post-Doctoral Fellow\",\"department\":\"Department of Automotive Engineering\",\"institution\":\"Clemson University\",\"location\":\"SC, USA\",\"startDate\":\"March 2018\",\"endDate\":\"July 2019\"},{\"title\":\"Research Fellow\",\"department\":\"School of Electrical and Electronic Engineering\",\"institution\":\"Nanyang Technological University\",\"location\":\"Singapore\",\"startDate\":\"Oct 2015\",\"endDate\":\"March 2018\"},{\"title\":\"Assistant Professor\",\"department\":\"Department of Computer Science and Engineering\",\"institution\":\"Khulna University of Engineering & Technology\",\"location\":\"Bangladesh\",\"startDate\":\"Jan 2014\",\"endDate\":\"Oct 2015\"},{\"title\":\"Senior Research Assistant\",\"department\":\"Department of Computer Science\",\"institution\":\"City University of Hong Kong\",\"location\":\"Hong Kong\",\"startDate\":\"Sept 2013\",\"endDate\":\"Dec 2013\"},{\"title\":\"Lecturer\",\"department\":\"Department of Computer Science and Engineering\",\"institution\":\"Khulna University of Engineering & Technology\",\"location\":\"Bangladesh\",\"startDate\":\"May 2006\",\"endDate\":\"Aug 2009\"}]");
+
+},{}],"iKJ5R":[function() {},{}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.30.3
  *
@@ -27320,851 +28540,6 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"CyEwo":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$37d3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$37d3.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$37d3.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _projectsJson = require("../dbs/projects.json"); // adjust path if needed
-var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
-var _s = $RefreshSig$();
-function Projects() {
-    _s();
-    const [projects, setProjects] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        setProjects((0, _projectsJsonDefault.default).active_research_projects);
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "projects-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Active Research Projects"
-            }, void 0, false, {
-                fileName: "src/components/projects.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this),
-            projects.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "No projects available."
-            }, void 0, false, {
-                fileName: "src/components/projects.js",
-                lineNumber: 16,
-                columnNumber: 9
-            }, this) : projects.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "project-card",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: project.title
-                        }, void 0, false, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 20,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Objective:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 22,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                project.objective
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 22,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Funder:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 23,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                project.funder
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 23,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Graduate Students:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 24,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                project.graduate_students
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 24,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Status:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 25,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                project.status
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 25,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Start Year:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 26,
-                                    columnNumber: 16
-                                }, this),
-                                " ",
-                                project.start_year
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 26,
-                            columnNumber: 13
-                        }, this),
-                        project.collaborators?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Collaborators:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 31,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                    children: project.collaborators.map((collab, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                            children: collab
-                                        }, i, false, {
-                                            fileName: "src/components/projects.js",
-                                            lineNumber: 34,
-                                            columnNumber: 21
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 32,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true),
-                        project.publications?.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    children: "Publications:"
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 43,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                    children: project.publications.map((pub, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                            children: pub
-                                        }, i, false, {
-                                            fileName: "src/components/projects.js",
-                                            lineNumber: 46,
-                                            columnNumber: 21
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "src/components/projects.js",
-                                    lineNumber: 44,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                            fileName: "src/components/projects.js",
-                            lineNumber: 52,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, index, true, {
-                    fileName: "src/components/projects.js",
-                    lineNumber: 19,
-                    columnNumber: 11
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/components/projects.js",
-        lineNumber: 12,
-        columnNumber: 5
-    }, this);
-}
-_s(Projects, "TSrpuQX6QU8EgjQSxaAzj2u9i4o=");
-_c = Projects;
-exports.default = Projects;
-var _c;
-$RefreshReg$(_c, "Projects");
-
-  $parcel$ReactRefreshHelpers$37d3.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../dbs/projects.json":"4vgXm"}],"4vgXm":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse("{\"active_research_projects\":[{\"title\":\"Fake News Identification using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI\",\"objective\":\"Analyze news and social media data to identify fake news with high accuracy by leveraging LLMs, agents, tools, and neuro-symbolic AI.\",\"funder\":\"BU Internal Grants\",\"graduate_students\":1,\"status\":\"Ongoing\",\"start_year\":2025,\"collaborators\":[\"Bradley University CS&IS Department\"],\"publications\":[]},{\"title\":\"Social Media Sentiment Analysis using Fine-Tuned LLMs, RAG Agents, and Neuro-Symbolic AI\",\"objective\":\"Compute sentiment scores and classify social media posts into sentiment categories using fine-tuned LLMs, RAG agents, tools, and neuro-symbolic AI.\",\"funder\":\"BU Internal Grants\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2025,\"collaborators\":[\"Bradley University CS&IS Department\"],\"publications\":[]},{\"title\":\"Understanding Adolescent Obesity from Social Media Data using LLMs\",\"objective\":\"Analyze social media data to understand adolescent obesity and healthy diet trends to support healthcare provider guidance.\",\"funder\":\"BU OSF HealthCare IFH Grant\",\"graduate_students\":1,\"status\":\"Ongoing\",\"start_year\":2024,\"collaborators\":[\"OSF HealthCare\",\"Bradley University\",\"Innovation for Health (IFH)\"],\"publications\":[\"Cross-Platform Sentiment Intelligence for Adolescent Health (Under Review)\"]},{\"title\":\"Accurate Hospital Patient Message Classification using Fine-Tuned LLMs\",\"objective\":\"Automate classification of large volumes of hospital patient messages using fine-tuned LLMs to improve response efficiency.\",\"funder\":\"BU OSF HealthCare IFH Grant\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2024,\"collaborators\":[\"OSF HealthCare\",\"Bradley University\"],\"publications\":[]},{\"title\":\"Studying V2X Communication for Improved Safety and Traffic Modeling\",\"objective\":\"Investigate Vehicle-to-Everything (V2X) communication to enhance road safety and traffic conditions.\",\"funder\":\"BU Internal Grant\",\"graduate_students\":2,\"status\":\"Ongoing\",\"start_year\":2023,\"collaborators\":[\"Bradley University\",\"Transportation Research Collaborators\"],\"publications\":[]}]}");
-
-},{}],"2hgHB":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$7e5d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$7e5d.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7e5d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _portfolioJson = require("../dbs/portfolio.json");
-var _portfolioJsonDefault = parcelHelpers.interopDefault(_portfolioJson);
-function Profile() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Profile"
-            }, void 0, false, {
-                fileName: "src/components/Profile.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "bio",
-                        children: (0, _portfolioJsonDefault.default).profile.Bio[0]
-                    }, void 0, false, {
-                        fileName: "src/components/Profile.js",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "bio",
-                        children: (0, _portfolioJsonDefault.default).profile.Bio[1]
-                    }, void 0, false, {
-                        fileName: "src/components/Profile.js",
-                        lineNumber: 9,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Profile.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = Profile;
-exports.default = Profile;
-var _c;
-$RefreshReg$(_c, "Profile");
-
-  $parcel$ReactRefreshHelpers$7e5d.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","../dbs/portfolio.json":"aCdcl","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gPifD":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$e1fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$e1fd.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e1fd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _publicationsJson = require("../dbs/publications.json");
-var _publicationsJsonDefault = parcelHelpers.interopDefault(_publicationsJson);
-function Publications() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Publications"
-            }, void 0, false, {
-                fileName: "src/components/publications.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            Object.keys((0, _publicationsJsonDefault.default)).sort((a, b)=>b - a) // latest year first
-            .map((year)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "year",
-                            children: year
-                        }, void 0, false, {
-                            fileName: "src/components/publications.js",
-                            lineNumber: 12,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: (0, _publicationsJsonDefault.default)[year].map((pub, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                            children: pub.title
-                                        }, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 17,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 17,
-                                            columnNumber: 47
-                                        }, this),
-                                        pub.authors,
-                                        " ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 19,
-                                            columnNumber: 33
-                                        }, this),
-                                        pub.journal && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                            children: pub.journal
-                                        }, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 21,
-                                            columnNumber: 35
-                                        }, this),
-                                        " ",
-                                        pub.booktitle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                            children: pub.booktitle
-                                        }, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 22,
-                                            columnNumber: 37
-                                        }, this),
-                                        " \xa0 \xa0",
-                                        pub.urlSource ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: pub.urlSource,
-                                            target: "_blank",
-                                            rel: "noreferrer",
-                                            children: "View Paper"
-                                        }, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 26,
-                                            columnNumber: 21
-                                        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: pub.url,
-                                            target: "_blank",
-                                            rel: "noreferrer",
-                                            children: "Search"
-                                        }, void 0, false, {
-                                            fileName: "src/components/publications.js",
-                                            lineNumber: 30,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, index, true, {
-                                    fileName: "src/components/publications.js",
-                                    lineNumber: 16,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/components/publications.js",
-                            lineNumber: 14,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, year, true, {
-                    fileName: "src/components/publications.js",
-                    lineNumber: 11,
-                    columnNumber: 11
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/components/publications.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = Publications;
-exports.default = Publications;
-var _c;
-$RefreshReg$(_c, "Publications");
-
-  $parcel$ReactRefreshHelpers$e1fd.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","../dbs/publications.json":"ecTq2","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ecTq2":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse('{"2006":[{"entryType":"article","citationKey":"aliefficient","title":"AN EFFICIENT RANK BASED ADAPTIVE ALGORITHM FOR DESIGNING WEB CRAWLERS USING SIMILARITY CRITERION","authors":"Ali, GG Md Nawaz and Eftakhar, SM Ashik and Waheduzzaman, Md","url":"https://scholar.google.com/scholar?q=AN+EFFICIENT+RANK+BASED+ADAPTIVE+ALGORITHM+FOR+DESIGNING+WEB+CRAWLERS+USING+SIMILARITY+CRITERION","urlSource":"https://www.researchgate.net/publication/299834624_An_Efficient_Rank_Based_Adaptive_Algorithm_for_Designing_Web_Crawlers_Using_Similarity_Criterion"}],"2009":[{"entryType":"inproceedings","citationKey":"ali2009fair","title":"Fair slots assignment mechanisms of IEEE 802.11 networks for multiple access points","authors":"Ali, GG Md Nawaz and Shahin, Rashma and Mowna, Nushrika","booktitle":"2009 12th International Conference on Computers and Information Technology","pages":"94--99","year":"2009","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Fair+slots+assignment+mechanisms+of+IEEE+802.11+networks+for+multiple+access+points","urlSource":"https://ieeexplore.ieee.org/abstract/document/5407158"},{"entryType":"inproceedings","citationKey":"ali2009performance","title":"Performance analysis of different routing algorithms for load distribution in multipath packet switched network","authors":"Ali, GG Md Nawaz and Chakraborty, Rajib and Alam, Md Shihabul","booktitle":"2009 Ninth IEEE International Conference on Computer and Information Technology","volume":"2","pages":"325--330","year":"2009","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+different+routing+algorithms+for+load+distribution+in+multipath+packet+switched+network","urlSource":"https://ieeexplore.ieee.org/abstract/document/5329070"}],"2010":[{"entryType":"article","citationKey":"ali2010efficient","title":"An Efficient Approach for Generalized Load Balancing in Multipath Packet Switched Networks","authors":"Ali, GG and Chakraborty, Rajib and Alam, Md Shihabul and Chan, Edward","journal":"arXiv preprint arXiv:1003.3312","year":"2010","url":"https://scholar.google.com/scholar?q=An+Efficient+Approach+for+Generalized+Load+Balancing+in+Multipath+Packet+Switched+Networks","urlSource":"https://arxiv.org/abs/1003.3312"}],"2011":[{"entryType":"inproceedings","citationKey":"ali2011co","title":"Co-operative data access in multiple road side units (rsus)-based vehicular ad hoc networks (vanets)","authors":"Ali, GG Md Nawaz and Chan, Edward","booktitle":"2011 Australasian Telecommunication Networks and Applications Conference (ATNAC)","pages":"1--6","year":"2011","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Co-operative+data+access+in+multiple+road+side+units+%28rsus%29-based+vehicular+ad+hoc+networks+%28vanets%29","urlSource":"https://ieeexplore.ieee.org/abstract/document/6096651"},{"entryType":"article","citationKey":"ali2011co","title":"Co-operative load balancing in vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward","journal":"International Journal of Wireless Networks and Broadband Technologies (IJWNBT)","volume":"1","number":"4","pages":"1--21","year":"2011","publisher":"IGI Global Scientific Publishing","url":"https://scholar.google.com/scholar?q=Co-operative+load+balancing+in+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.igi-global.com/article/content/64624"},{"entryType":"inproceedings","citationKey":"ali2011two","title":"Two-step joint scheduling scheme for road side units (RSUs)-based vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","booktitle":"International Conference on Database Systems for Advanced Applications","pages":"453--464","year":"2011","organization":"Springer Berlin Heidelberg Berlin, Heidelberg","url":"https://scholar.google.com/scholar?q=Two-step+joint+scheduling+scheme+for+road+side+units+%28RSUs%29-based+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://link.springer.com/chapter/10.1007/978-3-642-20244-5_43"}],"2013":[{"entryType":"inproceedings","citationKey":"ali2013scheduling","title":"On Scheduling Real-Time Multi-item Queries in Multi-RSU Vehicular Ad Hoc Networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","booktitle":"2013 27th International Conference on Advanced Information Networking and Applications Workshops","pages":"7--12","year":"2013","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+Scheduling+Real-Time+Multi-item+Queries+in+Multi-RSU+Vehicular+Ad+Hoc+Networks+%28VANETs%29","urlSource":"https://ieeexplore.ieee.org/abstract/document/6550365"},{"entryType":"article","citationKey":"ali2013supporting","title":"Supporting real-time multiple data items query in multi-RSU vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","journal":"Journal of Systems and Software","volume":"86","number":"8","pages":"2127--2142","year":"2013","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Supporting+real-time+multiple+data+items+query+in+multi-RSU+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.sciencedirect.com/science/article/pii/S0164121213000769"},{"entryType":"article","citationKey":"chen2013efficient","title":"Efficient processing of requests with network coding in on-demand data broadcast environments","authors":"Chen, Jun and Lee, Victor CS and Liu, Kai and Ali, GG Md Nawaz and Chan, Edward","journal":"Information Sciences","volume":"232","pages":"27--43","year":"2013","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Efficient+processing+of+requests+with+network+coding+in+on-demand+data+broadcast+environments","urlSource":"https://dl.acm.org/doi/10.1016/j.ins.2012.12.044"}],"2014":[{"entryType":"article","citationKey":"ali2014scheduling","title":"On scheduling data access with cooperative load balancing in vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chan, Edward and Li, Wenzhong","journal":"The Journal of Supercomputing","volume":"67","number":"2","pages":"438--468","year":"2014","publisher":"Springer US Boston","url":"https://scholar.google.com/scholar?q=On+scheduling+data+access+with+cooperative+load+balancing+in+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2014efficient","title":"An efficient cooperative load balancing approach in rsu-based vehicular ad hoc networks (vanets)","authors":"Ali, GG Md Nawaz and Mollah, Md Abdus Salim and Samantha, Syeda Khairunnesa and Mahmud, Saifuddin","booktitle":"2014 IEEE International Conference on Control System, Computing and Engineering (ICCSCE 2014)","pages":"52--57","year":"2014","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+efficient+cooperative+load+balancing+approach+in+rsu-based+vehicular+ad+hoc+networks+%28vanets%29","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2014performance","title":"Performance improvement in applying network coding to on-demand scheduling algorithms for broadcasts in wireless networks","authors":"Ali, G and Meng, Yuxuan and Lee, V and Liu, Kai and Chan, Edward","booktitle":"International Multi-Conference on Computing in the Global Information Technology (ICCGI)","year":"2014","url":"https://scholar.google.com/scholar?q=Performance+improvement+in+applying+network+coding+to+on-demand+scheduling+algorithms+for+broadcasts+in+wireless+networks","urlSource":"https://d1wqtxts1xzle7.cloudfront.net/84435802/download_full-libre.pdf?1650337841=&response-content-disposition=inline%3B+filename%3DICCGI_2014_The_Ninth_International_Multi.pdf&Expires=1777837271&Signature=cHqFNFwWVFurH6DrLSBDidujB3VX8Xm6Ka37s8ZmiR-FYkotCdZuJA6FIJ1xsEQJbKO8vh5WnFjZqbk~K~g8aKil3wJiatUF0281bsn262Kgv6rYE0F2Q0ewmXTRuMb-1cjmJu7hd~Xduckh3J8RpVlZ9rLHf2lSyXhYs~bf7nQEjt1YzkwM3riTX4fMF~zNabIealStvVGrcflnjBSu~VkfoXRMZfuPiAIFzieabRzYPRu-jTP7nh-jcwADsQuox1INzo6Pl7bx~WpTixAyEy3oONC5sWFK-3hucID6OPGJWZHPqnv01jSOY62S3QTPM1b1dPC828-7B3tNPsAiww__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=148"},{"entryType":"article","citationKey":"ali2014admission","title":"Admission control-based multichannel data broadcasting for real-time multi-item queries","authors":"Ali, GG Md Nawaz and Lee, Victor CS and Chan, Edward and Li, Minming and Liu, Kai and Lv, Jingsong and Chen, Jun","journal":"IEEE Transactions on Broadcasting","volume":"60","number":"4","pages":"589--605","year":"2014","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Admission+control-based+multichannel+data+broadcasting+for+real-time+multi-item+queries","urlSource":"https://doi.org/10.1109/TBC.2014.2364533"}],"2016":[{"entryType":"inproceedings","citationKey":"zhao2016energy","title":"An energy-efficient and self-regioning based RPL for low-power and lossy networks","authors":"Zhao, Ming and Ali, GG Md Nawaz and Lu, Rongxing and Chong, Peter Han Joo","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+energy-efficient+and+self-regioning+based+RPL+for+low-power+and+lossy+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"moyeen2016automatic","title":"An automatic layout faults detection technique in responsive web pages considering JavaScript defined dynamic layouts","authors":"Moyeen, MA and Ali, GG Md Nawaz and Chong, Peter Han Joo and Islam, Nazmul","booktitle":"2016 3rd International Conference on Electrical Engineering and Information Communication Technology (ICEEICT)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+automatic+layout+faults+detection+technique+in+responsive+web+pages+considering+JavaScript+defined+dynamic+layouts","urlSource":null},{"entryType":"inproceedings","citationKey":"shaikh2016parallel","title":"Parallel matricization for nD array operations","authors":"Shaikh, Md Abu Hanif and Ali, GG Md Nawaz and Chong, Peter Han Joo and Guan, Yong Liang","booktitle":"2016 IEEE Region 10 Conference (TENCON)","pages":"2432--2435","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Parallel+matricization+for+nD+array+operations","urlSource":null},{"entryType":"inproceedings","citationKey":"sudheera2016delay","title":"Delay efficient software defined networking based architecture for vehicular networks","authors":"Sudheera, KL Kushan and Ma, Maode and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communication Systems (ICCS)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Delay+efficient+software+defined+networking+based+architecture+for+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"ali2016striking","title":"On striking the balance between the fairness of service and throughput in roadside units based vehicular ad hoc networks","authors":"Ali, GG Md Nawaz and Mollah, Md Abdus Salim and Samantha, Syeda Khairunnesa and Chong, Peter Han Joo and Guan, Yong Liang","journal":"International Journal of Vehicle Autonomous Systems","volume":"13","number":"2","pages":"168--187","year":"2016","publisher":"Inderscience Publishers (IEL)","url":"https://scholar.google.com/scholar?q=On+striking+the+balance+between+the+fairness+of+service+and+throughput+in+roadside+units+based+vehicular+ad+hoc+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"zhao2016cloud","title":"A cloud-based network architecture for big data services","authors":"Zhao, Ming and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 IEEE 14th Intl Conf on Dependable, Autonomic and Secure Computing, 14th Intl Conf on Pervasive Intelligence and Computing, 2nd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress (DASC/PiCom/DataCom/CyberSciTech)","pages":"654--659","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=A+cloud-based+network+architecture+for+big+data+services","urlSource":null},{"entryType":"inproceedings","citationKey":"shaikh2016efficient","title":"Efficient matricization of nD array with CUDA and its evaluation","authors":"Shaikh, Md Abu Hanif and Hasan, KM Azharul and Ali, GG Md Nawaz and Chafii, Marwa and Chong, Peter Han Joo","booktitle":"2016 IEEE Intl Conference on Computational Science and Engineering (CSE) and IEEE Intl Conference on Embedded and Ubiquitous Computing (EUC) and 15th Intl Symposium on Distributed Computing and Applications for Business Engineering (DCABES)","pages":"246--252","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Efficient+matricization+of+nD+array+with+CUDA+and+its+evaluation","urlSource":null},{"entryType":"inproceedings","citationKey":"aung2016information","title":"Information epidemics control for data delivery in opportunistic networks","authors":"Aung, Cherry Ye and Ali, GG Md Nawaz and Zhao, Ming and Cai, Ruojun and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communications (ICC)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Information+epidemics+control+for+data+delivery+in+opportunistic+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2016efficient","title":"On efficient data dissemination using network coding in multi-rsu vehicular ad hoc networks","authors":"Ali, GG Md Nawaz and Rahman, Md Ashiqur and Chong, Peter Han Joo and Samantha, Syeda Khairunnesa","booktitle":"2016 IEEE 83rd Vehicular Technology Conference (VTC Spring)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+efficient+data+dissemination+using+network+coding+in+multi-rsu+vehicular+ad+hoc+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"rahman2016accessing","title":"On Accessing Heterogeneous Data Items using Network Coding in Wireless Broadcast","authors":"Rahman, Md Ashiqur and Ali, GG Md Nawaz and Gao, Yumeng and Samantha, Syeda K and Chong, Peter HJ","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=On+Accessing+Heterogeneous+Data+Items+using+Network+Coding+in+Wireless+Broadcast","urlSource":null},{"entryType":"inproceedings","citationKey":"islam2016expedite","title":"An expedite group key establishment protocol for Flying Ad-Hoc Network (FANET)","authors":"Islam, Nazmul and Hossain, Md Kowsar and Ali, GG Md Nawaz and Chong, Peter Han Joo","booktitle":"2016 5th International Conference on Informatics, Electronics and Vision (ICIEV)","pages":"312--315","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=An+expedite+group+key+establishment+protocol+for+Flying+Ad-Hoc+Network+%28FANET%29","urlSource":null},{"entryType":"inproceedings","citationKey":"moyeen2016wireless","title":"A wireless vehicular traffic service management scheme","authors":"Moyeen, MA and Ali, GG Md Nawaz and Chong, Peter Han Joo and Islam, Nazmul","booktitle":"2016 3rd International Conference on Electrical Engineering and Information Communication Technology (ICEEICT)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=A+wireless+vehicular+traffic+service+management+scheme","urlSource":null},{"entryType":"inproceedings","citationKey":"gao2016network","title":"Network coding based BSM broadcasting at road intersection in V2V communication","authors":"Gao, Yumeng and Ali, GG Md Nawaz and Chong, Peter Han Joo and Guan, Yong Liang","booktitle":"2016 IEEE 84th Vehicular Technology Conference (VTC-Fall)","pages":"1--5","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Network+coding+based+BSM+broadcasting+at+road+intersection+in+V2V+communication","urlSource":null},{"entryType":"article","citationKey":"aung2016cluster","title":"Cluster-based cooperative data forwarding with multi-radio multi-channel for multi-flow wireless networks","authors":"Aung, Cherry Ye and Ali, GG Md Nawaz and Chong, Peter Han Joo","year":"2016","url":"https://scholar.google.com/scholar?q=Cluster-based+cooperative+data+forwarding+with+multi-radio+multi-channel+for+multi-flow+wireless+networks","urlSource":null},{"entryType":"article","citationKey":"ali2016efficient","title":"Efficient data dissemination in cooperative multi-RSU vehicular ad hoc networks (VANETs)","authors":"Ali, GG Md Nawaz and Chong, Peter Han Joo and Samantha, Syeda Khairunnesa and Chan, Edward","journal":"Journal of Systems and Software","volume":"117","pages":"508--527","year":"2016","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Efficient+data+dissemination+in+cooperative+multi-RSU+vehicular+ad+hoc+networks+%28VANETs%29","urlSource":"https://www.sciencedirect.com/science/article/abs/pii/S0164121216300218"},{"entryType":"inproceedings","citationKey":"cai2016simulation","title":"Simulation study of routing attacks under network coding environment","authors":"Cai, Ruo Jun and Ali, GG Md Nawaz and Aung, Cherry Ye and Zhao, Ming and Chong, Peter Han Joo","booktitle":"2016 IEEE International Conference on Communications (ICC)","pages":"1--6","year":"2016","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Simulation+study+of+routing+attacks+under+network+coding+environment","urlSource":null}],"2017":[{"entryType":"article","citationKey":"morimoto2017offline","title":"An offline electronic payment system based on an untraceable blind signature scheme","authors":"Morimoto, Yasuhiko and Ali, GG Md Nawaz and Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Chong, Peter Han Joo","year":"2017","url":"https://scholar.google.com/scholar?q=An+offline+electronic+payment+system+based+on+an+untraceable+blind+signature+scheme","urlSource":null},{"entryType":"article","citationKey":"kutubi2017offline","title":"An offline electronic payment system based on an untraceable blind signature scheme","authors":"Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Ali, GG and Chong, Peter Han Joo and Morimoto, Yasuhiko","journal":"KSII Transactions on Internet and Information Systems (TIIS)","volume":"11","number":"5","pages":"2628--2645","year":"2017","publisher":"Korean Society for Internet Information","url":"https://scholar.google.com/scholar?q=An+offline+electronic+payment+system+based+on+an+untraceable+blind+signature+scheme","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2017multiple","title":"Multiple UPFCs mathematical model enhancing multi-machine power system control","authors":"Ali, GM and Al-Mawsawi, SA","booktitle":"2017 10th Jordanian International Electrical and Electronics Engineering Conference (JIEEEC)","pages":"1--4","year":"2017","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Multiple+UPFCs+mathematical+model+enhancing+multi-machine+power+system+control","urlSource":null}],"2018":[{"entryType":"article","citationKey":"ali2018efficient","title":"Efficient real-time coding-assisted heterogeneous data access in vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, Md and Rahman, Md Ashiqur and Samantha, Syeda Khairunnesa and Chong, Peter Han Joo and Guan, Yong Liang","journal":"IEEE Internet of Things Journal","volume":"5","number":"5","pages":"3499--3512","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Efficient+real-time+coding-assisted+heterogeneous+data+access+in+vehicular+networks","urlSource":null},{"entryType":"misc","citationKey":"majeed2018trauma","title":"","authors":"Majeed, M Azam and Gill, Peter and Etokakpan, Mboutidem and MacGillivray, Sherry and Choudhary, Deepak and Rodrigue, Nathalie and Haran, Shankar and Lockwood, Joel and Fuselli, Pamela and Akaraborworn, Osaree and others","year":"2018","publisher":"Canadian Journal of Surgery","url":"https://scholar.google.com/scholar?q=Majeed%2C+M+Azam+and+Gill%2C+Peter+and+Etokakpan%2C+Mboutidem+and+MacGillivray%2C+Sherry+and+Choudhary%2C+Deepak+and+Rodrigue%2C+Nathalie+and+Haran%2C+Shankar+and+Lockwood%2C+Joel+and+Fuselli%2C+Pamela+and+Akaraborworn%2C+Osaree+and+others+2018","urlSource":null},{"entryType":"article","citationKey":"alam2018untraceable","title":"An Untraceable Voting Scheme Based on Pairs of Signatures.","authors":"Alam, Kazi Md Rokibul and Maruf, Adnan and Rakib, Md Rezaur Rahman and Ali, GG Md Nawaz and Chong, Peter Han Joo and Morimoto, Yasuhiko","journal":"Int. J. Netw. Secur.","volume":"20","number":"4","pages":"774--787","year":"2018","url":"https://scholar.google.com/scholar?q=An+Untraceable+Voting+Scheme+Based+on+Pairs+of+Signatures.","urlSource":null},{"entryType":"article","citationKey":"noor2018practical","title":"Practical relay code design based on protograph codes","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Guan, Yong Liang","journal":"IET Communications","volume":"12","number":"3","pages":"334--339","year":"2018","publisher":"Wiley Online Library","url":"https://scholar.google.com/scholar?q=Practical+relay+code+design+based+on+protograph+codes","urlSource":null},{"entryType":"article","citationKey":"ali2018analysis","title":"Analysis and improvement of reliability through coding for safety message broadcasting in urban vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, Md and Chong, Peter Han Joo and Guan, Yong Liang","journal":"IEEE Transactions on Vehicular Technology","volume":"67","number":"8","pages":"6774--6787","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Analysis+and+improvement+of+reliability+through+coding+for+safety+message+broadcasting+in+urban+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"noor2018performance","title":"Performance analysis of IEEE 802.11 p safety message broadcast with and without relaying at road intersection","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Nguyen, Hieu and Guan, Yong Liang","journal":"IEEE Access","volume":"6","pages":"23786--23799","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+IEEE+802.11+p+safety+message+broadcast+with+and+without+relaying+at+road+intersection","urlSource":null},{"entryType":"article","citationKey":"noor2018delay","title":"Delay-universal channel coding with feedback","authors":"Noor-A-Rahim, Md and Khyam, Mohammad Omar and Guan, Yong Liang and Ali, GG Md Nawaz and Nguyen, Khoa D and Lechner, Gottfried","journal":"IEEE Access","volume":"6","pages":"37918--37931","year":"2018","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Delay-universal+channel+coding+with+feedback","urlSource":null}],"2019":[{"entryType":"article","citationKey":"ali2019towards","title":"Towards efficient and scalable implementation for coding-based on-demand data broadcast","authors":"Ali, GG Md Nawaz and Liu, Kai and Lee, Victor CS and Chong, Peter HJ and Guan, Yong Liang and Chen, Jun","journal":"Computer Networks","volume":"154","pages":"88--104","year":"2019","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Towards+efficient+and+scalable+implementation+for+coding-based+on-demand+data+broadcast","urlSource":"https://www.sciencedirect.com/science/article/pii/S138912861930221X"},{"entryType":"article","citationKey":"mondal2019multi","title":"A Multi-Stage Encryption Technique to Enhance the Secrecy of Image.","authors":"Mondal, Arindom and Alam, Kazi Md Rokibul and Ali, GG and Chong, Peter Han Joo and others","journal":"KSII Transactions on Internet & Information Systems","volume":"13","number":"5","year":"2019","url":"https://scholar.google.com/scholar?q=A+Multi-Stage+Encryption+Technique+to+Enhance+the+Secrecy+of+Image.","urlSource":null},{"entryType":"inproceedings","citationKey":"kaur2019network","title":"Network driven performance analysis in connected vehicular networks","authors":"Kaur, Manveen and Ali, GG Md Nawaz and Rayamajhi, Anjan and Ayalew, Beshah and Martin, Jim","booktitle":"2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Network+driven+performance+analysis+in+connected+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"noor2019reliable","title":"Reliable state estimation of an unmanned aerial vehicle over a distributed wireless IoT network","authors":"Noor-A-Rahim, MD and Khyam, Mohammad Omar and Ali, GG Md Nawaz and Liu, Zilong and Pesch, Dirk and Chong, Peter HJ","journal":"IEEE Transactions on Reliability","volume":"68","number":"3","pages":"1061--1069","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Reliable+state+estimation+of+an+unmanned+aerial+vehicle+over+a+distributed+wireless+IoT+network","urlSource":"https://doi.org/10.1109/TR.2019.2891994"},{"entryType":"article","citationKey":"zhang2019novel","title":"A novel hybrid mac protocol for basic safety message broadcasting in vehicular networks","authors":"Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Seet, Boon-Chong and Kumar, Arun","journal":"IEEE Transactions on Intelligent Transportation Systems","volume":"21","number":"10","pages":"4269--4282","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=A+novel+hybrid+mac+protocol+for+basic+safety+message+broadcasting+in+vehicular+networks","urlSource":null},{"entryType":"inproceedings","citationKey":"yoon2019cooperative","title":"Cooperative perception in connected vehicle traffic under field-of-view and participation variations","authors":"Yoon, DoHyun Daniel and Ali, GG Md Nawaz and Ayalew, Beshah","booktitle":"2019 IEEE 2nd Connected and Automated Vehicles Symposium (CAVS)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Cooperative+perception+in+connected+vehicle+traffic+under+field-of-view+and+participation+variations","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2019analysis","title":"Analysis of reliabilities under different path loss models in urban/sub-urban vehicular networks","authors":"Ali, GG Md Nawaz and Ayalew, Beshah and Vahidi, Ardalan and Noor-A-Rahim, Md","booktitle":"2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)","pages":"1--6","year":"2019","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Analysis+of+reliabilities+under+different+path+loss+models+in+urban%2Fsub-urban+vehicular+networks","urlSource":null},{"entryType":"article","citationKey":"ali2019cooperative","title":"Cooperative cache transfer-based on-demand network coded broadcast in vehicular networks","authors":"Ali, GG Md Nawaz and Noor-A-Rahim, MD and Rahman, Md Ashiqur and Ayalew, Beshah and Chong, Peter HJ and Guan, Yong Liang","journal":"ACM Transactions on Embedded Computing Systems (TECS)","volume":"18","number":"4","pages":"1--20","year":"2019","publisher":"ACM New York, NY, USA","url":"https://scholar.google.com/scholar?q=Cooperative+cache+transfer-based+on-demand+network+coded+broadcast+in+vehicular+networks","urlSource":"https://dl.acm.org/doi/abs/10.1145/3329865"},{"entryType":"inproceedings","citationKey":"yoon2019data","title":"Data association and fusion framework for decentralized multi-vehicle cooperative perception","authors":"Yoon, DoHyun Daniel and Ali, GG Md Nawaz and Ayalew, Beshah","booktitle":"International Design Engineering Technical Conferences and Computers and Information in Engineering Conference","volume":"59216","pages":"V003T01A019","year":"2019","organization":"American Society of Mechanical Engineers","url":"https://scholar.google.com/scholar?q=Data+association+and+fusion+framework+for+decentralized+multi-vehicle+cooperative+perception","urlSource":null},{"entryType":"article","citationKey":"ali2019performance","title":"Performance Analysis of On-Demand Scheduling with and without Network Coding in Wireless Broadcast","authors":"Ali, GG Md Nawaz and Lee, Victor CS and Meng, Yuxuan and Chong, Peter HJ and Chen, Jun","journal":"Future internet","volume":"11","number":"12","pages":"248","year":"2019","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Performance+Analysis+of+On-Demand+Scheduling+with+and+without+Network+Coding+in+Wireless+Broadcast","urlSource":null},{"entryType":"article","citationKey":"noor2019broadcast","title":"Broadcast performance analysis and improvements of the LTE-V2V autonomous mode at road intersection","authors":"Noor-A-Rahim, Md and Ali, GG Md Nawaz and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk","journal":"IEEE Transactions on Vehicular Technology","volume":"68","number":"10","pages":"9359--9369","year":"2019","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Broadcast+performance+analysis+and+improvements+of+the+LTE-V2V+autonomous+mode+at+road+intersection","urlSource":"https://doi.org/10.1109/TVT.2019.2936799"},{"entryType":"article","citationKey":"ali2019broadcast","title":"Broadcast performance analysis and improvements of the LTE-V2V autonomous mode at road intersection","authors":"Ali, GG and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk and others","year":"2019","publisher":"Institute of Electrical and Electronics Engineers (IEEE)","url":"https://scholar.google.com/scholar?q=Broadcast+performance+analysis+and+improvements+of+the+LTE-V2V+autonomous+mode+at+road+intersection","urlSource":"https://doi.org/10.1109/TVT.2019.2936799"}],"2020":[{"entryType":"article","citationKey":"rahman2020twitter","title":"Twitter and census data analytics to explore socioeconomic factors for post-covid-19 reopening sentiment","authors":"Rahman, Md Mokhlesur and Ali, GG and Li, Xue Jun and Paul, Kamal Chandra and Chong, Peter HJ","journal":"arXiv preprint arXiv:2007.00054","year":"2020","url":"https://scholar.google.com/scholar?q=Twitter+and+census+data+analytics+to+explore+socioeconomic+factors+for+post-covid-19+reopening+sentiment","urlSource":"https://arxiv.org/abs/2007.00054"},{"entryType":"article","citationKey":"ali2020feedbackless","title":"Feedbackless relaying for enhancing reliability of connected vehicles","authors":"Ali, GG Md Nawaz and Ayalew, Beshah and Vahidi, Ardalan and Noor-A-Rahim, Md","journal":"IEEE Transactions on Vehicular Technology","volume":"69","number":"5","pages":"4621--4634","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Feedbackless+relaying+for+enhancing+reliability+of+connected+vehicles","urlSource":"https://doi.org/10.1109/TVT.2020.2980848"},{"entryType":"techreport","citationKey":"vahidi2020boosting","title":"Boosting Energy Efficiency of Heterogeneous Connected Automated Vehicle (CAV) Fleets via Anticipative and Cooperative Vehicle Guidance","authors":"Vahidi, Ardalan and Jia, Yunyi and Ayalew, Beshah and Karbowski, Dominik and Taiber, Joachim G and Fayazi, Ali Reza and Ali, G and Dollar, Robert Austin and Ard, Tyler and Guo, Longxiang and others","year":"2020","institution":"Clemson Univ., SC (United States)","url":"https://scholar.google.com/scholar?q=Boosting+Energy+Efficiency+of+Heterogeneous+Connected+Automated+Vehicle+%28CAV%29+Fleets+via+Anticipative+and+Cooperative+Vehicle+Guidance","urlSource":null},{"entryType":"article","citationKey":"samuel2020feeling","title":"Feeling positive about reopening? New normal scenarios from COVID-19 US reopen sentiment analytics","authors":"Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Samuel, Yana and Pelaez, Alexander and Chong, Peter Han Joo and Yakubov, Michael","journal":"Ieee Access","volume":"8","pages":"142173--142190","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Feeling+positive+about+reopening%3F+New+normal+scenarios+from+COVID-19+US+reopen+sentiment+analytics","urlSource":null},{"entryType":"article","citationKey":"noor2020survey","title":"A survey on resource allocation in vehicular networks","authors":"Noor-A-Rahim, Md and Liu, Zilong and Lee, Haeyoung and Ali, GG Md Nawaz and Pesch, Dirk and Xiao, Pei","journal":"IEEE transactions on intelligent transportation systems","volume":"23","number":"2","pages":"701--721","year":"2020","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=A+survey+on+resource+allocation+in+vehicular+networks","urlSource":"https://doi.org/10.1109/TITS.2020.3019322"},{"entryType":"article","citationKey":"samuel2020covid","title":"Covid-19 public sentiment insights and machine learning for tweets classification","authors":"Samuel, Jim and Ali, GG Md Nawaz and Rahman, Md Mokhlesur and Esawi, Ek and Samuel, Yana","journal":"Information","volume":"11","number":"6","pages":"314","year":"2020","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Covid-19+public+sentiment+insights+and+machine+learning+for+tweets+classification","urlSource":"https://www.mdpi.com/2078-2489/11/6/314"},{"entryType":"article","citationKey":"mohan2020machine","title":"Machine Learning Algorithm for NLOS Millimeter Wave in 5G V2X Communication","authors":"Mohan, Deepika and Ali, GG and Chong, Peter Han Joo","journal":"arXiv preprint arXiv:2012.12123","year":"2020","url":"https://scholar.google.com/scholar?q=Machine+Learning+Algorithm+for+NLOS+Millimeter+Wave+in+5G+V2X+Communication","urlSource":"https://arxiv.org/abs/2012.12123"},{"entryType":"article","citationKey":"samuel2020feeling","title":"Feeling like it is time to reopen now? covid-19 new normal scenarios based on reopening sentiment analytics","authors":"Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG and Samuel, Yana and Pelaez, Alexander","journal":"arXiv preprint arXiv:2005.10961","year":"2020","url":"https://scholar.google.com/scholar?q=Feeling+like+it+is+time+to+reopen+now%3F+covid-19+new+normal+scenarios+based+on+reopening+sentiment+analytics","urlSource":"https://arxiv.org/abs/2005.10961"}],"2021":[{"entryType":"article","citationKey":"rahman2021machine","title":"Machine learning on the COVID-19 pandemic, human mobility and air quality: A review","authors":"Rahman, Md Mokhlesur and Paul, Kamal Chandra and Hossain, Md Amjad and Ali, GG Md Nawaz and Rahman, Md Shahinoor and Thill, Jean-Claude","journal":"Ieee Access","volume":"9","pages":"72420--72450","year":"2021","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Machine+learning+on+the+COVID-19+pandemic%2C+human+mobility+and+air+quality%3A+A+review","urlSource":null},{"entryType":"article","citationKey":"hota2021analysis","title":"An analysis on contemporary MAC layer protocols in vehicular networks: State-of-the-art and future directions","authors":"Hota, Lopamudra and Nayak, Biraja Prasad and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo","journal":"Future Internet","volume":"13","number":"11","pages":"287","year":"2021","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=An+analysis+on+contemporary+MAC+layer+protocols+in+vehicular+networks%3A+State-of-the-art+and+future+directions","urlSource":"https://www.mdpi.com/1999-5903/13/11/287"},{"entryType":"article","citationKey":"yang2021social","title":"Social Video Advertisement Replacement and its Evaluation in Convolutional Neural Networks","authors":"Yang, Cheng and Yu, Xiang and Kumar, Arun and Ali, GG Md Nawaz and Chong, Peter Han Joo and Lam, Patrick","journal":"ELCVIA Electronic Letters on Computer Vision and Image Analysis","volume":"20","number":"1","pages":"117--136","year":"2021","url":"https://scholar.google.com/scholar?q=Social+Video+Advertisement+Replacement+and+its+Evaluation+in+Convolutional+Neural+Networks","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2021public","title":"Public perceptions of COVID-19 vaccines: Policy implications from US spatiotemporal sentiment analytics","authors":"Ali, GG Md Nawaz and Rahman, Md Mokhlesur and Hossain, Md Amjad and Rahman, Md Shahinoor and Paul, Kamal Chandra and Thill, Jean-Claude and Samuel, Jim","booktitle":"Healthcare","volume":"9","number":"9","pages":"1110","year":"2021","organization":"MDPI","url":"https://scholar.google.com/scholar?q=Public+perceptions+of+COVID-19+vaccines%3A+Policy+implications+from+US+spatiotemporal+sentiment+analytics","urlSource":null},{"entryType":"inproceedings","citationKey":"zheng2021deep","title":"Deep learning algorithm for picture frame detection on social media videos","authors":"Zheng, Fucheng and Yang, Cheng and Chong, Peter Han Joo and Wang, George and Ali, GG Md Nawaz and Lam, Patrick","booktitle":"2021 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS)","pages":"149--155","year":"2021","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Deep+learning+algorithm+for+picture+frame+detection+on+social+media+videos","urlSource":null},{"entryType":"article","citationKey":"rahman2021socioeconomic","title":"Socioeconomic factors analysis for COVID-19 US reopening sentiment with Twitter and census data","authors":"Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Li, Xue Jun and Samuel, Jim and Paul, Kamal Chandra and Chong, Peter HJ and Yakubov, Michael","journal":"Heliyon","volume":"7","number":"2","year":"2021","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Socioeconomic+factors+analysis+for+COVID-19+US+reopening+sentiment+with+Twitter+and+census+data","urlSource":null},{"entryType":"article","citationKey":"chiputa2021enhancing","title":"Enhancing Handover for 5G Mobile Networks using Jump Markov Linear System and Deep Reinforcement Learning","authors":"Chiputa, Masoto and Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Sabit, Hakilo and Kumar, Arun and Li, Hui","year":"2021","publisher":"Preprints","url":"https://scholar.google.com/scholar?q=Enhancing+Handover+for+5G+Mobile+Networks+using+Jump+Markov+Linear+System+and+Deep+Reinforcement+Learning","urlSource":null},{"entryType":"article","citationKey":"yoon2021performance","title":"Performance of decentralized cooperative perception in V2V connected traffic","authors":"Yoon, DoHyun Daniel and Ayalew, Beshah and Ali, GG Md Nawaz","journal":"IEEE Transactions on Intelligent Transportation Systems","volume":"23","number":"7","pages":"6850--6863","year":"2021","publisher":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+of+decentralized+cooperative+perception+in+V2V+connected+traffic","urlSource":"https://ieeexplore.ieee.org/abstract/document/9387631"}],"2022":[{"entryType":"article","citationKey":"jarrah2022time","title":"The Time-Free Comparison Model for Fault Diagnosis in Wireless Ad Hoc Networks","authors":"Jarrah, Hazim and Ali, GG Md Nawaz and Kumar, Arun and Chong, Peter HJ and Sarkar, Nurul I and Gutierrez, Jairo","journal":"Mobile Networks and Applications","volume":"27","number":"2","pages":"469--482","year":"2022","publisher":"Springer US New York","url":"https://scholar.google.com/scholar?q=The+Time-Free+Comparison+Model+for+Fault+Diagnosis+in+Wireless+Ad+Hoc+Networks","urlSource":null},{"entryType":"article","citationKey":"chiputa2022enhancing","title":"Enhancing handover for 5G mmWave mobile networks using jump Markov linear system and deep reinforcement learning","authors":"Chiputa, Masoto and Zhang, Minglong and Ali, GG Md Nawaz and Chong, Peter Han Joo and Sabit, Hakilo and Kumar, Arun and Li, Hui","journal":"Sensors","volume":"22","number":"3","pages":"746","year":"2022","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Enhancing+handover+for+5G+mmWave+mobile+networks+using+jump+Markov+linear+system+and+deep+reinforcement+learning","urlSource":"https://www.mdpi.com/1424-8220/22/3/746"},{"entryType":"article","citationKey":"hota2022performance","title":"A performance analysis of VANETs propagation models and routing protocols","authors":"Hota, Lopamudra and Nayak, Biraja Prasad and Kumar, Arun and Sahoo, Bibhudatta and Ali, GG Md Nawaz","journal":"Sustainability","volume":"14","number":"3","pages":"1379","year":"2022","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+performance+analysis+of+VANETs+propagation+models+and+routing+protocols","urlSource":"https://www.mdpi.com/2071-1050/14/3/1379"}],"2023":[{"entryType":"article","citationKey":"rahman2023pandemic","title":"Pandemic vulnerability index of US cities: A hybrid knowledge-based and data-driven approach","authors":"Rahman, Md Shahinoor and Paul, Kamal Chandra and Rahman, Md Mokhlesur and Samuel, Jim and Thill, Jean-Claude and Hossain, Md Amjad and Ali, GG Md Nawaz","journal":"Sustainable Cities and Society","volume":"95","pages":"104570","year":"2023","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Pandemic+vulnerability+index+of+US+cities%3A+A+hybrid+knowledge-based+and+data-driven+approach","urlSource":null},{"entryType":"article","citationKey":"ali2023comprehensive","title":"A Comprehensive Study and Analysis of 3GPP\u2019s 5G New Radio for V2X Communication","authors":"Ali, GG Md Nawaz and Sadat, Mohammad Nazmus and Miah, Md Suruz and Sharief, Sameer Ahmed and Wang, Yun","year":"2023","publisher":"Preprints","url":"https://scholar.google.com/scholar?q=A+Comprehensive+Study+and+Analysis+of+3GPP%E2%80%99s+5G+New+Radio+for+V2X+Communication","urlSource":null},{"entryType":"inproceedings","citationKey":"ali2023performance","title":"Performance analysis of 5G new radio V2X communication","authors":"Ali, GG Md Nawaz and Sharief, Sameer Ahmed and Sadat, Mohammad Nazmus and Miah, Md Suruz","booktitle":"2023 IEEE Wireless and Microwave Technology Conference (WAMICON)","pages":"1--4","year":"2023","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Performance+analysis+of+5G+new+radio+V2X+communication","urlSource":"https://personalpages.bradley.edu/~smiah/Publications/OUT/b2hd-AlShSaMi2023-c1.html"}],"2024":[{"entryType":"article","citationKey":"ali2024comprehensive","title":"A comprehensive study and analysis of the third generation Partnership project\u2019s 5G new radio for Vehicle-to-Everything Communication","authors":"Ali, GG Md Nawaz and Sadat, Mohammad Nazmus and Miah, Md Suruz and Sharief, Sameer Ahmed and Wang, Yun","journal":"Future Internet","volume":"16","number":"1","pages":"21","year":"2024","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+comprehensive+study+and+analysis+of+the+third+generation+Partnership+project%E2%80%99s+5G+new+radio+for+Vehicle-to-Everything+Communication","urlSource":"https://www.mdpi.com/1999-5903/16/1/21"},{"entryType":"article","citationKey":"wang20244","title":"4 Computational Analysis of Wireless Modeling Sensor and","authors":"Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Md Nawaz and Zhang, Yanping","journal":"Computational Modeling and Simulation of Advanced Wireless Communication Systems","pages":"89","year":"2024","publisher":"CRC Press","url":"https://scholar.google.com/scholar?q=4+Computational+Analysis+of+Wireless+Modeling+Sensor+and","urlSource":null},{"entryType":"incollection","citationKey":"wang2024computational","title":"Computational Modeling and Analysis of Wireless Sensor Networks","authors":"Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Nawaz and Zhang, Yanping","booktitle":"Computational Modeling and Simulation of Advanced Wireless Communication Systems","pages":"89--111","year":"2024","publisher":"CRC Press","url":"https://scholar.google.com/scholar?q=Computational+Modeling+and+Analysis+of+Wireless+Sensor+Networks","urlSource":"https://pure.gonzaga.edu/p/en/research-outputs/ldabd7jkhpzg-1a17184e-0b71-4179-8881-7db9bfcdbb5c"}],"2025":[{"entryType":"article","citationKey":"ghosh2025multimodal","title":"A multimodal pain sentiment analysis system using ensembled deep learning approaches for IoT-enabled healthcare framework","authors":"Ghosh, Anay and Umer, Saiyed and Dhara, Bibhas Chandra and Ali, GG Md Nawaz","journal":"Sensors","volume":"25","number":"4","pages":"1223","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=A+multimodal+pain+sentiment+analysis+system+using+ensembled+deep+learning+approaches+for+IoT-enabled+healthcare+framework","urlSource":"https://www.mdpi.com/1424-8220/25/4/1223"},{"entryType":"article","citationKey":"mohammed2025gsaf","title":"Gsaf: An ML-based sentiment analytics framework for understanding contemporary public sentiment and trends on key societal issues","authors":"Mohammed, Abdul Moid Khan and Ali, GG Md Nawaz and Khairunnesa, Samantha S","journal":"Information","volume":"16","number":"4","pages":"271","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Gsaf%3A+An+ML-based+sentiment+analytics+framework+for+understanding+contemporary+public+sentiment+and+trends+on+key+societal+issues","urlSource":"https://www.mdpi.com/2078-2489/16/4/271"},{"entryType":"article","citationKey":"sayed2025public","title":"Public sentiment analysis of roadway work zones using social media data and machine learning models","authors":"Sayed, Md Abu and Hossain, Md Amjad and Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Islam, Mohammad Anwarul and Paul, Kamal Chandra and Qin, Xiao","journal":"Data Science and Management","year":"2025","publisher":"Elsevier","url":"https://scholar.google.com/scholar?q=Public+sentiment+analysis+of+roadway+work+zones+using+social+media+data+and+machine+learning+models","urlSource":"https://www.sciencedirect.com/science/article/pii/S2666764925000189"},{"entryType":"inproceedings","citationKey":"shifa2025leveraging","title":"Leveraging Large Language Models for Automating Outpatients\u2019 Message Classifications of Electronic Medical Records","authors":"Shifa, Amima and Ali, GG Md Nawaz and Foulger, Roopa","booktitle":"Healthcare","volume":"13","number":"23","pages":"3052","url":"https://www.mdpi.com/2227-9032/13/23/3052","year":"2025","organization":"MDPI","urlSource":"https://www.mdpi.com/2227-9032/13/23/3052"},{"entryType":"article","citationKey":"fayyaz2025advanced","title":"Advanced Feature Engineering and Machine Learning Techniques for High Accurate Price Prediction of Heterogeneous Pre-Own Cars","authors":"Fayyaz, Imran and Ali, GG Md Nawaz and Khairunnesa, Samantha S","journal":"Vehicles","volume":"7","number":"3","pages":"94","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Advanced+Feature+Engineering+and+Machine+Learning+Techniques+for+High+Accurate+Price+Prediction+of+Heterogeneous+Pre-Own+Cars","urlSource":"https://www.mdpi.com/2624-8921/7/3/94"},{"entryType":"inproceedings","citationKey":"mohammed2025understanding","title":"Understanding Contemporary Public Sentiment and Trends on Key Societal","authors":"Mohammed, Abdul Moid Khan and Ali, GG Md Nawaz","booktitle":"Intelligent Computing: Proceedings of the 2025 Computing Conference, Volume 1","volume":"1","pages":"321","year":"2025","organization":"Springer Nature","url":"https://scholar.google.com/scholar?q=Understanding+Contemporary+Public+Sentiment+and+Trends+on+Key+Societal","urlSource":null},{"entryType":"article","citationKey":"baseer2025machine","title":"Machine Learning-Based Compressive Strength Prediction in Pervious Concrete","authors":"Baseer, Hamed Abdul and Ali, GG Md Nawaz","journal":"CivilEng","volume":"7","number":"1","pages":"3","year":"2025","publisher":"MDPI","url":"https://scholar.google.com/scholar?q=Machine+Learning-Based+Compressive+Strength+Prediction+in+Pervious+Concrete","urlSource":"https://www.mdpi.com/2673-4109/7/1/3"}],"2026":[{"entryType":"inproceedings","citationKey":"shifa2026bridging","title":"Bridging Lexical and Contextual Semantics for Adolescents\' Health Sentiment Analysis: A Cross-Platform Study Using Large Language Models","authors":"Shifa, Amima* and Ali, GG Md Nawaz and Henricks, Dylan","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"360--365","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Bridging+Lexical+and+Contextual+Semantics+for+Adolescents%E2%80%99+Health+Sentiment+Analysis%3A+A+Cross-Platform+Study+Using+Large+Language+Models","urlSource":null},{"entryType":"inproceedings","citationKey":"poudel2026truth","title":"Truth in the Age of AI: Fine-Tuning LLMs for Reliable Fake News Detection","authors":"Poudel, Sajan and Sadat, Nazmus and Ali, GG Md Nawaz","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"354--359","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=Truth+in+the+Age+of+AI%3A+Fine-Tuning+LLMs+for+Reliable+Fake+News+Detection","urlSource":null},{"entryType":"inproceedings","citationKey":"fayyaz2026llms","title":"LLMs in Fake News Detection: A Comparative Study of Zero-Shot and Fine-Tuned Open-Source Models","authors":"Fayyaz, Imran* and Ali, GG Md Nawaz and Khairunnesa, Samantha S","booktitle":"2026 International Conference on Semantic Computing (ICSC)","pages":"238--245","year":"2026","organization":"IEEE","url":"https://scholar.google.com/scholar?q=LLMs+in+Fake+News+Detection%3A+A+Comparative+Study+of+Zero-Shot+and+Fine-Tuned+Open-Source+Models","urlSource":null}]}');
-
-},{}],"9PZB1":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$a531 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$a531.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a531.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _teachingJson = require("../dbs/teaching.json");
-var _teachingJsonDefault = parcelHelpers.interopDefault(_teachingJson);
-function Teaching() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "teaching",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Teaching"
-            }, void 0, false, {
-                fileName: "src/components/teaching.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "catalog",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: (0, _teachingJsonDefault.default).catalogUrl,
-                    target: "_blank",
-                    rel: "noreferrer",
-                    children: "Bradley University CS&IS Course Catalog"
-                }, void 0, false, {
-                    fileName: "src/components/teaching.js",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/components/teaching.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this),
-            (0, _teachingJsonDefault.default).categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "category",
-                            children: category.level
-                        }, void 0, false, {
-                            fileName: "src/components/teaching.js",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: category.courses.map((course, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                            children: course.courseCode
-                                        }, void 0, false, {
-                                            fileName: "src/components/teaching.js",
-                                            lineNumber: 21,
-                                            columnNumber: 17
-                                        }, this),
-                                        ": ",
-                                        course.title,
-                                        course.fullTitle && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/components/teaching.js",
-                                                    lineNumber: 25,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                                    children: course.fullTitle
-                                                }, void 0, false, {
-                                                    fileName: "src/components/teaching.js",
-                                                    lineNumber: 26,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true),
-                                        course.expectedOffering && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/components/teaching.js",
-                                                    lineNumber: 32,
-                                                    columnNumber: 21
-                                                }, this),
-                                                "Expected Offering: ",
-                                                course.expectedOffering
-                                            ]
-                                        }, void 0, true),
-                                        course.toolsTopics && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                                    children: "Topics/Tools:"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/teaching.js",
-                                                    lineNumber: 39,
-                                                    columnNumber: 21
-                                                }, this),
-                                                " ",
-                                                course.toolsTopics.join(", ")
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/teaching.js",
-                                            lineNumber: 38,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: course.catalogUrl,
-                                            target: "_blank",
-                                            rel: "noreferrer",
-                                            children: "Course Catalog"
-                                        }, void 0, false, {
-                                            fileName: "src/components/teaching.js",
-                                            lineNumber: 44,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, idx, true, {
-                                    fileName: "src/components/teaching.js",
-                                    lineNumber: 20,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/components/teaching.js",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, index, true, {
-                    fileName: "src/components/teaching.js",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, this))
-        ]
-    }, void 0, true, {
-        fileName: "src/components/teaching.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = Teaching;
-exports.default = Teaching;
-var _c;
-$RefreshReg$(_c, "Teaching");
-
-  $parcel$ReactRefreshHelpers$a531.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","../dbs/teaching.json":"3hAgi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"3hAgi":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse("{\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\",\"categories\":[{\"level\":\"Undergraduate\",\"courses\":[{\"courseCode\":\"CS 102\",\"title\":\"Data Structures\",\"toolsTopics\":[\"Java\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 321\",\"title\":\"Operating Systems\",\"toolsTopics\":[\"Linux shell\",\"kernel\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CIS 393\",\"title\":\"Web Technologies and Systems\",\"toolsTopics\":[\"HTML\",\"CSS\",\"JavaScript\",\"Node.js\",\"Express\",\"MySQL\",\"MongoDB\",\"React\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Graduate\",\"courses\":[{\"courseCode\":\"CS 514\",\"title\":\"Algorithms\",\"toolsTopics\":[\"C++\",\"Java\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 531\",\"title\":\"Web Development Technologies\",\"toolsTopics\":[\"HTML\",\"CSS\",\"JavaScript\",\"Node.js\",\"Express\",\"MySQL\",\"MongoDB\",\"React\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 571\",\"title\":\"Database Design and Management\",\"toolsTopics\":[\"Relational Algebra\",\"SQL\",\"ERDPlus\",\"Full-stack web development\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Undergraduate & Graduate Cross-listed\",\"courses\":[{\"courseCode\":\"CIS 445/545\",\"title\":\"Integrative Programming & Technology\",\"toolsTopics\":[\"Linux shell\",\"Git\",\"GitHub\",\"Full-stack web development\",\"Network security\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 462/562\",\"title\":\"Machine Learning\",\"toolsTopics\":[\"Python\",\"NumPy\",\"Pandas\",\"Matplotlib\",\"Seaborn\",\"Scikit-learn\",\"Keras\",\"TensorFlow\"],\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]},{\"level\":\"Expecting to develop & offer in FA 26\",\"courses\":[{\"courseCode\":\"CS 111\",\"title\":\"AI for All - Artificial Intelligence for Life, Society, and Disciplines\",\"toolsTopics\":[\"Artificial Intelligence\",\"AI literacy\",\"Society\",\"Disciplines\"],\"expectedOffering\":\"FA 26\",\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"},{\"courseCode\":\"CS 466\",\"title\":\"NLP & LLM\",\"fullTitle\":\"Natural Language Processing and Large Language Model\",\"toolsTopics\":[\"Natural Language Processing\",\"Large Language Models\"],\"expectedOffering\":\"FA 26\",\"catalogUrl\":\"https://catalog.bradley.edu/undergraduate/course-descriptions/cs/\"}]}]}");
-
-},{}],"i2D0v":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$ab59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$ab59.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ab59.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _grantsJson = require("../dbs/grants.json");
-var _grantsJsonDefault = parcelHelpers.interopDefault(_grantsJson);
-var _s = $RefreshSig$();
-function Grants() {
-    _s();
-    const [statusFilter, setStatusFilter] = (0, _react.useState)("All");
-    const years = Object.keys((0, _grantsJsonDefault.default)).sort((a, b)=>b - a);
-    const allGrants = years.flatMap((year)=>(0, _grantsJsonDefault.default)[year].map((grant)=>({
-                ...grant,
-                year
-            })));
-    const filteredGrants = statusFilter === "All" ? allGrants : allGrants.filter((grant)=>grant.status === statusFilter);
-    const awardedCount = allGrants.filter((g)=>g.status === "Awarded").length;
-    const underReviewCount = allGrants.filter((g)=>g.status === "Under Review").length;
-    const notFundedCount = allGrants.filter((g)=>g.status === "Not Funded").length;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "grants",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Research Grants / Proposal Writing Experiences"
-            }, void 0, false, {
-                fileName: "src/components/grants.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grant-summary",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "Total:"
-                            }, void 0, false, {
-                                fileName: "src/components/grants.js",
-                                lineNumber: 27,
-                                columnNumber: 12
-                            }, this),
-                            " ",
-                            allGrants.length
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 27,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "Awarded:"
-                            }, void 0, false, {
-                                fileName: "src/components/grants.js",
-                                lineNumber: 28,
-                                columnNumber: 12
-                            }, this),
-                            " ",
-                            awardedCount
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "Under Review:"
-                            }, void 0, false, {
-                                fileName: "src/components/grants.js",
-                                lineNumber: 29,
-                                columnNumber: 12
-                            }, this),
-                            " ",
-                            underReviewCount
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                children: "Not Funded:"
-                            }, void 0, false, {
-                                fileName: "src/components/grants.js",
-                                lineNumber: 30,
-                                columnNumber: 12
-                            }, this),
-                            " ",
-                            notFundedCount
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/grants.js",
-                lineNumber: 26,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "statusFilter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                    children: "Filter by Status: "
-                }, void 0, false, {
-                    fileName: "src/components/grants.js",
-                    lineNumber: 34,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/components/grants.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                id: "statusFilter",
-                value: statusFilter,
-                onChange: (e)=>setStatusFilter(e.target.value),
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                        value: "All",
-                        children: "All"
-                    }, void 0, false, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 42,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                        value: "Awarded",
-                        children: "Awarded"
-                    }, void 0, false, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 43,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                        value: "Under Review",
-                        children: "Under Review"
-                    }, void 0, false, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                        value: "Not Funded",
-                        children: "Not Funded"
-                    }, void 0, false, {
-                        fileName: "src/components/grants.js",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/grants.js",
-                lineNumber: 37,
-                columnNumber: 7
-            }, this),
-            years.map((year)=>{
-                const grantsForYear = (0, _grantsJsonDefault.default)[year].filter((grant)=>statusFilter === "All" || grant.status === statusFilter);
-                if (grantsForYear.length === 0) return null;
-                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "year",
-                            children: year
-                        }, void 0, false, {
-                            fileName: "src/components/grants.js",
-                            lineNumber: 57,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            children: grantsForYear.map((grant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                            children: grant.agency
-                                        }, void 0, false, {
-                                            fileName: "src/components/grants.js",
-                                            lineNumber: 62,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/components/grants.js",
-                                            lineNumber: 63,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
-                                            children: grant.title
-                                        }, void 0, false, {
-                                            fileName: "src/components/grants.js",
-                                            lineNumber: 64,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/components/grants.js",
-                                            lineNumber: 65,
-                                            columnNumber: 19
-                                        }, this),
-                                        "Status: ",
-                                        grant.status,
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                            fileName: "src/components/grants.js",
-                                            lineNumber: 67,
-                                            columnNumber: 19
-                                        }, this),
-                                        grant.amountAwarded && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                            children: [
-                                                "Amount Awarded: ",
-                                                grant.amountAwarded,
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/components/grants.js",
-                                                    lineNumber: 72,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true),
-                                        grant.amountRequested && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                            children: [
-                                                "Amount Requested: ",
-                                                grant.amountRequested,
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/components/grants.js",
-                                                    lineNumber: 79,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true),
-                                        grant.role && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                            children: [
-                                                "Role: ",
-                                                grant.role,
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                    fileName: "src/components/grants.js",
-                                                    lineNumber: 86,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true)
-                                    ]
-                                }, grant.id, true, {
-                                    fileName: "src/components/grants.js",
-                                    lineNumber: 61,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/components/grants.js",
-                            lineNumber: 59,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, year, true, {
-                    fileName: "src/components/grants.js",
-                    lineNumber: 56,
-                    columnNumber: 11
-                }, this);
-            })
-        ]
-    }, void 0, true, {
-        fileName: "src/components/grants.js",
-        lineNumber: 23,
-        columnNumber: 5
-    }, this);
-}
-_s(Grants, "Y2kynHdxxpfyxG49EeZJcf8uEYo=");
-_c = Grants;
-exports.default = Grants;
-var _c;
-$RefreshReg$(_c, "Grants");
-
-  $parcel$ReactRefreshHelpers$ab59.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/grants.json":"l2Cov","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"l2Cov":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse('{"2017":[{"id":3,"agency":"National Science Challenge","title":"Smart Places for Elderly in Smart Nation: Ageing well in New Zealand (A prototype system for elderly smart care)","status":"Not Funded"},{"id":2,"agency":"Huawei Innovation Research Program (HIRP)","title":"Future Software Defined 5G Cellular-V2X: A Complete Futuristic Framework for a Secured Automated Driving Experience","status":"Not Funded"},{"id":1,"agency":"Endeavour Fund \u2013 Smart Ideas","title":"Advance Accident Detection for Vehicle Collision Avoidance for Future Intelligent Transport System","status":"Not Funded"}],"2018":[{"id":6,"agency":"NSF S&AS (Smart & Autonomous System)","title":"Autonomous Control of Connected Vehicle Traffic Via Distributed Fog Computing","status":"Not Funded"},{"id":5,"agency":"NSF CPS (Cyber Physical System)","title":"Collaborative Situation Awareness in Heterogeneous Traffic","status":"Not Funded"},{"id":4,"agency":"Endeavour Fund \u2013 Smart Ideas","title":"Design of Coding Scheme and Random Retrieval for DNA Based Data Storage","status":"Not Funded"}],"2019":[{"id":7,"agency":"US DOT ADS Demonstration Grant","title":"Clemson-Center of Excellence for Automated Driving Systems (C-CEADS)","status":"Not Funded"}],"2020":[{"id":8,"agency":"NSF Quick Response Award Program","title":"Machine learning based prediction of the consequences of not wearing a facemask in public transport during the COVID-19 pandemic","status":"Not Funded"}],"2021":[{"id":10,"agency":"Bradley University Startup Grant","title":"C-V2X radios for a reliable and smooth V2X communication","status":"Awarded","amountAwarded":"$10K"},{"id":9,"agency":"WV Open Education Resource (OER) Grant","title":"Develop and offer Object-Oriented Programming course using open education resources","status":"Awarded","amountAwarded":"$1K"}],"2022":[{"id":12,"agency":"CTEL Paired Course Initiative Award","title":"Paired Courses Initiative (CIS 445/545 & ECE 444/544) for Fall 22","status":"Awarded","amountAwarded":"$1K"},{"id":11,"agency":"Sherry Endowment Student/Faculty Collaborative Project Award","title":"A Survey on Machine Learning Methods in Autonomous Vehicles","status":"Awarded","amountAwarded":"$800"}],"2023":[{"id":19,"agency":"IFH (Innovation for Health) Award","title":"An Automated Message Classification and Response based System Empowered by Customized OpenAI Application","status":"Awarded","amountAwarded":"$50K"},{"id":16,"agency":"Student Engagement Award","title":"Performance analysis of 5G New Radio and DSRC networks for V2X Communications","status":"Awarded","amountAwarded":"$6K"},{"id":15,"agency":"Caterpillar Fellowship Award","title":"Performance Analysis and Enhancement of 5G New Radio Vehicular Communication","status":"Awarded","amountAwarded":"$5K"},{"id":14,"agency":"Faculty Scholarship Award","title":"Enhanced Cooperative Perception for Connected and Autonomous Vehicles","status":"Awarded","amountAwarded":"$6K"},{"id":13,"agency":"Caterpillar Fellowship Award","title":"Smooth Seamless Inter-working between Cellular and DSRC: A Futuristic Framework for a Secured Connected Driving Experience","status":"Awarded","amountAwarded":"$5K"}],"2024":[{"id":21,"agency":"IFH (Innovation for Health) Award","title":"Understanding the Reactions of Adolescents to Obesity Related Health Messaging Residing in the Tri-county Area (Peoria, Tazewell, and Woodford Counties) through Social Media Data","status":"Awarded","amountAwarded":"$49,954"},{"id":20,"agency":"Bradley\'s CTEL SoTL Award","title":"Learning Machine Learning (ML) and Artificial Intelligence (AI) with Fun: A Cross-listed Course Re-design","status":"Awarded","amountAwarded":"$3.5K"},{"id":18,"agency":"Illinois Space Grant Consortium - Research Seed Grant Award","title":"Performance analysis of 5G New Radio and DSRC networks for V2X Communications","status":"Not Funded","amountRequested":"$10K"},{"id":17,"agency":"Caterpillar Fellowship Award","title":"On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network","status":"Not Funded","amountRequested":"$5K"}],"2025":[{"id":27,"agency":"Liberal Arts and Sciences Undergraduate Summer Research and Artistry Fellowship Program","title":"Cyberpunk 2020 Character Creation Website Tool","status":"Not Funded","amountRequested":"$6K"},{"id":26,"agency":"Interdisciplinary Undergraduate Research and Creative Projects Summer Fellowship Program","title":"Developing Gizmos Recycling Game: A Game-based Learning Tools for Kids","status":"Not Funded","amountRequested":"$6K"},{"id":25,"agency":"Faculty Scholarship Award","title":"On Analysis of 5G New Radio Vehicular Communication using Bradley University Traffic Network","status":"Awarded","amountAwarded":"$6K"},{"id":24,"agency":"Illinois Water Resources Center (IWRC) Annual Research Grant","title":"AI-Powered Water Quality Prediction in the Midwestern U.S.","status":"Not Funded","amountRequested":"$20K","role":"Co-PI"},{"id":23,"agency":"Illinois Space Grant Consortium - Research Seed Grant Award","title":"Unpacking Public Perception of NASA\u2019s Space Exploration Efforts: A Generative AI-based Approach to Social Media Sentiment Analysis","status":"Not Funded","amountRequested":"$8K"},{"id":22,"agency":"NSF IUSE grant","title":"Improving Student Learning in Data Science Concentration through Advanced AI and ML Computing Facility and Project-based Curricula","status":"Not Funded","amountRequested":"$496,883"}],"2026":[{"id":32,"agency":"Faculty Scholarship Community Partnership BU-UICOMP Seed Award","title":"Curriculum-aligned Fine-tuned AI Assistant for Preclinical Medical Students","status":"Under Review","amountRequested":"$12K"},{"id":31,"agency":"Interdisciplinary Scholarship Award (IDS)","title":"Use of Supervised Machine Learning and Neural Network Models to Understand the Impact of Climate Change on US Midwest Road Infrastructure","status":"Under Review","amountRequested":"$15K"},{"id":30,"agency":"Student Engagement Award","title":"Development of a Fine-Tuned LLM with RAG for Assisting Students and Faculty with Bradley University Information Retrieval","status":"Under Review","amountRequested":"$6K"},{"id":29,"agency":"NSF IUSE: EDU Level 1 Grant","title":"Bridging the Gap: An Integrated Narrative (Storytelling) for Ethical Data Science Approach","status":"Under Review","amountRequested":"$399,357"},{"id":28,"agency":"IFH (Innovation for Health) Award","title":"Multimodal Sentiment Analysis about Adolescent Obesity from Social Media Data and Recommendations for Healthcare Providers (Phase II)","status":"Not Funded","amountRequested":"$79,996"}]}');
-
-},{}]},["9C6xR","a0t4e"], "a0t4e", "parcelRequire412e", {}, null, null, "http://localhost:8080")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["9C6xR","a0t4e"], "a0t4e", "parcelRequire412e", {}, null, null, "http://localhost:8080")
 
 //# sourceMappingURL=Portfolio.31b563d9.js.map
