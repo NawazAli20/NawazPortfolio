@@ -3,13 +3,13 @@ import publicationsData from '../dbs/publications.json'
 function Publications() {
   return (
     <div>
-      <h1>Publications</h1>
+      <h2>Publications</h2>
 
       {Object.keys(publicationsData)
         .sort((a, b) => b - a) // latest year first
         .map((year) => (
           <div key={year}>
-            <h2 className='year'>{year}</h2>
+            <h3 className='year'>{year}</h3>
 
             <ul>
               {publicationsData[year].map((pub, index) => (

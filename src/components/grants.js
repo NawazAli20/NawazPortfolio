@@ -21,7 +21,7 @@ function Grants() {
 
   return (
     <div className="grants">
-      <h1>Research Grants / Proposal Writing Experiences</h1>
+      <h2>Research Grants / Proposal Writing Experiences</h2>
 
       <div className="grant-summary">
         <p><strong>Total:</strong> {allGrants.length}</p>
@@ -54,7 +54,7 @@ function Grants() {
 
         return (
           <section key={year}>
-            <h2 className="year">{year}</h2>
+            <h3 className="year">{year}</h3>
 
             <ul>
               {grantsForYear.map((grant) => (

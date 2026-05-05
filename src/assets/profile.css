@@ -1,0 +1,74 @@
+.profile-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-card,
+.profile-bio-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.profile-header h1 {
+  font-size: 2.2rem;
+}
+
+.profile-header h2 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #2563eb;
+  font-weight: 600;
+  background-color: white;
+  text-align: left;
+}
+
+.profile-affiliation,
+.profile-location {
+  margin: 4px 0;
+  color: #4b5563;
+}
+
+.profile-contact {
+  margin-top: 18px;
+  line-height: 1.7;
+}
+
+.profile-contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.profile-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.profile-links a {
+  background: #2563eb;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-links a:hover {
+  background: #1d4ed8;
+}
+
+.profile-bio-card h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.bio {
+  line-height: 1.7;
+  color: #374151;
+  text-align: justify;
+}

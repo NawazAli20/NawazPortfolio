@@ -1,0 +1,52 @@
+.research-skills {
+  padding: 20px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.research-skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+ color: white;
+  background-color: red;
+  border-radius: 30px 30px;
+  width: 80%;
+}
+
+.section-block {
+  margin-bottom: 30px;
+}
+
+.section-block h3 {
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.tag:hover {
+  background-color: #bae6fd;
+  transform: scale(1.05);
+}
+
+.skill {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.skill:hover {
+  background-color: #fde68a;
+}

@@ -3,7 +3,7 @@ import teachingData from "../dbs/teaching.json";
 function Teaching() {
   return (
     <div className="teaching">
-      <h1>Teaching</h1>
+      <h2>Teaching</h2>
 
       <p className="catalog">
         <a href={teachingData.catalogUrl} target="_blank" rel="noreferrer">
@@ -13,7 +13,7 @@ function Teaching() {
 
       {teachingData.categories.map((category, index) => (
         <section key={index}>
-          <h2 className="category">{category.level}</h2>
+          <h3 className="category">{category.level}</h3>
 
           <ul>
             {category.courses.map((course, idx) => (

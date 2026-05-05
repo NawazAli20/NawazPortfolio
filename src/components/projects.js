@@ -10,14 +10,14 @@ function Projects() {
 
   return (
     <div className="projects-container">
-      <h1>Active Research Projects</h1>
+      <h2>Active Research Projects</h2>
 
       {projects.length === 0 ? (
         <p>No projects available.</p>
       ) : (
         projects.map((project, index) => (
           <div key={index} className="project-card">
-            <h2>{project.title}</h2>
+            <h3 className="projectTitle">{project.title}</h3>
 
             <p><strong>Objective:</strong> {project.objective}</p>
             <p><strong>Funder:</strong> {project.funder}</p>

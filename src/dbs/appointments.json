@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Assistant Professor",
+    "department": "Department of Computer Science and Information Systems",
+    "institution": "Bradley University",
+    "location": "Peoria, IL, USA",
+    "startDate": "Aug 2021",
+    "endDate": "Present"
+  },
+  {
+    "title": "Assistant Professor",
+    "department": "Department of Applied Computer Science",
+    "institution": "University of Charleston",
+    "location": "WV, USA",
+    "startDate": "Aug 2019",
+    "endDate": "May 2021"
+  },
+  {
+    "title": "Post-Doctoral Fellow",
+    "department": "Department of Automotive Engineering",
+    "institution": "Clemson University",
+    "location": "SC, USA",
+    "startDate": "March 2018",
+    "endDate": "July 2019"
+  },
+  {
+    "title": "Research Fellow",
+    "department": "School of Electrical and Electronic Engineering",
+    "institution": "Nanyang Technological University",
+    "location": "Singapore",
+    "startDate": "Oct 2015",
+    "endDate": "March 2018"
+  },
+  {
+    "title": "Assistant Professor",
+    "department": "Department of Computer Science and Engineering",
+    "institution": "Khulna University of Engineering & Technology",
+    "location": "Bangladesh",
+    "startDate": "Jan 2014",
+    "endDate": "Oct 2015"
+  },
+  {
+    "title": "Senior Research Assistant",
+    "department": "Department of Computer Science",
+    "institution": "City University of Hong Kong",
+    "location": "Hong Kong",
+    "startDate": "Sept 2013",
+    "endDate": "Dec 2013"
+  },
+  {
+    "title": "Lecturer",
+    "department": "Department of Computer Science and Engineering",
+    "institution": "Khulna University of Engineering & Technology",
+    "location": "Bangladesh",
+    "startDate": "May 2006",
+    "endDate": "Aug 2009"
+  }
+]
