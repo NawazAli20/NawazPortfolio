@@ -1,0 +1,50 @@
+/* Navbar container */
+.navbar {
+    background-color: #0f172a;   /* deep navy */
+    color: #ffffff;
+    padding: 12px 40px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Flex layout */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Brand (your name) */
+.nav-brand a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+/* Links container */
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Individual links */
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Active link (important for professionalism) */
+.nav-links a.active {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 2px;
+}

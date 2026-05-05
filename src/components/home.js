@@ -2,6 +2,7 @@ import portfolioData from "../dbs/portfolio.json";
 import nawazPic from '../assets/Nawaz1.jpg'
 import BUlogo from '../assets/Bradley logo2.png'
 import '../assets/profile.css'
+// import nawazpic from '../assets/Nawaz1.jpg'; 
 
 function Home() {
   return (
