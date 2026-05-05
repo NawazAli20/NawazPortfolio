@@ -7,7 +7,6 @@
 .profile-card, .profile-bio-card {
   background: #fff;
   border-radius: 14px;
-  margin-bottom: 24px;
   padding: 28px;
   box-shadow: 0 4px 14px #00000014;
 }
@@ -196,5 +195,49 @@
   margin-top: 8px;
   font-style: italic;
   display: inline-block;
+}
+
+.navbar {
+  color: #fff;
+  background-color: #0f172a;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 40px;
+}
+
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-brand a {
+  color: #fff;
+  letter-spacing: .5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links {
+  gap: 24px;
+  display: flex;
+}
+
+.nav-links a {
+  color: #cbd5f5;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a.active {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 2px;
 }
 /*# sourceMappingURL=Portfolio.9f367d21.css.map */
