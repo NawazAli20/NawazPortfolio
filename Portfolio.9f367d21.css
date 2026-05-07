@@ -240,4 +240,131 @@
   border-bottom: 2px solid #38bdf8;
   padding-bottom: 2px;
 }
+
+.awards-section {
+  max-width: 1000px;
+}
+
+.awards-section > h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.award-category {
+  margin-bottom: 35px;
+}
+
+.award-category > h3 {
+  color: #2563eb;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+}
+
+.awards-list {
+  flex-direction: column;
+  gap: 14px;
+  display: flex;
+}
+
+.award-card {
+  background: #fff;
+  border-left: 5px solid #2563eb;
+  border-radius: 10px;
+  gap: 18px;
+  padding: 16px 18px;
+  display: flex;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.award-year {
+  color: #2563eb;
+  min-width: 90px;
+  font-weight: 700;
+}
+
+.award-info h3 {
+  color: #111827;
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.award-info p {
+  color: #4b5563;
+  margin: 0 0 8px;
+}
+
+.award-info span {
+  color: #0369a1;
+  background: #e0f2fe;
+  border-radius: 14px;
+  padding: 5px 10px;
+  font-size: .85rem;
+  display: inline-block;
+}
+
+.services-section {
+  max-width: 1000px;
+}
+
+.services-header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.services-header h2 {
+  margin: 0;
+}
+
+.services-filter {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: .95rem;
+}
+
+.services-list {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.service-card {
+  background: #fff;
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  padding: 22px 26px;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.service-card h3 {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+.service-card ul {
+  margin-bottom: 0;
+  padding-left: 22px;
+}
+
+.service-card li {
+  color: #374151;
+  margin-bottom: 9px;
+  line-height: 1.6;
+}
+
+.service-link {
+  color: #2563eb;
+  margin-left: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=Portfolio.9f367d21.css.map */

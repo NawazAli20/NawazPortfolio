@@ -17426,6 +17426,10 @@ var _projects = require("./components/projects");
 var _projectsDefault = parcelHelpers.interopDefault(_projects);
 var _appointments = require("./components/Appointments");
 var _appointmentsDefault = parcelHelpers.interopDefault(_appointments);
+var _awards = require("./components/awards");
+var _awardsDefault = parcelHelpers.interopDefault(_awards);
+var _services = require("./components/services");
+var _servicesDefault = parcelHelpers.interopDefault(_services);
 var _navbarCss = require("./assets/navbar.css");
 var _reactRouterDom = require("react-router-dom");
 function NavBar() {
@@ -17442,7 +17446,7 @@ function NavBar() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17450,7 +17454,7 @@ function NavBar() {
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 44,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17458,7 +17462,7 @@ function NavBar() {
                         children: "Appointments"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17466,7 +17470,7 @@ function NavBar() {
                         children: "Teaching"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 46,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17474,7 +17478,7 @@ function NavBar() {
                         children: "Publications"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17482,7 +17486,7 @@ function NavBar() {
                         children: "Grants"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 48,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17490,23 +17494,39 @@ function NavBar() {
                         children: "Projects"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 49,
+                        lineNumber: 51,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                        to: "/awards",
+                        children: "Awards"
+                    }, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 52,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
+                        to: "/services",
+                        children: "Services"
+                    }, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 53,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/app.js",
-                lineNumber: 42,
+                lineNumber: 44,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 34,
+            lineNumber: 36,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/app.js",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
@@ -17519,12 +17539,12 @@ function App() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavBar, {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 66,
+                    lineNumber: 70,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 67,
+                    lineNumber: 71,
                     columnNumber: 17
                 }, this),
                 " ",
@@ -17534,56 +17554,8 @@ function App() {
                             path: "/profile",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 70,
-                                columnNumber: 53
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 70,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/appointments",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appointmentsDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 71,
-                                columnNumber: 58
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 71,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/teaching",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _teachingDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 72,
-                                columnNumber: 54
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 72,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/publications",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
-                                lineNumber: 73,
-                                columnNumber: 58
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 73,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/grants",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _grantsDefault.default), {}, void 0, false, {
-                                fileName: "src/app.js",
                                 lineNumber: 74,
-                                columnNumber: 52
+                                columnNumber: 53
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
@@ -17591,27 +17563,99 @@ function App() {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            path: "/projects",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                            path: "/appointments",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appointmentsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
                                 lineNumber: 75,
-                                columnNumber: 54
+                                columnNumber: 58
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
                             lineNumber: 75,
                             columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/teaching",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _teachingDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 76,
+                                columnNumber: 54
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 76,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/publications",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 77,
+                                columnNumber: 58
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 77,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/grants",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _grantsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 78,
+                                columnNumber: 52
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 78,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/projects",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 79,
+                                columnNumber: 54
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 79,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/awards",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 80,
+                                columnNumber: 52
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 80,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            path: "/services",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+                                fileName: "src/app.js",
+                                lineNumber: 81,
+                                columnNumber: 54
+                            }, void 0)
+                        }, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 81,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/app.js",
-                    lineNumber: 68,
+                    lineNumber: 72,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 65,
+            lineNumber: 69,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -17627,7 +17671,7 @@ $RefreshReg$(_c1, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./components/home":"jYN9H","./components/Profile":"2hgHB","./components/publications":"gPifD","./components/teaching":"9PZB1","./components/grants":"i2D0v","./components/projects":"CyEwo","./components/Appointments":"9b9MI","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./assets/navbar.css":"hYLDO"}],"jYN9H":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./components/home":"jYN9H","./components/Profile":"2hgHB","./components/publications":"gPifD","./components/teaching":"9PZB1","./components/grants":"i2D0v","./components/projects":"CyEwo","./components/Appointments":"9b9MI","./assets/navbar.css":"hYLDO","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/awards":"fGTfu","./components/services":"4Jyi7"}],"jYN9H":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$844a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$844a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -21242,7 +21286,7 @@ $RefreshReg$(_c, "Appointments");
 },{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/appointments.json":"1BMqt","../assets/appointments.css":"iKJ5R","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1BMqt":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("[{\"title\":\"Assistant Professor\",\"department\":\"Department of Computer Science and Information Systems\",\"institution\":\"Bradley University\",\"location\":\"Peoria, IL, USA\",\"startDate\":\"Aug 2021\",\"endDate\":\"Present\"},{\"title\":\"Assistant Professor\",\"department\":\"Department of Applied Computer Science\",\"institution\":\"University of Charleston\",\"location\":\"WV, USA\",\"startDate\":\"Aug 2019\",\"endDate\":\"May 2021\"},{\"title\":\"Post-Doctoral Fellow\",\"department\":\"Department of Automotive Engineering\",\"institution\":\"Clemson University\",\"location\":\"SC, USA\",\"startDate\":\"March 2018\",\"endDate\":\"July 2019\"},{\"title\":\"Research Fellow\",\"department\":\"School of Electrical and Electronic Engineering\",\"institution\":\"Nanyang Technological University\",\"location\":\"Singapore\",\"startDate\":\"Oct 2015\",\"endDate\":\"March 2018\"},{\"title\":\"Assistant Professor\",\"department\":\"Department of Computer Science and Engineering\",\"institution\":\"Khulna University of Engineering & Technology\",\"location\":\"Bangladesh\",\"startDate\":\"Jan 2014\",\"endDate\":\"Oct 2015\"},{\"title\":\"Senior Research Assistant\",\"department\":\"Department of Computer Science\",\"institution\":\"City University of Hong Kong\",\"location\":\"Hong Kong\",\"startDate\":\"Sept 2013\",\"endDate\":\"Dec 2013\"},{\"title\":\"Lecturer\",\"department\":\"Department of Computer Science and Engineering\",\"institution\":\"Khulna University of Engineering & Technology\",\"location\":\"Bangladesh\",\"startDate\":\"May 2006\",\"endDate\":\"Aug 2009\"}]");
 
-},{}],"iKJ5R":[function() {},{}],"61z4w":[function(require,module,exports,__globalThis) {
+},{}],"iKJ5R":[function() {},{}],"hYLDO":[function() {},{}],"61z4w":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.30.3
  *
@@ -28506,6 +28550,291 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hYLDO":[function() {},{}]},["9C6xR","a0t4e"], "a0t4e", "parcelRequire412e", {}, null, null, "http://localhost:8080")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fGTfu":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$58a9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$58a9.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$58a9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _awardsJson = require("../dbs/awards.json");
+var _awardsJsonDefault = parcelHelpers.interopDefault(_awardsJson);
+var _awardsCss = require("../assets/awards.css");
+function Awards() {
+    const renderAwards = (awardList)=>{
+        return awardList.map((award, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "award-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "award-year",
+                        children: award.year
+                    }, void 0, false, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "award-info",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: award.title
+                            }, void 0, false, {
+                                fileName: "src/components/awards.js",
+                                lineNumber: 12,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: award.organization
+                            }, void 0, false, {
+                                fileName: "src/components/awards.js",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: award.category
+                            }, void 0, false, {
+                                fileName: "src/components/awards.js",
+                                lineNumber: 14,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, index, true, {
+                fileName: "src/components/awards.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this));
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "awards-section",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Awards and Honors"
+            }, void 0, false, {
+                fileName: "src/components/awards.js",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "award-category",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "At Bradley University"
+                    }, void 0, false, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "awards-list",
+                        children: renderAwards((0, _awardsJsonDefault.default).atBradleyUniversity)
+                    }, void 0, false, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/awards.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "award-category",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Before Bradley University"
+                    }, void 0, false, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "awards-list",
+                        children: renderAwards((0, _awardsJsonDefault.default).beforeBradleyUniversity)
+                    }, void 0, false, {
+                        fileName: "src/components/awards.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/awards.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/awards.js",
+        lineNumber: 21,
+        columnNumber: 5
+    }, this);
+}
+_c = Awards;
+exports.default = Awards;
+var _c;
+$RefreshReg$(_c, "Awards");
+
+  $parcel$ReactRefreshHelpers$58a9.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/awards.json":"499Gj","../assets/awards.css":"e9A8I","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"499Gj":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('{"atBradleyUniversity":[{"year":2026,"title":"Faculty Student Interdisciplinary Scholarship (IDS)","organization":"Bradley University OSP Advisory Board","category":"Scholarship/Research"},{"year":2026,"title":"Student Engagement Award","organization":"Bradley University OSP Advisory Board","category":"Student Engagement"},{"year":2026,"title":"President\u2019s Award for Best Graduate Poster","organization":"Bradley Student Scholarship Expo","category":"Scholarship/Research"},{"year":2025,"title":"Faculty Scholarship Award (FSA)","organization":"Bradley University OSP Advisory Board","category":"Scholarship/Research"},{"year":2024,"title":"Caterpillar Faculty Achievement Award for Scholarship","organization":"Bradley University","category":"Scholarship/Research"},{"year":2024,"title":"CDER Summer Training Workshop Participation Award","organization":"UMASS Amherst / NSF-IEEE TCPP Curriculum Initiative","category":"Professional Development"},{"year":2024,"title":"NSF IUSE Summit Participation Award","organization":"AAAS","category":"Scholarship/Research"},{"year":2024,"title":"CTEL SoTL Award","organization":"Bradley University CTEL","category":"Teaching"},{"year":2024,"title":"Student Scholarship Expo Award","organization":"Bradley University","category":"Scholarship/Research"},{"year":2023,"title":"Innovation for Health (IFH) Award","organization":"OSF Healthcare and Bradley University","category":"Scholarship/Research"},{"year":2023,"title":"Student Engagement Award (SEA)","organization":"Bradley University OSP Advisory Board","category":"Student Engagement"},{"year":2022,"title":"Caterpillar Fellowship Award","organization":"Bradley University Caterpillar Endowment Fund","category":"Fellowship"},{"year":2022,"title":"Faculty Scholarship Award (FSA)","organization":"Bradley University OSP Advisory Board","category":"Scholarship/Research"},{"year":2022,"title":"Center for Teaching Excellence and Learning (CTEL) Paired Courses Initiatives Award","organization":"Bradley University CTEL","category":"Teaching"}],"beforeBradleyUniversity":[{"year":2021,"title":"Open Education Resource Grant (OER)","organization":"West Virginia Higher Education Policy Commission (WVHEPC)","category":"Teaching"},{"year":2019,"title":"Best Paper Award","organization":"ASME IDETC/CIE 2019 Conference","category":"Research"},{"year":2014,"title":"Best Poster Award","organization":"Khulna University of Engineering & Technology","category":"Research"},{"year":2014,"title":"Best Paper Award","organization":"IARIA ICCGI 2014 Conference","category":"Research"},{"year":2013,"title":"Outstanding Academic Performance Award","organization":"City University of Hong Kong","category":"Academic"},{"year":2011,"title":"Student Grant Award","organization":"Australasian Telecommunications Networks and Applications Conference (ATNAC)","category":"Research"},{"year":2010,"title":"ePortfolio Design Award","organization":"City University of Hong Kong","category":"Academic"},{"year":"2009-2013","title":"Postgraduate Student Scholarship","organization":"City University of Hong Kong","category":"Scholarship"},{"year":"2002-2006","title":"University Merit Scholarship","organization":"Khulna University of Engineering & Technology, Bangladesh","category":"Scholarship"},{"year":"1999-2001","title":"Education Board Scholarship","organization":"Dhaka College, Bangladesh","category":"Scholarship"},{"year":"1994-1999","title":"Government Junior Scholarship","organization":"Ministry of Education, Bangladesh Government","category":"Scholarship"}]}');
+
+},{}],"e9A8I":[function() {},{}],"4Jyi7":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$123a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$123a.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$123a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _servicesJson = require("../dbs/services.json");
+var _servicesJsonDefault = parcelHelpers.interopDefault(_servicesJson);
+var _servicesCss = require("../assets/services.css");
+var _s = $RefreshSig$();
+function Services() {
+    _s();
+    const [selectedCategory, setSelectedCategory] = (0, _react.useState)("All");
+    const categories = (0, _servicesJsonDefault.default).services.map((service)=>service.category);
+    const filteredServices = selectedCategory === "All" ? (0, _servicesJsonDefault.default).services : (0, _servicesJsonDefault.default).services.filter((service)=>service.category === selectedCategory);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "services-section",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "services-header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Professional Services"
+                    }, void 0, false, {
+                        fileName: "src/components/services.js",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                        value: selectedCategory,
+                        onChange: (e)=>setSelectedCategory(e.target.value),
+                        className: "services-filter",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                value: "All",
+                                children: "All Services"
+                            }, void 0, false, {
+                                fileName: "src/components/services.js",
+                                lineNumber: 27,
+                                columnNumber: 11
+                            }, this),
+                            categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                    value: category,
+                                    children: category
+                                }, index, false, {
+                                    fileName: "src/components/services.js",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, this))
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/services.js",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/services.js",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "services-list",
+                children: filteredServices.map((service, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "service-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: service.category
+                            }, void 0, false, {
+                                fileName: "src/components/services.js",
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                children: service.items.map((item, itemIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: typeof item === "string" ? item : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                            children: [
+                                                item.title,
+                                                " ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: item.link,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "service-link",
+                                                    children: "[Link]"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/services.js",
+                                                    lineNumber: 50,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true)
+                                    }, itemIndex, false, {
+                                        fileName: "src/components/services.js",
+                                        lineNumber: 44,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "src/components/services.js",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "src/components/services.js",
+                        lineNumber: 39,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/components/services.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/services.js",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_s(Services, "Im5wThrHhzmaALlaN3ftG1JjEyo=");
+_c = Services;
+exports.default = Services;
+var _c;
+$RefreshReg$(_c, "Services");
+
+  $parcel$ReactRefreshHelpers$123a.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../dbs/services.json":"aPzbC","../assets/services.css":"egXNg","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"aPzbC":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('{"services":[{"category":"Administrative Experiences","items":["Chair of Curriculum Committee, Department of CS&IS, Bradley University, USA, Fall 2023 - Present","Member and Chair of Faculty Search Committee, Department of CS&IS, Bradley University, USA, 2022 - Fall 2023","Member of Undergraduate Syllabus Committee, Department of Data and Computer Science, University of Charleston, WV, USA, 2019 - 2021","Deputy Director of Students\' Welfare, Khulna University of Engineering & Technology, Bangladesh, May 2014 - October 2015","Member of Undergraduate and Postgraduate Syllabus Committee, Department of CSE, Khulna University of Engineering & Technology, Bangladesh, 2014 - 2015","Teacher-in-Charge of Undergraduate Exam Committee, Department of CSE, Khulna University of Engineering & Technology, Bangladesh, 2014 - 2015"]},{"category":"Memberships & Academic Contributions","items":["Member of IEEE, The Institute of Electrical and Electronics Engineers","Member of IEB, The Institute of Engineers Bangladesh","Editorial Board Member of Ubiquitous Computing and Communication Journal","Member of the Organizing Committee of 11th International Conference of Computer and Information Technology (ICCIT\u201909), Khulna, Bangladesh","Coach of the university team of ACM International Collegiate Programming Contest, Dhaka site, Bangladesh, December 2007"]},{"category":"Leading Guest Editor of Journal Special Issues","items":[{"title":"Computers, Materials and Continua Special Issue: Sentiment Analysis for Social Media Data: Lexicon-Based and Large Language Model Approaches","link":"https://www.techscience.com/cmc/special_detail/sentiment_analysis"},{"title":"Elsevier Special Issue: VSI:SUSCOM Sustainable 5G in Sustainable Computing: Informatics and Systems","link":"https://www.sciencedirect.com/journal/sustainable-computing-informatics-and-systems"},{"title":"Sensors: Wireless Sensor Network and IoT Technologies for Smart Cities","link":"https://www.mdpi.com/journal/sensors/special_issues/GRTU828PMI"},{"title":"Sensors: Machine Learning for Connected and Autonomous Vehicles for Mixed Traffic Environment","link":"https://www.mdpi.com/journal/sensors/special_issues/ML_CAV"},{"title":"Sustainability: Vehicular Networks and Sustainability","link":"https://www.mdpi.com/journal/sustainability/special_issues/Vehicular_Networks_Sustainability"},{"title":"Vehicles: V2X Vehicle-to-Everything Communication","link":"https://www.mdpi.com/journal/vehicles/special_issues/2D19V2V249"}]},{"category":"Reviewers","items":[{"title":"NSF STEM EDU Panel Reviewer","link":"https://www.nsf.gov/edu"},{"title":"IEEE Transactions on Intelligent Transportation Systems","link":"https://ieee-itss.org/pub/t-its/"},{"title":"IEEE Transactions on Vehicular Technology","link":"https://vtsociety.org/publication/ieee-transactions-vehicular-technology"},{"title":"IEEE Transactions on Communications","link":"https://www.comsoc.org/publications/journals/ieee-tcom"},{"title":"IEEE Access","link":"https://ieeeaccess.ieee.org/"},{"title":"IEEE Sensors Journal","link":"https://ieee-sensors.org/ieee-sensors-journal/"},{"title":"IEEE Internet of Things Journal","link":"https://ieee-iotj.org/"},{"title":"Computers & Electrical Engineering, Elsevier","link":"https://www.sciencedirect.com/journal/computers-and-electrical-engineering"},{"title":"Future Generation Computer Systems, Elsevier","link":"https://www.sciencedirect.com/journal/future-generation-computer-systems"},{"title":"Engineering Applications of Artificial Intelligence, Elsevier","link":"https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence"},{"title":"WINET: Wireless Networks Journal, Springer","link":"https://link.springer.com/journal/11276"},{"title":"Journal of Supercomputing, Springer","link":"https://link.springer.com/journal/11227"},{"title":"MDPI Sensors","link":"https://www.mdpi.com/journal/sensors"},{"title":"Future Internet","link":"https://www.mdpi.com/journal/futureinternet"},{"title":"MDPI Journal of Sensor and Actuator Networks","link":"https://www.mdpi.com/journal/jsan"},{"title":"Security and Communication Networks","link":"https://onlinelibrary.wiley.com/journal/19390122"},{"title":"EURASIP Journal on Wireless Communications and Networking","link":"https://jwcn-eurasipjournals.springeropen.com/"},{"title":"KSII Transactions on Internet and Information Systems","link":"https://itiis.org/"},{"title":"IEEE Vehicular Technology Conference (VTC)","link":"https://events.vtsociety.org/vtc2025-fall/"},{"title":"IJCNC: International Journal of Computer Networks & Communications","link":"https://airccse.org/journal/ijcnc.html"}]}]}');
+
+},{}],"egXNg":[function() {},{}]},["9C6xR","a0t4e"], "a0t4e", "parcelRequire412e", {}, null, null, "http://localhost:8080")
 
 //# sourceMappingURL=Portfolio.31b563d9.js.map
