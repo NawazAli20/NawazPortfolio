@@ -1,0 +1,157 @@
+{
+  "atBradleyUniversity": [
+    {
+      "year": 2026,
+      "title": "Faculty Student Interdisciplinary Scholarship (IDS)",
+      "organization": "Bradley University OSP Advisory Board",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2026,
+      "title": "Student Engagement Award",
+      "organization": "Bradley University OSP Advisory Board",
+      "category": "Student Engagement"
+    },
+    {
+      "year": 2026,
+      "title": "President’s Award for Best Graduate Poster",
+      "organization": "Bradley Student Scholarship Expo",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2025,
+      "title": "Faculty Scholarship Award (FSA)",
+      "organization": "Bradley University OSP Advisory Board",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2024,
+      "title": "Caterpillar Faculty Achievement Award for Scholarship",
+      "organization": "Bradley University",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2024,
+      "title": "CDER Summer Training Workshop Participation Award",
+      "organization": "UMASS Amherst / NSF-IEEE TCPP Curriculum Initiative",
+      "category": "Professional Development"
+    },
+    {
+      "year": 2024,
+      "title": "NSF IUSE Summit Participation Award",
+      "organization": "AAAS",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2024,
+      "title": "CTEL SoTL Award",
+      "organization": "Bradley University CTEL",
+      "category": "Teaching"
+    },
+    {
+      "year": 2024,
+      "title": "Student Scholarship Expo Award",
+      "organization": "Bradley University",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2023,
+      "title": "Innovation for Health (IFH) Award",
+      "organization": "OSF Healthcare and Bradley University",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2023,
+      "title": "Student Engagement Award (SEA)",
+      "organization": "Bradley University OSP Advisory Board",
+      "category": "Student Engagement"
+    },
+    {
+      "year": 2022,
+      "title": "Caterpillar Fellowship Award",
+      "organization": "Bradley University Caterpillar Endowment Fund",
+      "category": "Fellowship"
+    },
+    {
+      "year": 2022,
+      "title": "Faculty Scholarship Award (FSA)",
+      "organization": "Bradley University OSP Advisory Board",
+      "category": "Scholarship/Research"
+    },
+    {
+      "year": 2022,
+      "title": "Center for Teaching Excellence and Learning (CTEL) Paired Courses Initiatives Award",
+      "organization": "Bradley University CTEL",
+      "category": "Teaching"
+    }
+  ],
+
+  "beforeBradleyUniversity": [
+    {
+      "year": 2021,
+      "title": "Open Education Resource Grant (OER)",
+      "organization": "West Virginia Higher Education Policy Commission (WVHEPC)",
+      "category": "Teaching"
+    },
+    {
+      "year": 2019,
+      "title": "Best Paper Award",
+      "organization": "ASME IDETC/CIE 2019 Conference",
+      "category": "Research"
+    },
+    {
+      "year": 2014,
+      "title": "Best Poster Award",
+      "organization": "Khulna University of Engineering & Technology",
+      "category": "Research"
+    },
+    {
+      "year": 2014,
+      "title": "Best Paper Award",
+      "organization": "IARIA ICCGI 2014 Conference",
+      "category": "Research"
+    },
+    {
+      "year": 2013,
+      "title": "Outstanding Academic Performance Award",
+      "organization": "City University of Hong Kong",
+      "category": "Academic"
+    },
+    {
+      "year": 2011,
+      "title": "Student Grant Award",
+      "organization": "Australasian Telecommunications Networks and Applications Conference (ATNAC)",
+      "category": "Research"
+    },
+    {
+      "year": 2010,
+      "title": "ePortfolio Design Award",
+      "organization": "City University of Hong Kong",
+      "category": "Academic"
+    },
+    {
+      "year": "2009-2013",
+      "title": "Postgraduate Student Scholarship",
+      "organization": "City University of Hong Kong",
+      "category": "Scholarship"
+    },
+    {
+      "year": "2002-2006",
+      "title": "University Merit Scholarship",
+      "organization": "Khulna University of Engineering & Technology, Bangladesh",
+      "category": "Scholarship"
+    },
+    {
+      "year": "1999-2001",
+      "title": "Education Board Scholarship",
+      "organization": "Dhaka College, Bangladesh",
+      "category": "Scholarship"
+    },
+    {
+      "year": "1994-1999",
+      "title": "Government Junior Scholarship",
+      "organization": "Ministry of Education, Bangladesh Government",
+      "category": "Scholarship"
+    }
+  ]
+}

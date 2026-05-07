@@ -1,0 +1,140 @@
+{
+  "services": [
+    {
+      "category": "Administrative Experiences",
+      "items": [
+        "Chair of Curriculum Committee, Department of CS&IS, Bradley University, USA, Fall 2023 - Present",
+        "Member and Chair of Faculty Search Committee, Department of CS&IS, Bradley University, USA, 2022 - Fall 2023",
+        "Member of Undergraduate Syllabus Committee, Department of Data and Computer Science, University of Charleston, WV, USA, 2019 - 2021",
+        "Deputy Director of Students' Welfare, Khulna University of Engineering & Technology, Bangladesh, May 2014 - October 2015",
+        "Member of Undergraduate and Postgraduate Syllabus Committee, Department of CSE, Khulna University of Engineering & Technology, Bangladesh, 2014 - 2015",
+        "Teacher-in-Charge of Undergraduate Exam Committee, Department of CSE, Khulna University of Engineering & Technology, Bangladesh, 2014 - 2015"
+      ]
+    },
+    {
+      "category": "Memberships & Academic Contributions",
+      "items": [
+        "Member of IEEE, The Institute of Electrical and Electronics Engineers",
+        "Member of IEB, The Institute of Engineers Bangladesh",
+        "Editorial Board Member of Ubiquitous Computing and Communication Journal",
+        "Member of the Organizing Committee of 11th International Conference of Computer and Information Technology (ICCIT’09), Khulna, Bangladesh",
+        "Coach of the university team of ACM International Collegiate Programming Contest, Dhaka site, Bangladesh, December 2007"
+      ]
+    },
+    {
+      "category": "Leading Guest Editor of Journal Special Issues",
+      "items": [
+        {
+          "title": "Computers, Materials and Continua Special Issue: Sentiment Analysis for Social Media Data: Lexicon-Based and Large Language Model Approaches",
+          "link": "https://www.techscience.com/cmc/special_detail/sentiment_analysis"
+        },
+        {
+          "title": "Elsevier Special Issue: VSI:SUSCOM Sustainable 5G in Sustainable Computing: Informatics and Systems",
+          "link": "https://www.sciencedirect.com/journal/sustainable-computing-informatics-and-systems"
+        },
+        {
+          "title": "Sensors: Wireless Sensor Network and IoT Technologies for Smart Cities",
+          "link": "https://www.mdpi.com/journal/sensors/special_issues/GRTU828PMI"
+        },
+        {
+          "title": "Sensors: Machine Learning for Connected and Autonomous Vehicles for Mixed Traffic Environment",
+          "link": "https://www.mdpi.com/journal/sensors/special_issues/ML_CAV"
+        },
+        {
+          "title": "Sustainability: Vehicular Networks and Sustainability",
+          "link": "https://www.mdpi.com/journal/sustainability/special_issues/Vehicular_Networks_Sustainability"
+        },
+        {
+          "title": "Vehicles: V2X Vehicle-to-Everything Communication",
+          "link": "https://www.mdpi.com/journal/vehicles/special_issues/2D19V2V249"
+        }
+      ]
+    },
+    {
+    "category": "Reviewers",
+    "items": [
+        {
+        "title": "NSF STEM EDU Panel Reviewer",
+        "link": "https://www.nsf.gov/edu"
+        },
+        {
+        "title": "IEEE Transactions on Intelligent Transportation Systems",
+        "link": "https://ieee-itss.org/pub/t-its/"
+        },
+        {
+        "title": "IEEE Transactions on Vehicular Technology",
+        "link": "https://vtsociety.org/publication/ieee-transactions-vehicular-technology"
+        },
+        {
+        "title": "IEEE Transactions on Communications",
+        "link": "https://www.comsoc.org/publications/journals/ieee-tcom"
+        },
+        {
+        "title": "IEEE Access",
+        "link": "https://ieeeaccess.ieee.org/"
+        },
+        {
+        "title": "IEEE Sensors Journal",
+        "link": "https://ieee-sensors.org/ieee-sensors-journal/"
+        },
+        {
+        "title": "IEEE Internet of Things Journal",
+        "link": "https://ieee-iotj.org/"
+        },
+        {
+        "title": "Computers & Electrical Engineering, Elsevier",
+        "link": "https://www.sciencedirect.com/journal/computers-and-electrical-engineering"
+        },
+        {
+        "title": "Future Generation Computer Systems, Elsevier",
+        "link": "https://www.sciencedirect.com/journal/future-generation-computer-systems"
+        },
+        {
+        "title": "Engineering Applications of Artificial Intelligence, Elsevier",
+        "link": "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence"
+        },
+        {
+        "title": "WINET: Wireless Networks Journal, Springer",
+        "link": "https://link.springer.com/journal/11276"
+        },
+        {
+        "title": "Journal of Supercomputing, Springer",
+        "link": "https://link.springer.com/journal/11227"
+        },
+        {
+        "title": "MDPI Sensors",
+        "link": "https://www.mdpi.com/journal/sensors"
+        },
+        {
+        "title": "Future Internet",
+        "link": "https://www.mdpi.com/journal/futureinternet"
+        },
+        {
+        "title": "MDPI Journal of Sensor and Actuator Networks",
+        "link": "https://www.mdpi.com/journal/jsan"
+        },
+        {
+        "title": "Security and Communication Networks",
+        "link": "https://onlinelibrary.wiley.com/journal/19390122"
+        },
+        {
+        "title": "EURASIP Journal on Wireless Communications and Networking",
+        "link": "https://jwcn-eurasipjournals.springeropen.com/"
+        },
+        {
+        "title": "KSII Transactions on Internet and Information Systems",
+        "link": "https://itiis.org/"
+        },
+        {
+        "title": "IEEE Vehicular Technology Conference (VTC)",
+        "link": "https://events.vtsociety.org/vtc2025-fall/"
+        },
+        {
+        "title": "IJCNC: International Journal of Computer Networks & Communications",
+        "link": "https://airccse.org/journal/ijcnc.html"
+        }
+        
+    ]
+    }
+  ]
+}

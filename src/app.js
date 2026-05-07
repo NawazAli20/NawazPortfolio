@@ -5,6 +5,8 @@ import Teaching from "./components/teaching";
 import Grants from "./components/grants";
 import Projects from "./components/projects";
 import Appointments from "./components/Appointments";
+import Awards from "./components/awards";
+import Services from "./components/services";
 import './assets/navbar.css';
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -47,6 +49,8 @@ function NavBar() {
           <NavLink to="/publications">Publications</NavLink>
           <NavLink to="/grants">Grants</NavLink>
           <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/awards">Awards</NavLink>
+          <NavLink to="/services">Services</NavLink>
         </nav>
 
       </div>
@@ -73,6 +77,8 @@ function App(){
                     <Route path="/publications" element={<Publications/>}/>
                     <Route path="/grants" element={<Grants/>}/>
                     <Route path="/projects" element={<Projects/>}/>
+                    <Route path="/awards" element={<Awards/>}/>
+                    <Route path="/services" element={<Services/>}/>
                 </Routes>
             </BrowserRouter>
         </>
