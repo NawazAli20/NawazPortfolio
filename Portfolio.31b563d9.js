@@ -17446,7 +17446,7 @@ function NavBar() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 45,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17454,7 +17454,7 @@ function NavBar() {
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 46,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17462,7 +17462,7 @@ function NavBar() {
                         children: "Appointments"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 47,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17470,7 +17470,7 @@ function NavBar() {
                         children: "Teaching"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 48,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17478,7 +17478,7 @@ function NavBar() {
                         children: "Publications"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 49,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17486,7 +17486,7 @@ function NavBar() {
                         children: "Grants"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 50,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17494,7 +17494,7 @@ function NavBar() {
                         children: "Projects"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 51,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17502,7 +17502,7 @@ function NavBar() {
                         children: "Awards"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 52,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -17510,41 +17510,39 @@ function NavBar() {
                         children: "Services"
                     }, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 53,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/app.js",
-                lineNumber: 44,
+                lineNumber: 28,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 36,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/app.js",
-        lineNumber: 35,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
 _c = NavBar;
 function App() {
-    const basename = "/";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-            basename: basename,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(NavBar, {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 70,
+                    lineNumber: 54,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 71,
+                    lineNumber: 55,
                     columnNumber: 17
                 }, this),
                 " ",
@@ -17554,108 +17552,108 @@ function App() {
                             path: "/profile",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 74,
+                                lineNumber: 58,
                                 columnNumber: 53
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 74,
+                            lineNumber: 58,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/appointments",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appointmentsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 75,
+                                lineNumber: 59,
                                 columnNumber: 58
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 75,
+                            lineNumber: 59,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/teaching",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _teachingDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 76,
+                                lineNumber: 60,
                                 columnNumber: 54
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 76,
+                            lineNumber: 60,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/publications",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 77,
+                                lineNumber: 61,
                                 columnNumber: 58
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 77,
+                            lineNumber: 61,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/grants",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _grantsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 78,
+                                lineNumber: 62,
                                 columnNumber: 52
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 78,
+                            lineNumber: 62,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/projects",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 79,
+                                lineNumber: 63,
                                 columnNumber: 54
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 79,
+                            lineNumber: 63,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/awards",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 80,
+                                lineNumber: 64,
                                 columnNumber: 52
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 80,
+                            lineNumber: 64,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                             path: "/services",
                             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
                                 fileName: "src/app.js",
-                                lineNumber: 81,
+                                lineNumber: 65,
                                 columnNumber: 54
                             }, void 0)
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 81,
+                            lineNumber: 65,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/app.js",
-                    lineNumber: 72,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 69,
+            lineNumber: 53,
             columnNumber: 13
         }, this)
     }, void 0, false);
