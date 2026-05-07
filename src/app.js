@@ -9,24 +9,8 @@ import Awards from "./components/awards";
 import Services from "./components/services";
 import './assets/navbar.css';
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, Link } from "react-router-dom";
 
-// function NavBar(){
-//  return(
-//     <>
-//         <nav className="nav">
-//             <div className="elem"><Link to="/">Home</Link></div>
-//             <div className="elem"><Link to="/profile">Profile</Link></div>
-//             <div className="elem"><Link to="/appointments">Professional-Appointments</Link></div>
-//             <div className="elem"><Link to="/teaching">Teaching</Link></div>
-//             <div className="elem"><Link to="/publications">Publications</Link></div>
-//             <div className="elem"><Link to="/grants">Grants</Link></div>
-//             <div className="elem"><Link to="/projects">Projects</Link></div>
-//         </nav>
-    
-//     </>
-//  );
-// }
 
 import {NavLink } from "react-router-dom";
 
@@ -59,14 +43,14 @@ function NavBar() {
 }
 
 function App(){
-    const basename = process.env.NODE_ENV === "production" 
-  ? "/NawazPortfolio" 
-  : "/";
+  //   const basename = process.env.NODE_ENV === "production" 
+  // ? "/NawazPortfolio" 
+  // : "/";
 
 {/* <BrowserRouter basename={basename}></BrowserRouter> */}
     return(
         <>
-            <BrowserRouter basename={basename}>
+            <HashRouter>
                 <NavBar/>
                 <Home/> {/** default route*/}
                 <Routes>
@@ -80,7 +64,7 @@ function App(){
                     <Route path="/awards" element={<Awards/>}/>
                     <Route path="/services" element={<Services/>}/>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 
