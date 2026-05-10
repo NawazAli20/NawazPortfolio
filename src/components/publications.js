@@ -16,7 +16,19 @@ function Publications() {
                 <li key={index}>
                   <strong>{pub.title}</strong><br />
 
-                  {pub.authors} <br />
+                  {/* {pub.authors} <br /> */}
+                  
+              {pub.authors.split(" and ").map((author, index) => (
+                <span key={index}>
+                  {author.includes("Ali, GG Md Nawaz") ? (
+                    <strong>{author}</strong>
+                  ) : (
+                    author
+                  )}
+                  {index < pub.authors.split(" and ").length - 1 && " and "}
+                </span>
+              ))}
+                <br/>
 
                   {pub.journal && <em>{pub.journal}</em>}{" "}
                   {pub.booktitle && <em>{pub.booktitle}</em>} &nbsp; &nbsp;

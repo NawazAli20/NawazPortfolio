@@ -4,22 +4,22 @@
       "id": 32,
       "agency": "Faculty Scholarship Community Partnership BU-UICOMP Seed Award",
       "title": "Curriculum-aligned Fine-tuned AI Assistant for Preclinical Medical Students",
-      "status": "Under Review",
-      "amountRequested": "$12K"
+      "status": "Awarded",
+      "amountAwarded": "$12K"
     },
     {
       "id": 31,
       "agency": "Interdisciplinary Scholarship Award (IDS)",
       "title": "Use of Supervised Machine Learning and Neural Network Models to Understand the Impact of Climate Change on US Midwest Road Infrastructure",
       "status": "Awarded",
-      "amountRequested": "$15K"
+      "amountAwarded": "$15K"
     },
     {
       "id": 30,
       "agency": "Student Engagement Award",
       "title": "Development of a Fine-Tuned LLM with RAG for Assisting Students and Faculty with Bradley University Information Retrieval",
       "status": "Awarded",
-      "amountRequested": "$6K"
+      "amountAwarded": "$6K"
     },
     {
       "id": 29,
@@ -89,7 +89,7 @@
       "agency": "IFH (Innovation for Health) Award",
       "title": "Understanding the Reactions of Adolescents to Obesity Related Health Messaging Residing in the Tri-county Area (Peoria, Tazewell, and Woodford Counties) through Social Media Data",
       "status": "Awarded",
-      "amountAwarded": "$49,954"
+      "amountAwarded": "$50K"
     },
     {
       "id": 20,
@@ -165,7 +165,7 @@
       "agency": "Sherry Endowment Student/Faculty Collaborative Project Award",
       "title": "A Survey on Machine Learning Methods in Autonomous Vehicles",
       "status": "Awarded",
-      "amountAwarded": "$800"
+      "amountAwarded": "$0.8K"
     }
   ],
 

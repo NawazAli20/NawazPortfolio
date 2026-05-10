@@ -19,6 +19,19 @@ function Grants() {
   const underReviewCount = allGrants.filter((g) => g.status === "Under Review").length;
   const notFundedCount = allGrants.filter((g) => g.status === "Not Funded").length;
 
+ const totalAwardedAmount = allGrants
+  .filter((g) => g.status === "Awarded")
+  .reduce((sum, g) => {
+    const amountStr = g.amountAwarded;
+
+    const amount = parseFloat(
+      amountStr.replace("$", "").replace("K", "")
+    );
+
+    return sum + amount * 1000;
+  }, 0);
+
+
   return (
     <div className="grants">
       <h2>Research Grants / Proposal Writing Experiences</h2>
@@ -28,6 +41,7 @@ function Grants() {
         <p><strong>Awarded:</strong> {awardedCount}</p>
         <p><strong>Under Review:</strong> {underReviewCount}</p>
         <p><strong>Not Funded:</strong> {notFundedCount}</p>
+        <p><strong>Total Awarded Amount:</strong> ${totalAwardedAmount.toLocaleString()}</p>
       </div>
 
       <label htmlFor="statusFilter">

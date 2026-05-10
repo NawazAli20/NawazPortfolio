@@ -69,7 +69,7 @@ ul>li{
     border: 2px dashed red;
     margin-bottom: 20px;
     padding: 5px;
-    width:50%;
+    max-width:80%;
     background-color: aliceblue;
     justify-content: space-evenly;
     

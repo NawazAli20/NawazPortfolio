@@ -18,6 +18,8 @@ function NavBar() {
   return (
     <header className="navbar">
       <div className="nav-container">
+
+
         
         {/* Left: Name / Brand */}
         {/* <div className="nav-brand">

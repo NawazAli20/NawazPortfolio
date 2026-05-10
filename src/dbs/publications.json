@@ -1,6 +1,22 @@
 {
   "2026": [
     {
+      "entryType": "article",
+      "citationKey": "de2026streamlined",
+      "title": "A Streamlined Client-Server Architecture for Sustainable Sentiment Analysis System Using Textual Data",
+      "authors": "De, Soumalya and Akhtar, Rahil and Umer, Saiyed and Rout, Ranjeet Kumar and Ali, GG Md Nawaz",
+      "journal": "Computers, Materials & Continua",
+      "volume": "88",
+      "number": "1",
+      "pages": "--",
+      "year": "2026",
+      "publisher": "Tech Science Press",
+      "doi": "10.32604/cmc.2026.079340",
+      "issn": "1546-2226",
+      "url": "https://scholar.google.com/scholar?q=A+Streamlined+Client-Server+Architecture+for+Sustainable+Sentiment+Analysis+System+Using+Textual+Data",
+      "urlSource": "http://www.techscience.com/cmc/v88n1/67314"
+    },
+    {
       "entryType": "inproceedings",
       "citationKey": "shifa2026bridging",
       "title": "Bridging Lexical and Contextual Semantics for Adolescents' Health Sentiment Analysis: A Cross-Platform Study Using Large Language Models",
@@ -10,7 +26,7 @@
       "year": "2026",
       "organization": "IEEE",
       "url": "https://scholar.google.com/scholar?q=Bridging+Lexical+and+Contextual+Semantics+for+Adolescents%E2%80%99+Health+Sentiment+Analysis%3A+A+Cross-Platform+Study+Using+Large+Language+Models",
-      "urlSource": null
+      "urlSource": "https://ieeexplore.ieee.org/abstract/document/11486568"
     },
     {
       "entryType": "inproceedings",
@@ -22,7 +38,7 @@
       "year": "2026",
       "organization": "IEEE",
       "url": "https://scholar.google.com/scholar?q=Truth+in+the+Age+of+AI%3A+Fine-Tuning+LLMs+for+Reliable+Fake+News+Detection",
-      "urlSource": null
+      "urlSource": "https://ieeexplore.ieee.org/abstract/document/11486523"
     },
     {
       "entryType": "inproceedings",
@@ -34,7 +50,7 @@
       "year": "2026",
       "organization": "IEEE",
       "url": "https://scholar.google.com/scholar?q=LLMs+in+Fake+News+Detection%3A+A+Comparative+Study+of+Zero-Shot+and+Fine-Tuned+Open-Source+Models",
-      "urlSource": null
+      "urlSource": "https://ieeexplore.ieee.org/abstract/document/11486462"
     }
   ],
   "2025": [
@@ -116,7 +132,7 @@
       "year": "2025",
       "organization": "Springer Nature",
       "url": "https://scholar.google.com/scholar?q=Understanding+Contemporary+Public+Sentiment+and+Trends+on+Key+Societal",
-      "urlSource": null
+      "urlSource": "https://link.springer.com/chapter/10.1007/978-3-031-92602-0_21"
     },
     {
       "entryType": "article",
@@ -151,7 +167,7 @@
     {
       "entryType": "article",
       "citationKey": "wang20244",
-      "title": "4 Computational Analysis of Wireless Modeling Sensor and",
+      "title": "Computational Analysis of Wireless Modeling Sensor and",
       "authors": "Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Md Nawaz and Zhang, Yanping",
       "journal": "Computational Modeling and Simulation of Advanced Wireless Communication Systems",
       "pages": "89",
@@ -164,7 +180,7 @@
       "entryType": "incollection",
       "citationKey": "wang2024computational",
       "title": "Computational Modeling and Analysis of Wireless Sensor Networks",
-      "authors": "Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Nawaz and Zhang, Yanping",
+      "authors": "Wang, Yun and Sadat, Mohammad Nazmus and Ali, GG Md Nawaz and Zhang, Yanping",
       "booktitle": "Computational Modeling and Simulation of Advanced Wireless Communication Systems",
       "pages": "89--111",
       "year": "2024",
@@ -364,7 +380,7 @@
       "entryType": "article",
       "citationKey": "rahman2020twitter",
       "title": "Twitter and census data analytics to explore socioeconomic factors for post-covid-19 reopening sentiment",
-      "authors": "Rahman, Md Mokhlesur and Ali, GG and Li, Xue Jun and Paul, Kamal Chandra and Chong, Peter HJ",
+      "authors": "Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Li, Xue Jun and Paul, Kamal Chandra and Chong, Peter HJ",
       "journal": "arXiv preprint arXiv:2007.00054",
       "year": "2020",
       "url": "https://scholar.google.com/scholar?q=Twitter+and+census+data+analytics+to+explore+socioeconomic+factors+for+post-covid-19+reopening+sentiment",
@@ -439,7 +455,7 @@
       "entryType": "article",
       "citationKey": "mohan2020machine",
       "title": "Machine Learning Algorithm for NLOS Millimeter Wave in 5G V2X Communication",
-      "authors": "Mohan, Deepika and Ali, GG and Chong, Peter Han Joo",
+      "authors": "Mohan, Deepika and Ali, GG Md Nawaz and Chong, Peter Han Joo",
       "journal": "arXiv preprint arXiv:2012.12123",
       "year": "2020",
       "url": "https://scholar.google.com/scholar?q=Machine+Learning+Algorithm+for+NLOS+Millimeter+Wave+in+5G+V2X+Communication",
@@ -449,7 +465,7 @@
       "entryType": "article",
       "citationKey": "samuel2020feeling",
       "title": "Feeling like it is time to reopen now? covid-19 new normal scenarios based on reopening sentiment analytics",
-      "authors": "Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG and Samuel, Yana and Pelaez, Alexander",
+      "authors": "Samuel, Jim and Rahman, Md Mokhlesur and Ali, GG Md Nawaz and Samuel, Yana and Pelaez, Alexander",
       "journal": "arXiv preprint arXiv:2005.10961",
       "year": "2020",
       "url": "https://scholar.google.com/scholar?q=Feeling+like+it+is+time+to+reopen+now%3F+covid-19+new+normal+scenarios+based+on+reopening+sentiment+analytics",
@@ -474,7 +490,7 @@
       "entryType": "article",
       "citationKey": "mondal2019multi",
       "title": "A Multi-Stage Encryption Technique to Enhance the Secrecy of Image.",
-      "authors": "Mondal, Arindom and Alam, Kazi Md Rokibul and Ali, GG and Chong, Peter Han Joo and others",
+      "authors": "Mondal, Arindom and Alam, Kazi Md Rokibul and Ali, GG Md Nawaz and Chong, Peter Han Joo and others",
       "journal": "KSII Transactions on Internet & Information Systems",
       "volume": "13",
       "number": "5",
@@ -605,7 +621,7 @@
       "entryType": "article",
       "citationKey": "ali2019broadcast",
       "title": "Broadcast performance analysis and improvements of the LTE-V2V autonomous mode at road intersection",
-      "authors": "Ali, GG and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk and others",
+      "authors": "Ali, GG Md Nawaz and Guan, Yong Liang and Ayalew, Beshah and Chong, Peter Han Joo and Pesch, Dirk and others",
       "year": "2019",
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "url": "https://scholar.google.com/scholar?q=Broadcast+performance+analysis+and+improvements+of+the+LTE-V2V+autonomous+mode+at+road+intersection",
@@ -625,16 +641,6 @@
       "year": "2018",
       "publisher": "IEEE",
       "url": "https://scholar.google.com/scholar?q=Efficient+real-time+coding-assisted+heterogeneous+data+access+in+vehicular+networks",
-      "urlSource": null
-    },
-    {
-      "entryType": "misc",
-      "citationKey": "majeed2018trauma",
-      "title": "",
-      "authors": "Majeed, M Azam and Gill, Peter and Etokakpan, Mboutidem and MacGillivray, Sherry and Choudhary, Deepak and Rodrigue, Nathalie and Haran, Shankar and Lockwood, Joel and Fuselli, Pamela and Akaraborworn, Osaree and others",
-      "year": "2018",
-      "publisher": "Canadian Journal of Surgery",
-      "url": "https://scholar.google.com/scholar?q=Majeed%2C+M+Azam+and+Gill%2C+Peter+and+Etokakpan%2C+Mboutidem+and+MacGillivray%2C+Sherry+and+Choudhary%2C+Deepak+and+Rodrigue%2C+Nathalie+and+Haran%2C+Shankar+and+Lockwood%2C+Joel+and+Fuselli%2C+Pamela+and+Akaraborworn%2C+Osaree+and+others+2018",
       "urlSource": null
     },
     {
@@ -719,7 +725,7 @@
       "entryType": "article",
       "citationKey": "kutubi2017offline",
       "title": "An offline electronic payment system based on an untraceable blind signature scheme",
-      "authors": "Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Ali, GG and Chong, Peter Han Joo and Morimoto, Yasuhiko",
+      "authors": "Kutubi, Md Abdullah Al Rahat and Alam, Kazi Md Rokibul and Tahsin, Rafaf and Ali, GG Md Nawaz and Chong, Peter Han Joo and Morimoto, Yasuhiko",
       "journal": "KSII Transactions on Internet and Information Systems (TIIS)",
       "volume": "11",
       "number": "5",
@@ -727,18 +733,6 @@
       "year": "2017",
       "publisher": "Korean Society for Internet Information",
       "url": "https://scholar.google.com/scholar?q=An+offline+electronic+payment+system+based+on+an+untraceable+blind+signature+scheme",
-      "urlSource": null
-    },
-    {
-      "entryType": "inproceedings",
-      "citationKey": "ali2017multiple",
-      "title": "Multiple UPFCs mathematical model enhancing multi-machine power system control",
-      "authors": "Ali, GM and Al-Mawsawi, SA",
-      "booktitle": "2017 10th Jordanian International Electrical and Electronics Engineering Conference (JIEEEC)",
-      "pages": "1--4",
-      "year": "2017",
-      "organization": "IEEE",
-      "url": "https://scholar.google.com/scholar?q=Multiple+UPFCs+mathematical+model+enhancing+multi-machine+power+system+control",
       "urlSource": null
     }
   ],
@@ -967,7 +961,7 @@
       "entryType": "inproceedings",
       "citationKey": "ali2014performance",
       "title": "Performance improvement in applying network coding to on-demand scheduling algorithms for broadcasts in wireless networks",
-      "authors": "Ali, G and Meng, Yuxuan and Lee, V and Liu, Kai and Chan, Edward",
+      "authors": "Ali, GG Md Nawaz and Meng, Yuxuan and Lee, V and Liu, Kai and Chan, Edward",
       "booktitle": "International Multi-Conference on Computing in the Global Information Technology (ICCGI)",
       "year": "2014",
       "url": "https://scholar.google.com/scholar?q=Performance+improvement+in+applying+network+coding+to+on-demand+scheduling+algorithms+for+broadcasts+in+wireless+networks",
@@ -1074,7 +1068,7 @@
       "entryType": "article",
       "citationKey": "ali2010efficient",
       "title": "An Efficient Approach for Generalized Load Balancing in Multipath Packet Switched Networks",
-      "authors": "Ali, GG and Chakraborty, Rajib and Alam, Md Shihabul and Chan, Edward",
+      "authors": "Ali, GG Md Nawaz and Chakraborty, Rajib and Alam, Md Shihabul and Chan, Edward",
       "journal": "arXiv preprint arXiv:1003.3312",
       "year": "2010",
       "url": "https://scholar.google.com/scholar?q=An+Efficient+Approach+for+Generalized+Load+Balancing+in+Multipath+Packet+Switched+Networks",
